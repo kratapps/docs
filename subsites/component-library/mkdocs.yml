@@ -1,0 +1,95 @@
+site_name: Component Library
+site_description: Docs | Component Library
+site_author: Ondrej Kratochvil
+site_url: https://docs.kratapps.com/component-library
+
+# Theme configuration
+theme:
+  name: material
+  logo: ../images/logo_kratapps.svg
+  favicon: ../images/favicon.ico
+  palette:
+    - scheme: default
+      primary: white
+      accent: custom
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    #  - index.pages
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    - navigation.expand
+    - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    - navigation.path
+    # - navigation.prune
+    - navigation.sections
+#    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+#    - toc.integrate
+
+plugins:
+#  - privacy
+  - search:
+      #      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s\u200b\-\.,!=\[\]()"`/]+'
+  - minify:
+      minify_html: true
+
+
+# Markdown extensions
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      
+# Extra
+extra:
+  homepage: /
+  generator: false
+  social:
+    - icon: fontawesome/regular/envelope
+      link: mailto:hello@kratapps.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/kratapps
+
+# Extra CSS or JavaScript files
+extra_css:
+  - ../stylesheets/extra.css
+  - ../stylesheets/hljs-kratapps.css
+extra_javascript:
+  - ../scripts/highlight.min.js
+  - ../scripts/highlightConfig.js
+
+# Navigation configuration
+nav:
+  - Component Reference: overview/components.md
+  - Apex:
+    - JSON Preprocessor: bundle/json-preprocessor.md
+    - Lightning Error: bundle/lightning-error.md
+    - Lightning Response: bundle/lightning-response.md
+  - LWC:
+    - Alert: bundle/alert.md
+    - Error Handler: bundle/error-handler.md
+    - Spinner: bundle/spinner.md
+      
+

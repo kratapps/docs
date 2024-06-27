@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+node scripts/buildComponentsOverviewPage.js
+node scripts/buildSetupAuditTrailReference.js
+npm run prettier-staged

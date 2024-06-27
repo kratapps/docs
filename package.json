@@ -1,0 +1,25 @@
+{
+  "name": "blog-kratapps",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "husky install",
+    "prettier-all": "prettier --write {,*/**/}*.{md,json,js,html}",
+    "prettier-staged": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kratapps/blog-kratapps.git"
+  },
+  "devDependencies": {
+    "@kratapps/prettier-config": "^0.1.5",
+    "fs-extra": "^11.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "**/*.{md,json,js,html}": [
+      "prettier --write"
+    ]
+  }
+}
