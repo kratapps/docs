@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Alert",
+    "type": "lwc",
+    "category": "component",
+    "href": "/component-library/bundle/alert/",
+    "description": "LWC component for SLDS Alert"
+  },
+  {
+    "name": "Error Handler",
+    "type": "lwc",
+    "category": "service",
+    "href": "/component-library/bundle/error-handler/",
+    "description": "Handle errors and show either a toast or error prompt to a user."
+  },
+  {
+    "name": "Spinner",
+    "type": "lwc",
+    "category": "component",
+    "href": "/component-library/bundle/spinner/",
+    "description": "Displays an animated spinner."
+  },
+  {
+    "name": "JSON Preprocessor",
+    "type": "apex",
+    "href": "/component-library/bundle/json-preprocessor/",
+    "description": "Configurable JSON transformation in Apex."
+  },
+  {
+    "name": "Lightning Error",
+    "type": "apex",
+    "href": "/component-library/bundle/lightning-error/",
+    "description": "Streamlined error handling from Apex controllers."
+  },
+  {
+    "name": "Lightning Response",
+    "type": "apex",
+    "href": "/component-library/bundle/lightning-response/",
+    "description": "Streamlined response handling from Apex controllers."
+  }
+]
