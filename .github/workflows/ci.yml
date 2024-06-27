@@ -27,7 +27,7 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material
       - run: pip install mkdocs-minify-plugin
-      - run: make build-multisite
+      - run: make mkdocs-build-multisite
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
