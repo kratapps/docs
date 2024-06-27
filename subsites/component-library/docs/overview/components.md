@@ -5,7 +5,7 @@ hide:
 
 # Component Library
 
-[![GitHub](https://img.shields.io/badge/GitHub-kratapps/component--library-black?logo=github)](https://github.com/kratapps/component-library)
+[![GitHub](https://img.shields.io/badge/GitHub-Public-black?logo=github)](https://github.com/kratapps/component-library)
 
 Custom Salesforce LWC and Apex Components.
 
