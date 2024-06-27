@@ -1,6 +1,15 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+# Write to subsites/component-library/docs/overview/components.*
 node scripts/buildComponentsOverviewPage.js
+git add subsites/component-library/docs/overview/components.json
+git add subsites/component-library/docs/overview/components.md
+
+# Write to subsites/setup-audit-trail/docs/reference.*
 node scripts/buildSetupAuditTrailReference.js
+git add subsites/setup-audit-trail/docs/reference.json
+git add subsites/setup-audit-trail/docs/reference.md
+
+# Prettier
 npm run prettier-staged
