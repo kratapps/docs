@@ -1,0 +1,71 @@
+:root {
+    --md-primary-fg-color:        #ae358e;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark:  #90030C;
+    --color-secondary: rgba(234,122,255,0.10196078431372549);
+}
+
+.md-header {
+    background-color: white;
+    color: black;
+}
+
+.md-tabs {
+    background-color: white;
+    color: black;
+    border-bottom: 3px solid #ae358e !important;
+}
+
+.md-tabs__item--active {
+    background-color: var(--color-secondary);
+}
+
+.md-tabs__item--active:before {
+    content: "";
+    height: 3px;
+    display: block;
+    background: #ae358e;
+}
+
+.md-footer {
+    background-color: #ae358e;
+}
+
+th, td {
+    border: 1px solid var(--md-typeset-table-color);
+    border-spacing: 0;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+}
+
+.md-typeset__table tr:nth-child(2n) {
+    background-color: var(--color-secondary);
+}
+
+.md-content img:not(a img) {
+    /*padding: 1rem;*/
+    /*border-radius: 8px;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.md-typeset code.hljs {
+    background-color: #2b2b2b;
+    color: #bababa;
+}
+
+button.md-clipboard.md-icon {
+    color: lightgray;
+}
+
+button.md-clipboard.md-icon:hover {
+    color: whitesmoke;
+}
+
+.component-list li div, .component-list li p {
+    color: black;
+}
+
+.component-list li img {
+    height: 15px;
+}
