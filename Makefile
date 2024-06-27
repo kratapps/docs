@@ -7,7 +7,6 @@ serve:
 build-multisite:
 	rm -rf site
 	mkdir site
-	cp CNAME site/CNAME
 	# home site
 	python3 -m mkdocs build --site-dir build/home --config-file mkdocs.yml
 	mv build/home/* site
