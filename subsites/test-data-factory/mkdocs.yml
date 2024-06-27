@@ -1,7 +1,7 @@
-site_name: Setup Audit Trail Reference
-site_description: Docs | Setup Audit Trail Reference
+site_name: Test Data Factory
+site_description: Docs | Test Data Factory
 site_author: Ondrej Kratochvil
-site_url: https://docs.kratapps.com/setup-audit-trail
+site_url: https://docs.kratapps.com/test-data-factory
 
 # Theme configuration
 theme:
@@ -82,4 +82,8 @@ extra_javascript:
 
 # Navigation configuration
 nav:
-  - Reference: reference.md
+  - Test Data Factory:
+    - Docs: index.md
+    - Release Notes:
+      - release-notes/1.4.md
+    - MIT License: https://github.com/kratapps/test-data-factory/blob/main/LICENSE
