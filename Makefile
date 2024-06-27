@@ -2,16 +2,9 @@ mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 project_dir := $(dir $(mkfile_path))
 
 serve:
-	#python3 -m mkdocs serve
-	#make build-multisite
 	python3 -m http.server --directory "${project_dir}/site"
 	
-#build:
-	#python3 -m mkdocs build
-	
 build-multisite:
-	/Users/okratochvil/.nvm/versions/node/v20.9.0/bin/node scripts/buildComponentsOverviewPage.js
-	/Users/okratochvil/.nvm/versions/node/v20.9.0/bin/node scripts/buildSetupAuditTrailReference.js
 	rm -rf site
 	mkdir site
 	cp CNAME site/CNAME
