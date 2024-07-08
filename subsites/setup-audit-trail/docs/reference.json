@@ -3353,6 +3353,20 @@
     "section": null
   },
   {
+    "action": "jSPublicLoggingLibAllowUIOffOn",
+    "display": "Organization setup action: jSPublicLoggingLibAllowUIOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "jSPublicLoggingLibAllowUIOnOff",
+    "display": "Organization setup action: jSPublicLoggingLibAllowUIOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "leadassrule",
     "display": "Changed Lead Assignment Rule New Default Rule",
     "title": "Miscellaneous",
@@ -4955,6 +4969,13 @@
   {
     "action": "SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledStandard",
     "display": "Changed profile Sith Lord: Death Star connected app is enabled",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledCustom",
+    "display": "Changed profile Stormtrooper: Control Room Access Custom Metadata Type was disabled",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
