@@ -1631,6 +1631,13 @@
     "section": "Field Dependencies"
   },
   {
+    "action": "createdDuplicateRule",
+    "display": "Created new 01I4W000002HdqL duplicate rule \"Droid Serial Number\". Set \"Record-Level Security\" to \"Enforce sharing rules\"",
+    "title": "Matching and Duplicate Rules",
+    "category": "Data Management",
+    "section": "Duplicate Rule"
+  },
+  {
     "action": "createdemailalert",
     "display": "Created Email Alert Unauthorized Access for Object: Death Star",
     "title": "Workflow Rule",
@@ -4436,6 +4443,13 @@
     "section": "Inbox mobile and legacy desktop apps"
   },
   {
+    "action": "SandboxLicenseMatch",
+    "display": "License match requested, sandboxOrgId: 00D790000000Nq2, requested by: 0054W00000DiLY4",
+    "title": "Sandboxes",
+    "category": "Organization Management",
+    "section": "Sandboxes"
+  },
+  {
     "action": "savedlistlayoutCase",
     "display": "Changed Case search layout Search Results",
     "title": "Layouts",
@@ -5110,6 +5124,13 @@
     "title": "Miscellaneous",
     "category": "Data Management",
     "section": "Data Management"
+  },
+  {
+    "action": "updateLoginFlowProfile",
+    "display": "Reassigned UI login flow for Clone Trooper to Stormtrooper",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Login Flows"
   },
   {
     "action": "updateLpuAccessMapping",

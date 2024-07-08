@@ -511,13 +511,15 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Users) - Changed profile Sith: DeathStarAccess Custom Permission was enabled
 -   SetupEntityAccessAudit_Profile_CustomPermission_EnabledStandard (Manage
     Users) - Changed profile Sith: DeathStarAccess Custom Permission was enabled
+-   updateLoginFlowProfile (Login Flows) - Reassigned UI login flow for Clone
+    Trooper to Stormtrooper
 -   userLicenseEntityPermRevoked - Removed the Create on Account object
     permission as allowed by User License 100070000009FRQ
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('deleteLoginFlow','insertLightningLoginFlow','loginIpRange','minimumPasswordLifetimeDisableForProfile','minimumPasswordLifetimeEnableForProfile','passwordexpiryForProfile','passwordhistoryForProfile','passwordmaxinvalidForProfile','PermissionSelfHealing','profileClonedStandard','profileCustAppCustom','profileCustAppStandard','profileDefaultCustAppCustom','profileDefaultRecordTypeChangedStandard','profileEntityPermRemoved','profileFlsChangedCustom','profileFlsChangedStandard','profileOlpChangedCustom','profilePageLayoutChangedCustom','profilePageLayoutChangedStandard','profilePermChangedCustom','profileRecordTypeAddedCustom','profileRecordTypeAddedStandard','profileRecordTypeRemovedCustom','profileRecordTypeRemovedStandard','profileTabsetChangedCustom','profileTabsetChangedStandard','SetupEntityAccessAudit_Profile_ApexClass_DisabledCustom','SetupEntityAccessAudit_Profile_ApexClass_DisabledStandard','SetupEntityAccessAudit_Profile_ApexClass_EnabledCustom','SetupEntityAccessAudit_Profile_ApexClass_EnabledStandard','SetupEntityAccessAudit_Profile_ApexPage_EnabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_DisabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_EnabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_EnabledStandard','userLicenseEntityPermRevoked')
+WHERE Action IN ('deleteLoginFlow','insertLightningLoginFlow','loginIpRange','minimumPasswordLifetimeDisableForProfile','minimumPasswordLifetimeEnableForProfile','passwordexpiryForProfile','passwordhistoryForProfile','passwordmaxinvalidForProfile','PermissionSelfHealing','profileClonedStandard','profileCustAppCustom','profileCustAppStandard','profileDefaultCustAppCustom','profileDefaultRecordTypeChangedStandard','profileEntityPermRemoved','profileFlsChangedCustom','profileFlsChangedStandard','profileOlpChangedCustom','profilePageLayoutChangedCustom','profilePageLayoutChangedStandard','profilePermChangedCustom','profileRecordTypeAddedCustom','profileRecordTypeAddedStandard','profileRecordTypeRemovedCustom','profileRecordTypeRemovedStandard','profileTabsetChangedCustom','profileTabsetChangedStandard','SetupEntityAccessAudit_Profile_ApexClass_DisabledCustom','SetupEntityAccessAudit_Profile_ApexClass_DisabledStandard','SetupEntityAccessAudit_Profile_ApexClass_EnabledCustom','SetupEntityAccessAudit_Profile_ApexClass_EnabledStandard','SetupEntityAccessAudit_Profile_ApexPage_EnabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_DisabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_EnabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_EnabledStandard','updateLoginFlowProfile','userLicenseEntityPermRevoked')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1415,11 +1417,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Process
 -   DiscardSandbox (Sandboxes) - Discarded sandbox, name: mySandbox, sandboxid:
     07E4W000000KINO, sandboxOrgId: null, discarded by: 00560000001JNq5
+-   SandboxLicenseMatch (Sandboxes) - License match requested, sandboxOrgId:
+    00D790000000Nq2, requested by: 0054W00000DiLY4
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('DeleteSandbox','deleteScratchOrg','deployedchangeset','DiscardSandbox')
+WHERE Action IN ('DeleteSandbox','deleteScratchOrg','deployedchangeset','DiscardSandbox','SandboxLicenseMatch')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1850,6 +1854,9 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Duplicate Rule for Accounts Extended, changed matching rules.
 -   changedMatchRule (Matching Rule) - For matching rule Standard Account
     Matching Rule, changed Advanced Logic from null to 1 AND 2
+-   createdDuplicateRule (Duplicate Rule) - Created new 01I4W000002HdqL
+    duplicate rule "Droid Serial Number". Set "Record-Level Security" to
+    "Enforce sharing rules"
 -   createdMatchRule (Matching Rule) - Created new Account matching rule
     Standard Account Matching Rule
 -   createdMatchRuleItem (Matching Rule) - For matching rule Standard Account
@@ -1861,7 +1868,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('activatedMatchRule','changedDuplicateFilter','changedDuplicateRule','changedDuplicateRuleMatchRule','changedMatchRule','createdMatchRule','createdMatchRuleItem','setMatchEngine')
+WHERE Action IN ('activatedMatchRule','changedDuplicateFilter','changedDuplicateRule','changedDuplicateRuleMatchRule','changedMatchRule','createdDuplicateRule','createdMatchRule','createdMatchRuleItem','setMatchEngine')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
