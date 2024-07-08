@@ -3514,6 +3514,13 @@
     "section": null
   },
   {
+    "action": "multipleSAMLConfigsOffOn",
+    "display": "Organization setup action: multipleSAMLConfigsOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "namedCredentialDelete",
     "display": "Deleted named credential: ApproveApprovalApi",
     "title": "Named Credentials",
