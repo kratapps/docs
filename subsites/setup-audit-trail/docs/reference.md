@@ -1426,6 +1426,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     attempts policy from 10 to 5
 -   passwordminlength (Password Policies) - Changed password minimum length
     policy from 8 characters to 7 characters
+-   passwordminlengthForProfile (Password Policies) - Changed profile Sith Lord:
+    Changed password minimum length policy from 16 characters to 32 characters
 -   passwordquestion (Password Policies) - Changed password question policy from
     Cannot contain password to None
 -   selfApiSetPasswordDisable (Password Policies) - Disabled use of API
@@ -1434,7 +1436,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('minimumPasswordLifetimeDisable','minimumPasswordLifetimeEnable','obscureSecretAnswerDisable','obscureSecretAnswerEnable','passwordcomplexity','passwordexpiry','passwordhistory','passwordlockout','passwordmaxinvalid','passwordminlength','passwordquestion','selfApiSetPasswordDisable')
+WHERE Action IN ('minimumPasswordLifetimeDisable','minimumPasswordLifetimeEnable','obscureSecretAnswerDisable','obscureSecretAnswerEnable','passwordcomplexity','passwordexpiry','passwordhistory','passwordlockout','passwordmaxinvalid','passwordminlength','passwordminlengthForProfile','passwordquestion','selfApiSetPasswordDisable')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

@@ -3864,6 +3864,13 @@
     "section": "Password Policies"
   },
   {
+    "action": "passwordminlengthForProfile",
+    "display": "Changed profile Sith Lord: Changed password minimum length policy from 16 characters to 32 characters",
+    "title": "Password Policies",
+    "category": "Organization Management",
+    "section": "Password Policies"
+  },
+  {
     "action": "passwordquestion",
     "display": "Changed password question policy from Cannot contain password to None",
     "title": "Password Policies",
