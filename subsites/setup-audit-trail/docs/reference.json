@@ -982,6 +982,13 @@
     "section": "Customize Products"
   },
   {
+    "action": "changedPicklistPromoteCustom",
+    "display": "Promoted picklist field Planets on Galaxy to new global value set Planets",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "changedPicklistReplace",
     "display": "Replaced Affiliation picklist value from Republic to Galactic Empire",
     "title": "Picklists",
@@ -1134,6 +1141,20 @@
     "title": "Apps, Tabs and Pages",
     "category": "UI",
     "section": "Custom Apps"
+  },
+  {
+    "action": "changedUniPickDevName",
+    "display": "Changed name of Planets in the System global picklist from Planets to Planets_in_the_System",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": "Global Value Sets"
+  },
+  {
+    "action": "changedUniPicklist",
+    "display": "Changed label of global picklist from Planets to Planets in the System",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": "Global Value Sets"
   },
   {
     "action": "changedUserAdminVerifiedStatusUnverified",
@@ -2224,6 +2245,13 @@
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
+  },
+  {
+    "action": "deletedGlobalPicklist",
+    "display": "Deleted global picklist : Planets in the System",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": "Global Value Sets"
   },
   {
     "action": "deletedgroup",

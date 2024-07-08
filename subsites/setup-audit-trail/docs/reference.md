@@ -1750,6 +1750,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     default value on Droids from Republic to none
 -   changedPicklistPromote (Customize Products) - Promoted picklist field
     Macaron Flavor to new global value set Flavors
+-   changedPicklistPromoteCustom (Custom Objects) - Promoted picklist field
+    Planets on Galaxy to new global value set Planets
 -   changedPicklistReplace (Customize Opportunities) - Replaced Affiliation
     picklist value from Republic to Galactic Empire
 -   changedPicklistSort (Customize Opportunities) - Reordered Weapon picklist
@@ -1759,12 +1761,18 @@ ORDER BY CreatedDate DESC LIMIT 1000
     picklist value's API name from Republic to Galactic Empire
 -   changedPicklistValueApiNameCustom (Custom Objects) - Changed Affiliation
     picklist value on Droids from Republic to Galactic Empire
+-   changedUniPickDevName (Global Value Sets) - Changed name of Planets in the
+    System global picklist from Planets to Planets_in_the_System
+-   changedUniPicklist (Global Value Sets) - Changed label of global picklist
+    from Planets to Planets in the System
 -   createdPicklistWithColor (Customize Opportunities) - Added value Blaster to
     Weapon picklist with color Assigned dynamically
 -   createdPicklistWithColorCustom (Custom Objects) - Added value Blaster to
     Weapon picklist with color Assigned dynamically on Stormtrooper
 -   createGlobalPicklist (Global Value Sets) - Created global picklist : Planets
     in the System
+-   deletedGlobalPicklist (Global Value Sets) - Deleted global picklist :
+    Planets in the System
 -   deletedPicklistMapWithColor (Customize Accounts) - Deleted value Blaster
     with color Assigned dynamically from Weapon picklist and replaced with value
     Pistol
@@ -1781,7 +1789,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedPicklist','changedPicklistCustom','changedPicklistDefault','changedPicklistDefaultCustom','changedPicklistPromote','changedPicklistReplace','changedPicklistSort','changedPicklistSortCustom','changedPicklistValueApiName','changedPicklistValueApiNameCustom','createdPicklistWithColor','createdPicklistWithColorCustom','createGlobalPicklist','deletedPicklistMapWithColor','deletedPicklistMapWithColorCustom','deletedPicklistWithColor','deletedPicklistWithColorCustom','hardDeletedGlobalPicklist')
+WHERE Action IN ('changedPicklist','changedPicklistCustom','changedPicklistDefault','changedPicklistDefaultCustom','changedPicklistPromote','changedPicklistPromoteCustom','changedPicklistReplace','changedPicklistSort','changedPicklistSortCustom','changedPicklistValueApiName','changedPicklistValueApiNameCustom','changedUniPickDevName','changedUniPicklist','createdPicklistWithColor','createdPicklistWithColorCustom','createGlobalPicklist','deletedGlobalPicklist','deletedPicklistMapWithColor','deletedPicklistMapWithColorCustom','deletedPicklistWithColor','deletedPicklistWithColorCustom','hardDeletedGlobalPicklist')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
