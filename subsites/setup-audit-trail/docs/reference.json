@@ -1848,6 +1848,13 @@
     "section": null
   },
   {
+    "action": "crossOrgRedirectsEnabledOnOff",
+    "display": "Organization setup action: crossOrgRedirectsEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "CSPAccountDisabled",
     "display": "Account Confederacy of Independent Systems disabled as a Customer Portal account",
     "title": "Portal",
@@ -2492,6 +2499,13 @@
     "section": null
   },
   {
+    "action": "diarizationUserDisabled",
+    "display": "Organization setup action: [Anakin Skywalker] has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "disableAPILoginRequiresOrgDomain",
     "display": "Disabled SOAP API logins from https://test.salesforce.com",
     "title": "Network",
@@ -2930,6 +2944,13 @@
     "display": "Disabled “Users require the Manage Flow permission to view all Automation Home charts”",
     "title": "User Detail",
     "category": "User Management",
+    "section": null
+  },
+  {
+    "action": "flowsLightningAppOffOn",
+    "display": "Organization setup action: flowsLightningAppOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
     "section": null
   },
   {
@@ -3883,6 +3904,13 @@
     "section": null
   },
   {
+    "action": "PermSetC2CLicenselessMigration",
+    "display": "Permission set Customer 360 Data Platform Integration was converted to integration permission set sfdc_a360",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": null
+  },
+  {
     "action": "PermSetCloneNoLicense",
     "display": "Created permission set Death Star 2: using permission set Death Star with no license",
     "title": "Permission Sets",
@@ -3965,6 +3993,13 @@
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
+  },
+  {
+    "action": "PermSetGroupStandardChange",
+    "display": "Permission set group CodeBuilderGroup: was automatically updated to reflect changes to the standard permission set CodeBuilderUserPsl",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": null
   },
   {
     "action": "PermSetGroupUnassign",
@@ -4317,6 +4352,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "relationshipGraphPrefOffOn",
+    "display": "Enabled Sales Cloud Buyer Relationship Map.",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "remoteproxy",
     "display": "Remote Proxy insert CPI: https://death-star.com",
     "title": "Network",
@@ -4480,6 +4522,13 @@
   {
     "action": "rqrEmailChangeConfirmPrefOnOff",
     "display": "Organization setup action: rqrEmailChangeConfirmPrefOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "rRHInExpAuraSitesPrefOffOn",
+    "display": "Organization setup action: rRHInExpAuraSitesPrefOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -4984,6 +5033,20 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "stackedModalManagerEnabledOffOn",
+    "display": "Organization setup action: stackedModalManagerEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "suggestedForYouOffOn",
+    "display": "Changed Suggested for You from off to on",
+    "title": "Adoption Assistance",
+    "category": "Organization Management",
+    "section": "Adoption Assistance"
   },
   {
     "action": "suloginaccessused",
