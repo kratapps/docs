@@ -4086,6 +4086,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "profileDescriptionChanged",
+    "display": "Changed profile Sith: Description was changed",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "profileEntityPermRemoved",
     "display": "Removed the Create on Account object permission from Profile 00e07000000dkb6",
     "title": "Profiles",
