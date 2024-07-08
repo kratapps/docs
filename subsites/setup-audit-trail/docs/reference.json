@@ -1262,6 +1262,13 @@
     "section": "Service Provider"
   },
   {
+    "action": "changeServiceProviderStartUrl",
+    "display": "Start URL changed from https://republic.com/api/v1/saml to https://galactic-empire.com/api/v1/saml for Service Provider: GalacticEmpire ",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": "Service Provider"
+  },
+  {
     "action": "changeServiceProviderSubjectType",
     "title": "Org Config",
     "category": "Organization Management"
@@ -2023,6 +2030,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "deleteAuthProvider",
+    "display": "Deleted Auth. Provider Meta Ads Data Cloud",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
     "action": "DELETECallCenter",
     "display": "Organization setup action: DELETECallCenter has changed.",
     "title": "Org Preferences",
@@ -2035,6 +2049,13 @@
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Connected Apps"
+  },
+  {
+    "action": "deleteCustomAttribute",
+    "display": "Deleted custom attribute WORK_ORDER_SERVICE_NOTE with value of \"\" for connected app",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
   },
   {
     "action": "deletedActionOverride",
@@ -2730,6 +2751,13 @@
     "section": "Feed Tracking"
   },
   {
+    "action": "feed_field_tracked",
+    "display": "Feed Tracking for Stormtrooper field Blaster on",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": "Feed Tracking"
+  },
+  {
     "action": "feed_field_untracked",
     "display": "Feed Tracking for Stormtrooper field Blaster off",
     "title": "Custom Fields",
@@ -2903,6 +2931,13 @@
     "title": "External Objects",
     "category": "Schema",
     "section": "External Objects"
+  },
+  {
+    "action": "hardDeletedGlobalPicklist",
+    "display": "Permanently deleted global picklist : Status",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": "Global Value Sets"
   },
   {
     "action": "HistoricalTrendingEntityDeleted",
@@ -3948,6 +3983,13 @@
   {
     "action": "profileCustAppCustom",
     "display": "Changed profile Sith: Death Star application is now Not Visible",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "profileCustAppStandard",
+    "display": "Changed profile Sith: Digital Experiences application is now Visible",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
