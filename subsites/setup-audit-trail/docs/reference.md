@@ -36,6 +36,8 @@ Actions available in [JSON format](reference.json).
     Customer Portal user
 -   deactivateduser (Manage Users) - Deactivated user Anakin Skywalker (UserID:
     [0052A00000EsOI0])
+-   deleteTwoFactorWebAuthN - Security Key credential 0moJw00000004bL with
+    nickname "Padme" removed for anakin@skywalker.com
 -   frozeuser (Manage Users) - Froze user account for Darth Vader
 -   insertTwoFactorInfo2 (Manage Users) - Time-Based Token added for
     anakin@skywalker.com
@@ -75,7 +77,7 @@ Actions available in [JSON format](reference.json).
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('activateduser','changedpassword','changedsupportuseroffon','changedsupportuseronoff','createdcustomersuccessuser','createdpartneruser','createduser','CSPUserDisabled','deactivateduser','frozeuser','insertTwoFactorInfo2','insertTwoFactorWebAuthN','lightninglogincancel','lightningloginenroll','overridegrantaccessenabledoff','PRMUserDisabled','sessiongen','suloginaccessused','suLogout','suNetworkAdminLogin','suNetworkAdminLogout','suOrgAdminLogin','suOrgAdminLogout','suPRMAdminLogin','suPRMAdminLogout','twoFactorWebAuthN_editNickname','unfrozeuser','unlockeduser')
+WHERE Action IN ('activateduser','changedpassword','changedsupportuseroffon','changedsupportuseronoff','createdcustomersuccessuser','createdpartneruser','createduser','CSPUserDisabled','deactivateduser','deleteTwoFactorWebAuthN','frozeuser','insertTwoFactorInfo2','insertTwoFactorWebAuthN','lightninglogincancel','lightningloginenroll','overridegrantaccessenabledoff','PRMUserDisabled','sessiongen','suloginaccessused','suLogout','suNetworkAdminLogin','suNetworkAdminLogout','suOrgAdminLogin','suOrgAdminLogout','suPRMAdminLogin','suPRMAdminLogout','twoFactorWebAuthN_editNickname','unfrozeuser','unlockeduser')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1818,6 +1820,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   accountteamreassign (Data Management) - Used mass account team reassign
     utility
 -   accounttransfer (Data Management) - Used mass account transfer utility
+-   emptiedAdminRecycleBin (Data Management) - Emptied 25596 record(s) from the
+    organization's Recycle Bin
 -   emptiedUserRecycleBin (Data Management) - Emptied 15 record(s) from the
     Recycle Bin
 -   forceRecalc_RSFField (Customize Orders) - the RSF field Planets in the
@@ -1830,7 +1834,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('accountteamreassign','accounttransfer','emptiedUserRecycleBin','forceRecalc_RSFField','forceRecalc_RSFFieldCustom','opportunityteamreassign')
+WHERE Action IN ('accountteamreassign','accounttransfer','emptiedAdminRecycleBin','emptiedUserRecycleBin','forceRecalc_RSFField','forceRecalc_RSFFieldCustom','opportunityteamreassign')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1887,6 +1891,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 -   defaultCustomEntityExtAccess (Sharing Defaults) - Changed default external
     access for Stormtrooper from Public Read Only to Private
+-   extAccessChanged (Sharing Defaults) - Changed default external access for
+    User from Public Read Only to Private
 -   owdExternalUpdateStartedForEntity (Sharing Defaults) - Started default
     external access update for Stormtrooper from Public Read Only to Private
 -   owdUpdateFinished (Sharing Defaults) - Finished Organization-Wide Defaults
@@ -1897,7 +1903,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('defaultCustomEntityExtAccess','owdExternalUpdateStartedForEntity','owdUpdateFinished','owdUpdateStarted')
+WHERE Action IN ('defaultCustomEntityExtAccess','extAccessChanged','owdExternalUpdateStartedForEntity','owdUpdateFinished','owdUpdateStarted')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

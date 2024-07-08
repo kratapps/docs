@@ -2380,6 +2380,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "deleteTwoFactorWebAuthN",
+    "display": "Security Key credential 0moJw00000004bL with nickname \"Padme\" removed for anakin@skywalker.com",
+    "title": "User Activation and Auth",
+    "category": "User Management",
+    "section": null
+  },
+  {
     "action": "deployedchangeset",
     "display": "Deployed Change Set: Quoting Process",
     "title": "Sandboxes",
@@ -2555,6 +2562,13 @@
     "section": "Email Administration"
   },
   {
+    "action": "emptiedAdminRecycleBin",
+    "display": "Emptied 25596 record(s) from the organization's Recycle Bin",
+    "title": "Mass Utility",
+    "category": "Data Management",
+    "section": "Data Management"
+  },
+  {
     "action": "emptiedUserRecycleBin",
     "display": "Emptied 15 record(s) from the Recycle Bin",
     "title": "Mass Utility",
@@ -2679,6 +2693,13 @@
     "title": "Miscellaneous",
     "category": "Data Management",
     "section": "Data Export"
+  },
+  {
+    "action": "extAccessChanged",
+    "display": "Changed default external access for User from Public Read Only to Private",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
   },
   {
     "action": "extensionHostUnrestrictedOffOn",
