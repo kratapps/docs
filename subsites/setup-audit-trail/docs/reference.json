@@ -348,6 +348,13 @@
     "section": "Application"
   },
   {
+    "action": "changeApplicationTokenExchangeEnabled",
+    "display": "Changed the Death Star connected app setting Enable Token Exchange Flow from true to false",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
+  },
+  {
     "action": "changedApexClass",
     "display": "Changed DeathStarController Apex Class code",
     "title": "Apex",
@@ -3449,6 +3456,13 @@
     "title": "Portal",
     "category": "Organization Management",
     "section": "Experiences send welcome email pref"
+  },
+  {
+    "action": "NetworksChangedStatusOn",
+    "display": "Activated Galactic Empire Community site ",
+    "title": "Portal",
+    "category": "Organization Management",
+    "section": "Experiences network status"
   },
   {
     "action": "newProfileUIOffOn",

@@ -798,6 +798,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   changeApplicationSecretRequiredForRefreshToken (Application) - Changed the
     connected app's Require Secret for Refresh Token Flow setting from true to
     false
+-   changeApplicationTokenExchangeEnabled (Application) - Changed the Death Star
+    connected app setting Enable Token Exchange Flow from true to false
 -   changeIpRelaxationPolicy (Application) - Changed connected app DeathStar IP
     relaxation setting from Enforce IP restrictions to Relax IP restrictions
 -   changeOauthDefaultScope (Application) - Changed connected app DeathStar
@@ -831,7 +833,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('addOauthClientCredentialUser','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationSecretRequiredForRefreshToken','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication')
+WHERE Action IN ('addOauthClientCredentialUser','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationSecretRequiredForRefreshToken','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1384,6 +1386,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     group to Galactic Empire Community
 -   NetworksChangedSendWelcomeEmailOn (Experiences send welcome email pref) -
     Enabled welcome emails for Galactic Empire Community
+-   NetworksChangedStatusOn (Experiences network status) - Activated Galactic
+    Empire Community site
 -   ootbProfExtUserOpsEnableOffOn - Organization setup action:
     ootbProfExtUserOpsEnableOffOn has changed.
 -   ootbProfExtUserOpsEnableOnOff - Organization setup action:
@@ -1396,7 +1400,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('AccountPRMEnabled','CSPAccountDisabled','NetworkMemberGroupAdd','NetworksChangedSendWelcomeEmailOn','ootbProfExtUserOpsEnableOffOn','ootbProfExtUserOpsEnableOnOff','PRMAccountDisabled','sitesRecordReassignOrgPrefOnOff')
+WHERE Action IN ('AccountPRMEnabled','CSPAccountDisabled','NetworkMemberGroupAdd','NetworksChangedSendWelcomeEmailOn','NetworksChangedStatusOn','ootbProfExtUserOpsEnableOffOn','ootbProfExtUserOpsEnableOnOff','PRMAccountDisabled','sitesRecordReassignOrgPrefOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
