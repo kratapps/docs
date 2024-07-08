@@ -418,6 +418,13 @@
     "section": "Customize Accounts"
   },
   {
+    "action": "changedCF_RSFFilterCustom",
+    "display": "Changed filter of rollup summary field Planets in the Empire custom field on Galaxies",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "changedCFCustom",
     "display": "Changed label of custom field on Lightsaber from Owner to",
     "title": "Custom Fields",
@@ -1022,6 +1029,13 @@
     "title": "Picklists",
     "category": "Schema",
     "section": "Custom Objects"
+  },
+  {
+    "action": "changedPicklistWithColor",
+    "display": "Changed Stage picklist value Prospecting color from #a845dc to #993399",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": null
   },
   {
     "action": "changedprocessdefinition",
