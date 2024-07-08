@@ -2149,6 +2149,13 @@
     "section": "Custom Objects"
   },
   {
+    "action": "deletedcustentlayout",
+    "display": "Deleted Planet page layout Death Star Layout",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Custom Objects"
+  },
+  {
     "action": "deletedCustEntTab",
     "display": "Deleted custom object tab: Death Star",
     "title": "Apps, Tabs and Pages",
@@ -2161,6 +2168,13 @@
     "title": "Links, Buttons and Actions",
     "category": "UI",
     "section": "Customize Cases"
+  },
+  {
+    "action": "deletedCustLinkCustom",
+    "display": "Deleted custom button or link on DeathStar: Death_Star_Position",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Custom Objects"
   },
   {
     "action": "deletedCustLinkCustomPageItem",
@@ -2520,16 +2534,30 @@
     "section": null
   },
   {
+    "action": "einsteinGPTCopilotEnabledOffOn",
+    "display": "Organization setup action: einsteinGPTCopilotEnabledOffOn has changed.",
+    "title": "Einstein GPT",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "einsteinGPTCopilotEnabledOnOff",
+    "display": "Organization setup action: einsteinGPTCopilotEnabledOnOff has changed.",
+    "title": "Einstein GPT",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "einsteinGPTPlatformEnabledOffOn",
     "display": "Organization setup action: einsteinGPTPlatformEnabledOffOn has changed.",
-    "title": "Org Preferences",
+    "title": "Einstein GPT",
     "category": "Organization Management",
     "section": null
   },
   {
     "action": "einsteinGPTSalesEmailsPrefOffOn",
     "display": "Organization setup action: einsteinGPTSalesEmailsPrefOffOn has changed.",
-    "title": "Org Preferences",
+    "title": "Einstein GPT",
     "category": "Organization Management",
     "section": null
   },
@@ -4647,6 +4675,13 @@
   {
     "action": "SetupEntityAccessAudit_Profile_ApexClass_EnabledStandard",
     "display": "Changed profile Sith Lord: DeathStarController Apex class access was enabled",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_Profile_ApexPage_DisabledCustom",
+    "display": "Changed profile Sith: DeathStarDashboard Visualforce page access was disabled",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
