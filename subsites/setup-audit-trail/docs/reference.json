@@ -2821,6 +2821,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "gCSCFMigrationMigratedOffOn",
+    "display": "Organization setup action: gCSCFMigrationMigratedOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "generateOauthStagedCredential",
     "display": "Generated temporary credentials for connected app Death Star",
     "title": "Connected Apps",
@@ -3883,6 +3890,34 @@
     "section": null
   },
   {
+    "action": "pipelineInspectionPrefOffOn",
+    "display": "Organization setup action: pipelineInspectionPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "pipelineInspectionPrefOnOff",
+    "display": "Organization setup action: pipelineInspectionPrefOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "pipelineInspectionSetupPrefOffOn",
+    "display": "Organization setup action: pipelineInspectionSetupPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "pipelineInspectorSglRollupOffOn",
+    "display": "Organization setup action: pipelineInspectorSglRollupOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "PRMAccountDisabled",
     "display": "Account Confederacy of Independent Systems disabled as a Partner account",
     "title": "Portal",
@@ -4336,6 +4371,13 @@
     "title": "Layouts",
     "category": "UI",
     "section": "Custom Objects"
+  },
+  {
+    "action": "savedlistlayoutOpportunity",
+    "display": "Changed Opportunity search layout List View",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Opportunities"
   },
   {
     "action": "saveDomainProvisioned",

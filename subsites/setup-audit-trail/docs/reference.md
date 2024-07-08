@@ -1192,6 +1192,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     flowBlockAxsToSessionIdOffOn has changed.
 -   flowUseApexExceptionEmailOffOn - Organization setup action:
     flowUseApexExceptionEmailOffOn has changed.
+-   gCSCFMigrationMigratedOffOn - Organization setup action:
+    gCSCFMigrationMigratedOffOn has changed.
 -   INSERTCallCenter (Call Centers) - Organization setup action:
     INSERTCallCenter has changed.
 -   inviteCsnUserEnabledOnOff - Organization setup action:
@@ -1223,6 +1225,14 @@ ORDER BY CreatedDate DESC LIMIT 1000
     orchestrationInSandboxOffOn has changed.
 -   orgWideMergeLeadsOnOff (Customize Leads) - Organization setup action:
     orgWideMergeLeadsOnOff has changed.
+-   pipelineInspectionPrefOffOn - Organization setup action:
+    pipelineInspectionPrefOffOn has changed.
+-   pipelineInspectionPrefOnOff - Organization setup action:
+    pipelineInspectionPrefOnOff has changed.
+-   pipelineInspectionSetupPrefOffOn - Organization setup action:
+    pipelineInspectionSetupPrefOffOn has changed.
+-   pipelineInspectorSglRollupOffOn - Organization setup action:
+    pipelineInspectorSglRollupOffOn has changed.
 -   restrictEmailDomainsEnabledOffOn - Organization setup action:
     restrictEmailDomainsEnabledOffOn has changed.
 -   restrictEmailDomainsEnabledOnOff - Organization setup action:
@@ -1316,7 +1326,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('aCATAcceptedOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','aITrustPIIMaskingEnabledOffOn','alarmResumeSameRunContextOffOn','autonomousExperienceOffOn','bYOLMigrationStatusPrefOffOn','callSummarizationOffOn','cDPEnabledPrefOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','chatbotEnabledOffOn','codeBuilderOffOn','codeBuilderOnOff','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','conversationZoomPrefOnOff','crossOrgRedirectsEnabledOffOn','dataCloudReportingPrefOffOn','dataSpacesPlatformSecurityOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','depriveSoqlAccessOffOn','diarizationPrefOffOn','diarizationPrefOnOff','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','eDCEinsteinFeatureEnabledOffOn','einsteinGPTPlatformEnabledOffOn','einsteinGPTSalesEmailsPrefOffOn','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','expBundleMetadataPrefOffOn','extensionHostUnrestrictedOffOn','flowBlockAxsToSessionIdOffOn','flowUseApexExceptionEmailOffOn','INSERTCallCenter','inviteCsnUserEnabledOnOff','leadInspectorPrefOffOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','mailAppProductivityEnabledOffOn','manyWhoPreferenceOffOn','ManyWhoReadyOffOn','mFADirectUILoginOptInOffOn','mFADirectUILoginOptInOnOff','negativeOIQuantityEnabledOffOn','optimizerAppEnabledOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthOffOn','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','s1encryptedstoragepref2off','s1encryptedstoragepref2on','s1EncryptedStoragePref2OnOff','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','sellerHomePrefOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','skipSFAWhenMFAUILoginOnOff','socialProfilesEnableOffOn','socialProfilesEnableOnOff','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','u2FEnabledOffOn','unifiedActivitiesForECIOffOn','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','videoConferenceZoomOffOn','videoConferenceZoomOnOff','workOrdersEnabledOnOff','zeroOIQuantityEnabledOffOn')
+WHERE Action IN ('aCATAcceptedOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','aITrustPIIMaskingEnabledOffOn','alarmResumeSameRunContextOffOn','autonomousExperienceOffOn','bYOLMigrationStatusPrefOffOn','callSummarizationOffOn','cDPEnabledPrefOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','chatbotEnabledOffOn','codeBuilderOffOn','codeBuilderOnOff','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','conversationZoomPrefOnOff','crossOrgRedirectsEnabledOffOn','dataCloudReportingPrefOffOn','dataSpacesPlatformSecurityOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','depriveSoqlAccessOffOn','diarizationPrefOffOn','diarizationPrefOnOff','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','eDCEinsteinFeatureEnabledOffOn','einsteinGPTPlatformEnabledOffOn','einsteinGPTSalesEmailsPrefOffOn','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','expBundleMetadataPrefOffOn','extensionHostUnrestrictedOffOn','flowBlockAxsToSessionIdOffOn','flowUseApexExceptionEmailOffOn','gCSCFMigrationMigratedOffOn','INSERTCallCenter','inviteCsnUserEnabledOnOff','leadInspectorPrefOffOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','mailAppProductivityEnabledOffOn','manyWhoPreferenceOffOn','ManyWhoReadyOffOn','mFADirectUILoginOptInOffOn','mFADirectUILoginOptInOnOff','negativeOIQuantityEnabledOffOn','optimizerAppEnabledOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','pipelineInspectionPrefOffOn','pipelineInspectionPrefOnOff','pipelineInspectionSetupPrefOffOn','pipelineInspectorSglRollupOffOn','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthOffOn','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','s1encryptedstoragepref2off','s1encryptedstoragepref2on','s1EncryptedStoragePref2OnOff','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','sellerHomePrefOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','skipSFAWhenMFAUILoginOnOff','socialProfilesEnableOffOn','socialProfilesEnableOnOff','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','u2FEnabledOffOn','unifiedActivitiesForECIOffOn','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','videoConferenceZoomOffOn','videoConferenceZoomOnOff','workOrdersEnabledOnOff','zeroOIQuantityEnabledOffOn')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1999,6 +2009,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Results
 -   savedlistlayoutCustomObject (Custom Objects) - Changed Quote search layout
     Search Results
+-   savedlistlayoutOpportunity (Customize Opportunities) - Changed Opportunity
+    search layout List View
 -   updatedCompactLayoutMapping (Customize Opportunities) - Weapon Compact
     Layout for Blaster Rifle record type was changed from System Default to
     Inherit from Primary
@@ -2009,7 +2021,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('accountlayout','activitylayout','addedFieldToCompactLayout','assetlayout','campaignlayout','caselayout','contactlayout','contractlayout','createdCompactLayout','createdcustentlayout','custentlayout','custmdtypelayout','leadlayout','opplayout','orderlayout','productlayout','removedFieldOnCompactLayout','savedlistlayoutCase','savedlistlayoutCustomObject','updatedCompactLayoutMapping','updatedDefaultCompactLayoutMapping','userlayout')
+WHERE Action IN ('accountlayout','activitylayout','addedFieldToCompactLayout','assetlayout','campaignlayout','caselayout','contactlayout','contractlayout','createdCompactLayout','createdcustentlayout','custentlayout','custmdtypelayout','leadlayout','opplayout','orderlayout','productlayout','removedFieldOnCompactLayout','savedlistlayoutCase','savedlistlayoutCustomObject','savedlistlayoutOpportunity','updatedCompactLayoutMapping','updatedDefaultCompactLayoutMapping','userlayout')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
