@@ -1407,6 +1407,13 @@
     "section": null
   },
   {
+    "action": "contactUpdateProfileFLSOffOn",
+    "display": "Organization setup action: contactUpdateProfileFLSOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "contextualEverywhereEnabledOffOn",
     "display": "Organization setup action: contextualEverywhereEnabledOffOn has changed.",
     "title": "Org Preferences",
