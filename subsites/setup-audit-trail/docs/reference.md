@@ -797,6 +797,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   addOauthClientCredentialUser (OAuth Client Credentials User) - Assigned
     OAuth client credentials user darth@vader.com (UserID: [005790000024p8r]) to
     app Death Star Connector (AppID: [0H479000000CcUh])
+-   adminApprovedAppsOnlyOffOn (Connected Apps) - Enabled For admin-approved
+    users, limit API access to only allowlisted connected apps
 -   adminApprovedAppsOnlyOnOff (Connected Apps) - Disabled For admin-approved
     users, limit API access to only allowlisted connected apps
 -   blockConnectedApplication (Connected Apps) - Blocked Connected App Death
@@ -869,13 +871,15 @@ ORDER BY CreatedDate DESC LIMIT 1000
     null
 -   unblockConnectedApplication (Connected Apps) - Unblocked Connected App Death
     Star to Salesforce
+-   visualforceApiAccessAllowedOffOn (Connected Apps) - Enabled Allow
+    Visualforce pages to access APIs
 -   visualforceApiAccessAllowedOnOff (Connected Apps) - Disabled Allow
     Visualforce pages to access APIs
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('addOauthClientCredentialUser','adminApprovedAppsOnlyOnOff','blockConnectedApplication','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationNamedUserJwtEnabled','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationRefreshTokenRotationEnabled','changeApplicationSecretRequiredForRefreshToken','changeApplicationSecretRequiredForTokenExchange','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication','visualforceApiAccessAllowedOnOff')
+WHERE Action IN ('addOauthClientCredentialUser','adminApprovedAppsOnlyOffOn','adminApprovedAppsOnlyOnOff','blockConnectedApplication','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationNamedUserJwtEnabled','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationRefreshTokenRotationEnabled','changeApplicationSecretRequiredForRefreshToken','changeApplicationSecretRequiredForTokenExchange','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication','visualforceApiAccessAllowedOffOn','visualforceApiAccessAllowedOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1482,6 +1486,22 @@ ORDER BY CreatedDate DESC LIMIT 1000
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
 WHERE Action IN ('AccountPRMEnabled','CSPAccountDisabled','NetworkMemberGroupAdd','NetworkMemberGroupRemove','NetworksChangedSendWelcomeEmailOn','NetworksChangedStatusOn','ootbProfExtUserOpsEnableOffOn','ootbProfExtUserOpsEnableOnOff','PRMAccountDisabled','sitesRecordReassignOrgPrefOnOff')
+ORDER BY CreatedDate DESC LIMIT 1000
+```
+
+### SAML Configuration
+
+-   multipleSamlConverted (SAML Configuration) - Converted SAML Configuration as
+    Migrated SAML Config
+-   multipleSamlEnabled (SAML Configuration) - Enabled Multiple SAML
+    Configurations
+-   samlSsoConfig_create (SAML Configuration) - Created SAML Configuration
+    Migrated SAML Config
+
+```
+SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
+FROM SetupAuditTrail
+WHERE Action IN ('multipleSamlConverted','multipleSamlEnabled','samlSsoConfig_create')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

@@ -175,6 +175,13 @@
     "section": "OAuth Client Credentials User"
   },
   {
+    "action": "adminApprovedAppsOnlyOffOn",
+    "display": "Enabled For admin-approved users, limit API access to only allowlisted connected apps",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Connected Apps"
+  },
+  {
     "action": "adminApprovedAppsOnlyOnOff",
     "display": "Disabled For admin-approved users, limit API access to only allowlisted connected apps",
     "title": "Connected Apps",
@@ -3598,6 +3605,20 @@
     "section": null
   },
   {
+    "action": "multipleSamlConverted",
+    "display": "Converted SAML Configuration as Migrated SAML Config",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "multipleSamlEnabled",
+    "display": "Enabled Multiple SAML Configurations",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
     "action": "namedCredentialDelete",
     "display": "Deleted named credential: ApproveApprovalApi",
     "title": "Named Credentials",
@@ -4674,6 +4695,13 @@
     "section": "Inbox mobile and legacy desktop apps"
   },
   {
+    "action": "samlSsoConfig_create",
+    "display": "Created SAML Configuration Migrated SAML Config",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
     "action": "SandboxLicenseMatch",
     "display": "License match requested, sandboxOrgId: 00D790000000Nq2, requested by: 0054W00000DiLY4",
     "title": "Sandboxes",
@@ -5684,6 +5712,13 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "visualforceApiAccessAllowedOffOn",
+    "display": "Enabled Allow Visualforce pages to access APIs",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Connected Apps"
   },
   {
     "action": "visualforceApiAccessAllowedOnOff",
