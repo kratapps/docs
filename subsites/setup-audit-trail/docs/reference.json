@@ -2541,6 +2541,13 @@
     "section": null
   },
   {
+    "action": "deployConnectionAuthorized",
+    "display": "Authorized inbound changes from: UAT (Full Sandbox)",
+    "title": "Deployment Connections",
+    "category": "Organization Management",
+    "section": "Deployment Connections"
+  },
+  {
     "action": "deployedchangeset",
     "display": "Deployed Change Set: Quoting Process",
     "title": "Sandboxes",

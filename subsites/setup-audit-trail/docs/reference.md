@@ -909,6 +909,18 @@ WHERE Action IN ('changedTabSetName','installedpackagingapp','nonSecurityReviewe
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
+### Deployment Connections
+
+-   deployConnectionAuthorized (Deployment Connections) - Authorized inbound
+    changes from: UAT (Full Sandbox)
+
+```
+SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
+FROM SetupAuditTrail
+WHERE Action IN ('deployConnectionAuthorized')
+ORDER BY CreatedDate DESC LIMIT 1000
+```
+
 ### Einstein GPT
 
 -   einsteinGPTCopilotEnabledOffOn - Organization setup action:
