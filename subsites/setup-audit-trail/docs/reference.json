@@ -341,6 +341,13 @@
     "section": "Application"
   },
   {
+    "action": "changeApplicationRefreshTokenRotationEnabled",
+    "display": "Changed the DeathStar connected app setting Enable Refresh Token Rotation from false to true",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
+  },
+  {
     "action": "changeApplicationSecretRequiredForRefreshToken",
     "display": "Changed the connected app's Require Secret for Refresh Token Flow setting from true to false",
     "title": "Connected Apps",
@@ -2249,6 +2256,13 @@
   {
     "action": "deletedCustomTab",
     "display": "Deleted custom Lightning Component tab: Death Star",
+    "title": "Apps, Tabs and Pages",
+    "category": "UI",
+    "section": "Custom Tabs"
+  },
+  {
+    "action": "deletedCustWebTab",
+    "display": "Deleted custom web tab: Death Star Portal",
     "title": "Apps, Tabs and Pages",
     "category": "UI",
     "section": "Custom Tabs"

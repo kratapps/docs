@@ -822,6 +822,9 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   changeApplicationPkceRequired (Application) - Changed the Death Star
     connected app setting Require Proof Key for Code Exchange (PKCE) Extension
     for Supported Authorization Flows from false to true
+-   changeApplicationRefreshTokenRotationEnabled (Application) - Changed the
+    DeathStar connected app setting Enable Refresh Token Rotation from false to
+    true
 -   changeApplicationSecretRequiredForRefreshToken (Application) - Changed the
     connected app's Require Secret for Refresh Token Flow setting from true to
     false
@@ -860,7 +863,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('addOauthClientCredentialUser','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationSecretRequiredForRefreshToken','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication')
+WHERE Action IN ('addOauthClientCredentialUser','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationRefreshTokenRotationEnabled','changeApplicationSecretRequiredForRefreshToken','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -2070,6 +2073,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   deletedCustEntTab (Custom Tabs) - Deleted custom object tab: Death Star
 -   deletedCustomTab (Custom Tabs) - Deleted custom Lightning Component tab:
     Death Star
+-   deletedCustWebTab (Custom Tabs) - Deleted custom web tab: Death Star Portal
 -   deletedFlexiPage (Lightning Pages) - Deleted Lightning Page: Death Star
 -   deletedTabSet (Custom Apps) - Deleted custom app Death Star
 -   renamedtab (Rename Tabs and Labels) - Install Processor Log: Changed tab
@@ -2078,7 +2082,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedCustEntTabMotif','changedCustomTabField','changedCustWebTabURL','changedFlexiPage','changedTabSetTabs','createdCustEntTab','createdCustomTab','createdFlexiPage','createdTabSet','deletedCustEntTab','deletedCustomTab','deletedFlexiPage','deletedTabSet','renamedtab')
+WHERE Action IN ('changedCustEntTabMotif','changedCustomTabField','changedCustWebTabURL','changedFlexiPage','changedTabSetTabs','createdCustEntTab','createdCustomTab','createdFlexiPage','createdTabSet','deletedCustEntTab','deletedCustomTab','deletedCustWebTab','deletedFlexiPage','deletedTabSet','renamedtab')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
