@@ -1513,6 +1513,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     customer Visualforce pages with standard headers attribute from on to off
 -   clickjacknoncustomon (Session Settings) - Changed clickjack protection for
     customer Visualforce pages with standard headers attribute from off to on
+-   insertAuthSecurityLevel (Session Settings) - Session Security Level for
+    Death Star was set to Standard
 -   LocalStorageForLogoutUrlOffOn (Session Settings) - Changed Use Local Storage
     for Logout URL from Off to On
 -   requiredSessionLevelForProfile (Session Settings) - Changed profile Admin:
@@ -1523,7 +1525,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('clickjacknoncustomheaderlessoff','clickjacknoncustomheaderlesson','clickjacknoncustomoff','clickjacknoncustomon','LocalStorageForLogoutUrlOffOn','requiredSessionLevelForProfile','updateSessionSecurityLevel')
+WHERE Action IN ('clickjacknoncustomheaderlessoff','clickjacknoncustomheaderlesson','clickjacknoncustomoff','clickjacknoncustomon','insertAuthSecurityLevel','LocalStorageForLogoutUrlOffOn','requiredSessionLevelForProfile','updateSessionSecurityLevel')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

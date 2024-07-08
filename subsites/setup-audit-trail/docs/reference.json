@@ -3171,6 +3171,13 @@
     "section": "Auth. Providers"
   },
   {
+    "action": "insertAuthSecurityLevel",
+    "display": "Session Security Level for Death Star was set to Standard",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
+  },
+  {
     "action": "INSERTCallCenter",
     "display": "Organization setup action: INSERTCallCenter has changed.",
     "title": "Org Preferences",
