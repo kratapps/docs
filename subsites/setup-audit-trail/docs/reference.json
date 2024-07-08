@@ -2303,6 +2303,13 @@
     "section": "Approval Process"
   },
   {
+    "action": "deletedqueue",
+    "display": "Deleted Queue Death Star Escalations",
+    "title": "Miscellaneous",
+    "category": "Data Management",
+    "section": "Data Management"
+  },
+  {
     "action": "deletedQuickAction",
     "display": "Deleted Action: Activate_Superlaser",
     "title": "Links, Buttons and Actions",

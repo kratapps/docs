@@ -1895,6 +1895,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Geocodes for the Address field of Address, changed "Current Status" from
     "Inactive" to "Active"
 -   createdqueue (Data Management) - Created Queue Death Star Escalations
+-   deletedqueue (Data Management) - Deleted Queue Death Star Escalations
 -   deletedReportJob (Reporting Snapshots) - Deleted reporting snapshot Planets
 -   export (Data Export) - Requested an export
 -   leadassrule (Customize Leads) - Changed Lead Assignment Rule New Default
@@ -1907,7 +1908,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedCleanRule','createdqueue','deletedReportJob','export','leadassrule','queueMembership','updatedqueue')
+WHERE Action IN ('changedCleanRule','createdqueue','deletedqueue','deletedReportJob','export','leadassrule','queueMembership','updatedqueue')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
