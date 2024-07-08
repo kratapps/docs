@@ -5630,6 +5630,20 @@
     "section": null
   },
   {
+    "action": "wolayout",
+    "display": "Changed Work Order page layout Install Work Order",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Work Orders"
+  },
+  {
+    "action": "workOrdersEnabledOffOn",
+    "display": "Organization setup action: workOrdersEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "workOrdersEnabledOnOff",
     "display": "Organization setup action: workOrdersEnabledOnOff has changed.",
     "title": "Org Preferences",
