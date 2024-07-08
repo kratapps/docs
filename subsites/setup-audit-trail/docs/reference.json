@@ -175,6 +175,13 @@
     "section": "OAuth Client Credentials User"
   },
   {
+    "action": "adminApprovedAppsOnlyOnOff",
+    "display": "Disabled For admin-approved users, limit API access to only allowlisted connected apps",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Connected Apps"
+  },
+  {
     "action": "advancedCMTSecurityOffOn",
     "display": "Organization setup action: advancedCMTSecurityOffOn has changed.",
     "title": "Org Preferences",
@@ -234,6 +241,13 @@
     "title": "Black Tab Framework",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "blockConnectedApplication",
+    "display": "Blocked Connected App Death Star",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Connected Apps"
   },
   {
     "action": "bYOLMigrationStatusPrefOffOn",
@@ -320,6 +334,13 @@
     "section": "Application"
   },
   {
+    "action": "changeApplicationNamedUserJwtEnabled",
+    "display": "Changed connected app Issue JSON Web Token(JWT)-based access tokens for named users setting from false to true",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
+  },
+  {
     "action": "changeApplicationOptionalConsumerSecret",
     "display": "Changed connected app Require Secret for Web Server Flow OAuth setting from false to true",
     "title": "Connected Apps",
@@ -342,7 +363,7 @@
   },
   {
     "action": "changeApplicationRefreshTokenRotationEnabled",
-    "display": "Changed the DeathStar connected app setting Enable Refresh Token Rotation from false to true",
+    "display": "Changed the Death_Star connected app setting Enable Refresh Token Rotation from false to true",
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
@@ -355,8 +376,15 @@
     "section": "Application"
   },
   {
+    "action": "changeApplicationSecretRequiredForTokenExchange",
+    "display": "Changed the Death_Star connected app setting Require Secret for Token Exchange from false to true",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
+  },
+  {
     "action": "changeApplicationTokenExchangeEnabled",
-    "display": "Changed the Death Star connected app setting Enable Token Exchange Flow from true to false",
+    "display": "Changed the Death_Star connected app setting Enable Token Exchange Flow from false to true",
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
@@ -5656,6 +5684,13 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "visualforceApiAccessAllowedOnOff",
+    "display": "Disabled Allow Visualforce pages to access APIs",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Connected Apps"
   },
   {
     "action": "warnForceDotComRedirectionOffOn",

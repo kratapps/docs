@@ -797,6 +797,10 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   addOauthClientCredentialUser (OAuth Client Credentials User) - Assigned
     OAuth client credentials user darth@vader.com (UserID: [005790000024p8r]) to
     app Death Star Connector (AppID: [0H479000000CcUh])
+-   adminApprovedAppsOnlyOnOff (Connected Apps) - Disabled For admin-approved
+    users, limit API access to only allowlisted connected apps
+-   blockConnectedApplication (Connected Apps) - Blocked Connected App Death
+    Star
 -   changeApplicationCallbackUrl (Application) - Changed Connected App Callback
     URL from https://death-star.cloud to
     https://death-star.cloud/oauth2/callback
@@ -815,6 +819,9 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Email from anakin@skywalker.com to darth@vader.com
 -   changeApplicationMobileSessionTimeout (Application) - Changed Connected App
     Mobile Session Timeout from null to null
+-   changeApplicationNamedUserJwtEnabled (Application) - Changed connected app
+    Issue JSON Web Token(JWT)-based access tokens for named users setting from
+    false to true
 -   changeApplicationOptionalConsumerSecret (Application) - Changed connected
     app Require Secret for Web Server Flow OAuth setting from false to true
 -   changeApplicationPinLength (Application) - Changed Connected App PIN Length
@@ -823,13 +830,16 @@ ORDER BY CreatedDate DESC LIMIT 1000
     connected app setting Require Proof Key for Code Exchange (PKCE) Extension
     for Supported Authorization Flows from false to true
 -   changeApplicationRefreshTokenRotationEnabled (Application) - Changed the
-    DeathStar connected app setting Enable Refresh Token Rotation from false to
+    Death_Star connected app setting Enable Refresh Token Rotation from false to
     true
 -   changeApplicationSecretRequiredForRefreshToken (Application) - Changed the
     connected app's Require Secret for Refresh Token Flow setting from true to
     false
--   changeApplicationTokenExchangeEnabled (Application) - Changed the Death Star
-    connected app setting Enable Token Exchange Flow from true to false
+-   changeApplicationSecretRequiredForTokenExchange (Application) - Changed the
+    Death_Star connected app setting Require Secret for Token Exchange from
+    false to true
+-   changeApplicationTokenExchangeEnabled (Application) - Changed the Death_Star
+    connected app setting Enable Token Exchange Flow from false to true
 -   changeIpRelaxationPolicy (Application) - Changed connected app DeathStar IP
     relaxation setting from Enforce IP restrictions to Relax IP restrictions
 -   changeOauthDefaultScope (Application) - Changed connected app DeathStar
@@ -859,11 +869,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
     null
 -   unblockConnectedApplication (Connected Apps) - Unblocked Connected App Death
     Star to Salesforce
+-   visualforceApiAccessAllowedOnOff (Connected Apps) - Disabled Allow
+    Visualforce pages to access APIs
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('addOauthClientCredentialUser','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationRefreshTokenRotationEnabled','changeApplicationSecretRequiredForRefreshToken','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication')
+WHERE Action IN ('addOauthClientCredentialUser','adminApprovedAppsOnlyOnOff','blockConnectedApplication','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationNamedUserJwtEnabled','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationRefreshTokenRotationEnabled','changeApplicationSecretRequiredForRefreshToken','changeApplicationSecretRequiredForTokenExchange','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication','visualforceApiAccessAllowedOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
