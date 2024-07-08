@@ -422,6 +422,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 ### Profiles
 
+-   deletedprofile (Manage Users) - Deleted profile Clone Trooper
 -   deleteLoginFlow (Login Flows) - Deleted UI login flow for Stormtrooper
 -   insertLightningLoginFlow (Login Flows) - Enabled UI Lightning Login flow for
     Stormtrooper profile with flow Stormtrooper login flow
@@ -524,7 +525,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('deleteLoginFlow','insertLightningLoginFlow','loginIpRange','minimumPasswordLifetimeDisableForProfile','minimumPasswordLifetimeEnableForProfile','passwordexpiryForProfile','passwordhistoryForProfile','passwordmaxinvalidForProfile','PermissionSelfHealing','profileClonedStandard','profileCustAppCustom','profileCustAppStandard','profileDefaultCustAppCustom','profileDefaultRecordTypeChangedStandard','profileDescriptionChanged','profileEntityPermRemoved','profileFlsChangedCustom','profileFlsChangedStandard','profileOlpChangedCustom','profilePageLayoutChangedCustom','profilePageLayoutChangedStandard','profilePermChangedCustom','profileRecordTypeAddedCustom','profileRecordTypeAddedStandard','profileRecordTypeRemovedCustom','profileRecordTypeRemovedStandard','profileTabsetChangedCustom','profileTabsetChangedStandard','SetupEntityAccessAudit_Profile_ApexClass_DisabledCustom','SetupEntityAccessAudit_Profile_ApexClass_DisabledStandard','SetupEntityAccessAudit_Profile_ApexClass_EnabledCustom','SetupEntityAccessAudit_Profile_ApexClass_EnabledStandard','SetupEntityAccessAudit_Profile_ApexPage_DisabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_DisabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_EnabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_EnabledStandard','updateLoginFlowProfile','userLicenseEntityPermRevoked')
+WHERE Action IN ('deletedprofile','deleteLoginFlow','insertLightningLoginFlow','loginIpRange','minimumPasswordLifetimeDisableForProfile','minimumPasswordLifetimeEnableForProfile','passwordexpiryForProfile','passwordhistoryForProfile','passwordmaxinvalidForProfile','PermissionSelfHealing','profileClonedStandard','profileCustAppCustom','profileCustAppStandard','profileDefaultCustAppCustom','profileDefaultRecordTypeChangedStandard','profileDescriptionChanged','profileEntityPermRemoved','profileFlsChangedCustom','profileFlsChangedStandard','profileOlpChangedCustom','profilePageLayoutChangedCustom','profilePageLayoutChangedStandard','profilePermChangedCustom','profileRecordTypeAddedCustom','profileRecordTypeAddedStandard','profileRecordTypeRemovedCustom','profileRecordTypeRemovedStandard','profileTabsetChangedCustom','profileTabsetChangedStandard','SetupEntityAccessAudit_Profile_ApexClass_DisabledCustom','SetupEntityAccessAudit_Profile_ApexClass_DisabledStandard','SetupEntityAccessAudit_Profile_ApexClass_EnabledCustom','SetupEntityAccessAudit_Profile_ApexClass_EnabledStandard','SetupEntityAccessAudit_Profile_ApexPage_DisabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_DisabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_EnabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_EnabledStandard','updateLoginFlowProfile','userLicenseEntityPermRevoked')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1409,6 +1410,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Systems disabled as a Customer Portal account
 -   NetworkMemberGroupAdd (Experiences network Member Group) - Added Sith member
     group to Galactic Empire Community
+-   NetworkMemberGroupRemove (Experiences network Member Group) - Removed Sith
+    member group from Galactic Empire Community
 -   NetworksChangedSendWelcomeEmailOn (Experiences send welcome email pref) -
     Enabled welcome emails for Galactic Empire Community
 -   NetworksChangedStatusOn (Experiences network status) - Activated Galactic
@@ -1425,7 +1428,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('AccountPRMEnabled','CSPAccountDisabled','NetworkMemberGroupAdd','NetworksChangedSendWelcomeEmailOn','NetworksChangedStatusOn','ootbProfExtUserOpsEnableOffOn','ootbProfExtUserOpsEnableOnOff','PRMAccountDisabled','sitesRecordReassignOrgPrefOnOff')
+WHERE Action IN ('AccountPRMEnabled','CSPAccountDisabled','NetworkMemberGroupAdd','NetworkMemberGroupRemove','NetworksChangedSendWelcomeEmailOn','NetworksChangedStatusOn','ootbProfExtUserOpsEnableOffOn','ootbProfExtUserOpsEnableOnOff','PRMAccountDisabled','sitesRecordReassignOrgPrefOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

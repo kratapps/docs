@@ -2303,6 +2303,13 @@
     "section": "Approval Process"
   },
   {
+    "action": "deletedprofile",
+    "display": "Deleted profile Clone Trooper",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "deletedqueue",
     "display": "Deleted Queue Death Star Escalations",
     "title": "Miscellaneous",
@@ -3509,6 +3516,13 @@
   {
     "action": "NetworkMemberGroupAdd",
     "display": "Added Sith member group to Galactic Empire Community",
+    "title": "Portal",
+    "category": "Organization Management",
+    "section": "Experiences network Member Group"
+  },
+  {
+    "action": "NetworkMemberGroupRemove",
+    "display": "Removed Sith member group from Galactic Empire Community ",
     "title": "Portal",
     "category": "Organization Management",
     "section": "Experiences network Member Group"
