@@ -1136,6 +1136,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "changedTabSetName",
+    "display": "Changed label of custom app from Death Star to Death Star II",
+    "title": "Custom Apps",
+    "category": "Organization Management",
+    "section": "Custom Apps"
+  },
+  {
     "action": "changedTabSetTabs",
     "display": "Changed tabs of custom app Death Star",
     "title": "Apps, Tabs and Pages",
@@ -3257,7 +3264,7 @@
   {
     "action": "installedpackagingapp",
     "display": "Installed AppExchange package: One Logger",
-    "title": "Managed Packages",
+    "title": "Custom Apps",
     "category": "Organization Management",
     "section": "Custom Apps"
   },
@@ -3635,7 +3642,7 @@
   {
     "action": "nonSecurityReviewedManagedPackageInstalled",
     "display": "The managed package \"Salesforce CPQ\" version \"Winter '24\" has not been security reviewed and was installed by user \"033a0000000pgefiak@00d60000000j3aqea0\".",
-    "title": "Managed Packages",
+    "title": "Custom Apps",
     "category": "Organization Management",
     "section": null
   },
@@ -4305,7 +4312,7 @@
   {
     "action": "purged_uninstall_export",
     "display": "Purged uninstall export for package Death Star (Version Name 6.11 (February 28, 2022))",
-    "title": "Managed Packages",
+    "title": "Custom Apps",
     "category": "Organization Management",
     "section": "Custom Apps"
   },
@@ -5212,7 +5219,7 @@
   {
     "action": "uninstalledpackagingapp",
     "display": "Uninstalled AppExchange package: Salesforce CPQ",
-    "title": "Managed Packages",
+    "title": "Custom Apps",
     "category": "Organization Management",
     "section": "Custom Apps"
   },
@@ -5338,7 +5345,7 @@
   {
     "action": "upgradedpackagingapp",
     "display": "Upgraded AppExchange package: Salesforce CPQ",
-    "title": "Managed Packages",
+    "title": "Custom Apps",
     "category": "Organization Management",
     "section": "Custom Apps"
   },

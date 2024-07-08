@@ -864,6 +864,29 @@ WHERE Action IN ('addOauthClientCredentialUser','changeApplicationCallbackUrl','
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
+### Custom Apps
+
+-   changedTabSetName (Custom Apps) - Changed label of custom app from Death
+    Star to Death Star II
+-   installedpackagingapp (Custom Apps) - Installed AppExchange package: One
+    Logger
+-   nonSecurityReviewedManagedPackageInstalled - The managed package "Salesforce
+    CPQ" version "Winter '24" has not been security reviewed and was installed
+    by user "033a0000000pgefiak@00d60000000j3aqea0".
+-   purged_uninstall_export (Custom Apps) - Purged uninstall export for package
+    Death Star (Version Name 6.11 (February 28, 2022))
+-   uninstalledpackagingapp (Custom Apps) - Uninstalled AppExchange package:
+    Salesforce CPQ
+-   upgradedpackagingapp (Custom Apps) - Upgraded AppExchange package:
+    Salesforce CPQ
+
+```
+SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
+FROM SetupAuditTrail
+WHERE Action IN ('changedTabSetName','installedpackagingapp','nonSecurityReviewedManagedPackageInstalled','purged_uninstall_export','uninstalledpackagingapp','upgradedpackagingapp')
+ORDER BY CreatedDate DESC LIMIT 1000
+```
+
 ### Einstein GPT
 
 -   einsteinGPTCopilotEnabledOffOn - Organization setup action:
@@ -931,27 +954,6 @@ ORDER BY CreatedDate DESC LIMIT 1000
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
 WHERE Action IN ('dkimRotationPreparationSuccessful','dkimRotationSuccessful','emailConsentManagementOff','emailConsentManagementOn','emailsenderidcomplianceoff','emailspfcomplianceoff','emailspfcomplianceon','handlebouncedemailsoff','handlebouncedemailson','resendBouncedEmailsoff','resendBouncedEmailson','restricttlstodomainsoff','restricttlstodomainson','sendEmailAccessControl','setupObjectChanged','setupObjectChangedSkipValue','setupObjectCreated','setupObjectDeleted','value_RESTRICT_TLS_TO_DOMAINS','value_TLS_SETTING','verifyemaildomainownershipbydkimoff','verifyemaildomainownershipbydkimon')
-ORDER BY CreatedDate DESC LIMIT 1000
-```
-
-### Managed Packages
-
--   installedpackagingapp (Custom Apps) - Installed AppExchange package: One
-    Logger
--   nonSecurityReviewedManagedPackageInstalled - The managed package "Salesforce
-    CPQ" version "Winter '24" has not been security reviewed and was installed
-    by user "033a0000000pgefiak@00d60000000j3aqea0".
--   purged_uninstall_export (Custom Apps) - Purged uninstall export for package
-    Death Star (Version Name 6.11 (February 28, 2022))
--   uninstalledpackagingapp (Custom Apps) - Uninstalled AppExchange package:
-    Salesforce CPQ
--   upgradedpackagingapp (Custom Apps) - Upgraded AppExchange package:
-    Salesforce CPQ
-
-```
-SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
-FROM SetupAuditTrail
-WHERE Action IN ('installedpackagingapp','nonSecurityReviewedManagedPackageInstalled','purged_uninstall_export','uninstalledpackagingapp','upgradedpackagingapp')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
