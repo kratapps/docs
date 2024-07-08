@@ -1119,11 +1119,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Limit from 100 to 100
 -   value_PROV_SCRATCH_DAILY_LIMIT - Changed Provisioned Daily Scratch Org Limit
     from 200 to 200
+-   value_RULES_ENGINE_CALLS_LIMIT - Organization setup action:
+    value_RULES_ENGINE_CALLS_LIMIT has changed from 50000 to 50000
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('RateLimitingNotification','value_MAX_STREAMING_TOPICS_PROV','value_OMNI_STUDIO_CALLS_LIMIT','value_PROV_SCRATCH_ACTIVE_LIMIT','value_PROV_SCRATCH_DAILY_LIMIT')
+WHERE Action IN ('RateLimitingNotification','value_MAX_STREAMING_TOPICS_PROV','value_OMNI_STUDIO_CALLS_LIMIT','value_PROV_SCRATCH_ACTIVE_LIMIT','value_PROV_SCRATCH_DAILY_LIMIT','value_RULES_ENGINE_CALLS_LIMIT')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
