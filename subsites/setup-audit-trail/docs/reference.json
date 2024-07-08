@@ -577,8 +577,15 @@
     "section": "Custom Objects"
   },
   {
+    "action": "changedCFTypeFormula",
+    "display": "Changed field type of Lightsaber Color custom formula field from Percent to Number",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": null
+  },
+  {
     "action": "changedCFTypeFormulaCustom",
-    "display": "Changed field type of Lightsaber Color custom formula field on Lightsaber from Number to Percent",
+    "display": "Changed field type of Lightsaber Color custom formula field on Lightsaber from Percent to Number",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Custom Objects"
