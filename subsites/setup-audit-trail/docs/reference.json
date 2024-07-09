@@ -4632,6 +4632,13 @@
     "section": "Email Administration"
   },
   {
+    "action": "retainloginhintson",
+    "display": "Organization setup action: retainloginhintson has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "revokeduserpackagelicense",
     "display": "Revoked User Package License assignment",
     "title": "User Permissions",
