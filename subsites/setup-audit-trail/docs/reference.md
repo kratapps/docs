@@ -1808,6 +1808,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     of custom object Staging Utility to Auto Number (Starting from 0)
 -   createdCustEnt (Custom Objects) - Created custom object: Battleship
 -   createdFieldSet (Customize Assets) - Created Field Set Line Editor on Quote
+-   createdRecordTypeCustom (Custom Objects) - Created record type: Stormtrooper
+    on Trooper
 -   delete_external_id (Company Information) - Dropped external identifier
     designation: Account.Battleship Factory ID
 -   deletedCustEnt (Custom Objects) - Deleted custom object: Battleship
@@ -1820,7 +1822,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('add_external_id','changeDataCaptureCreatedWithChannel','changedCustEntActivityOn','changedCustEntDeployment','changedCustEntLabel','changedCustEntMask','changedCustEntName','changedCustEntRecName','changedCustEntRptOn','changedCustEntSearchIndexingOn','changedCustEntTypeAutoNum','createdCustEnt','createdFieldSet','delete_external_id','deletedCustEnt','deletedFieldSet','feed_entity_untracked','hardDeletedCustEnt','updatedFieldSet')
+WHERE Action IN ('add_external_id','changeDataCaptureCreatedWithChannel','changedCustEntActivityOn','changedCustEntDeployment','changedCustEntLabel','changedCustEntMask','changedCustEntName','changedCustEntRecName','changedCustEntRptOn','changedCustEntSearchIndexingOn','changedCustEntTypeAutoNum','createdCustEnt','createdFieldSet','createdRecordTypeCustom','delete_external_id','deletedCustEnt','deletedFieldSet','feed_entity_untracked','hardDeletedCustEnt','updatedFieldSet')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

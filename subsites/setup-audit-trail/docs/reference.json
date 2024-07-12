@@ -1869,6 +1869,13 @@
     "section": "Global Actions"
   },
   {
+    "action": "createdRecordTypeCustom",
+    "display": "Created record type: Stormtrooper on Trooper",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "createdrole",
     "display": "Created new role Sith Lord",
     "title": "Org Config",
