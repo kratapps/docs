@@ -2184,6 +2184,13 @@
     "section": "Application"
   },
   {
+    "action": "deletedaccountlayout",
+    "display": "Deleted Account page layout Republic Manager Layout",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Accounts"
+  },
+  {
     "action": "deletedActionOverride",
     "display": "Reset standard button override: AddAccountDefaultTeam",
     "title": "Links, Buttons and Actions",
@@ -2252,6 +2259,13 @@
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Custom Objects"
+  },
+  {
+    "action": "deletedcontactlayout",
+    "display": "Deleted Contact page layout Republic Contact Layout",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Contacts"
   },
   {
     "action": "deletedCustEnt",
@@ -2378,6 +2392,13 @@
     "title": "Lightning Components",
     "category": "UI",
     "section": "Lightning Components"
+  },
+  {
+    "action": "deletedopplayout",
+    "display": "Deleted Opportunity page layout PRM Deal Registration - Direct Partner",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Opportunities"
   },
   {
     "action": "deletedoutboundmessage",
@@ -2921,6 +2942,13 @@
   {
     "action": "externalCredentialParameterDelete",
     "display": "Deleted the parameter: x-api-key for DeathStar",
+    "title": "Named Credentials",
+    "category": "Organization Management",
+    "section": "External Credentials"
+  },
+  {
+    "action": "externalCredentialParameterFieldsChange",
+    "display": "Updated the parameter: Authorization from (Parameter Type: Authentication Header, Parameter Value: {!'Basic ' & BASE64ENCODE(BLOB($Credential.Death_Star_API.Username & ':' & $Credential.Death_Star_API.Password))}, Sequence Number: 2) to (Parameter Type: Authentication Header, Parameter Value: {!'Basic ' & BASE64ENCODE(BLOB($Credential.DeathStarAPI.Username & ':' & $Credential.DeathStarAPI.Password))}, Sequence Number: 2) for DeathStarAPI",
     "title": "Named Credentials",
     "category": "Organization Management",
     "section": "External Credentials"

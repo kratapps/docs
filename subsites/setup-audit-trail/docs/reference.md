@@ -1002,6 +1002,12 @@ ORDER BY CreatedDate DESC LIMIT 1000
     credential: DeathStarExternal
 -   externalCredentialParameterDelete (External Credentials) - Deleted the
     parameter: x-api-key for DeathStar
+-   externalCredentialParameterFieldsChange (External Credentials) - Updated the
+    parameter: Authorization from (Parameter Type: Authentication Header,
+    Parameter Value: {!'Basic ' &
+    BASE64ENCODE(BLOB($Credential.Death_Star_API.Username & ':' & $Credential.Death_Star_API.Password))}, Sequence Number: 2) to (Parameter Type: Authentication Header, Parameter Value: {!'Basic ' & BASE64ENCODE(BLOB($Credential.DeathStarAPI.Username
+    & ':' & $Credential.DeathStarAPI.Password))}, Sequence Number: 2) for
+    DeathStarAPI
 -   externalCredentialParameterInsert (External Credentials) - Created a new
     parameter: x-api-key (Parameter Type: Authentication Header, Parameter
     Value: {!$Credential.DeathStar.x-api-key}, Sequence Number: 1) for DeathStar
@@ -1026,7 +1032,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('externalCredentialDelete','externalCredentialFieldChange','externalCredentialInsert','externalCredentialParameterDelete','externalCredentialParameterInsert','namedCredentialDelete','namedCredentialEncryptedFieldChange','namedCredentialFieldChange','namedCredentialInsert','namedCredentialParameterDelete','namedCredentialParameterFieldsChange','namedCredentialParameterInsert')
+WHERE Action IN ('externalCredentialDelete','externalCredentialFieldChange','externalCredentialInsert','externalCredentialParameterDelete','externalCredentialParameterFieldsChange','externalCredentialParameterInsert','namedCredentialDelete','namedCredentialEncryptedFieldChange','namedCredentialFieldChange','namedCredentialInsert','namedCredentialParameterDelete','namedCredentialParameterFieldsChange','namedCredentialParameterInsert')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -2165,8 +2171,14 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Layout
 -   custmdtypelayout (Custom Metadata Types) - Changed Star Wars Character page
     layout Star Wars Character Layout
+-   deletedaccountlayout (Customize Accounts) - Deleted Account page layout
+    Republic Manager Layout
+-   deletedcontactlayout (Customize Contacts) - Deleted Contact page layout
+    Republic Contact Layout
 -   deletedcustentlayout (Custom Objects) - Deleted Planet page layout Death
     Star Layout
+-   deletedopplayout (Customize Opportunities) - Deleted Opportunity page layout
+    PRM Deal Registration - Direct Partner
 -   leadlayout (Customize Leads) - Changed Lead page layout Lead
 -   opplayout (Customize Opportunities) - Changed Opportunity page layout
     Opportunity Layout
@@ -2193,7 +2205,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('accountlayout','activitylayout','addedFieldToCompactLayout','assetlayout','campaignlayout','caselayout','contactlayout','contractlayout','createdCompactLayout','createdcustentlayout','custentlayout','custmdtypelayout','deletedcustentlayout','leadlayout','opplayout','orderlayout','productlayout','removedFieldOnCompactLayout','savedlistlayoutCase','savedlistlayoutCustomObject','savedlistlayoutOpportunity','updatedCompactLayoutMapping','updatedDefaultCompactLayoutMapping','userlayout','wolayout')
+WHERE Action IN ('accountlayout','activitylayout','addedFieldToCompactLayout','assetlayout','campaignlayout','caselayout','contactlayout','contractlayout','createdCompactLayout','createdcustentlayout','custentlayout','custmdtypelayout','deletedaccountlayout','deletedcontactlayout','deletedcustentlayout','deletedopplayout','leadlayout','opplayout','orderlayout','productlayout','removedFieldOnCompactLayout','savedlistlayoutCase','savedlistlayoutCustomObject','savedlistlayoutOpportunity','updatedCompactLayoutMapping','updatedDefaultCompactLayoutMapping','userlayout','wolayout')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
