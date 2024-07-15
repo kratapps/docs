@@ -5042,6 +5042,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "SetupEntityAccessAudit_Profile_CustomPermission_DisabledCustom",
+    "display": "Changed profile Sith: DeathStarAccess Custom Permission was disabled",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "SetupEntityAccessAudit_Profile_CustomPermission_DisabledStandard",
     "display": "Changed profile Sith: DeathStarAccess Custom Permission was disabled",
     "title": "Profiles",
@@ -5695,6 +5702,20 @@
   {
     "action": "value_PROV_SCRATCH_DAILY_LIMIT",
     "display": "Changed Provisioned Daily Scratch Org Limit from 200 to 200",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_PROV_SNAPSHOT_ACTIVE_LIMIT",
+    "display": "Changed Provisioned Snapshot Active Limit from 0 to 100",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_PROV_SNAPSHOT_DAILY_LIMIT",
+    "display": "Changed Provisioned Snapshot Daily Request Limit from 0 to 100",
     "title": "Org Limits",
     "category": "Organization Management",
     "section": null
