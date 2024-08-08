@@ -1,0 +1,49 @@
+# Logger Settings Reference
+
+**Type**: Custom Metadata
+
+**API Name**: `ok__Logger_Settings__mdt`
+
+One Logger org-wide configuration.
+
+## Fields
+
+| Label                                   | Name                                               | Type     | Required | Description                                                                                                                      |
+| --------------------------------------- | -------------------------------------------------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Custom Metadata Record Name             | DeveloperName                                      | string   | true     |                                                                                                                                  |
+| Custom Metadata Record ID               | Id                                                 | id       | true     |                                                                                                                                  |
+| Label                                   | Label                                              | string   | false    |                                                                                                                                  |
+| Master Language                         | Language                                           | picklist | true     |                                                                                                                                  |
+| Label                                   | MasterLabel                                        | string   | true     |                                                                                                                                  |
+| Namespace Prefix                        | NamespacePrefix                                    | string   | false    |                                                                                                                                  |
+| Qualified API Name                      | QualifiedApiName                                   | string   | false    |                                                                                                                                  |
+| System Modstamp                         | SystemModstamp                                     | datetime | true     |                                                                                                                                  |
+| Create Batch Job Tags                   | ok\_\_Create_Batch_Job_Tags\_\_c                   | boolean  | true     | Automatically assign a unique batch job tag to logs published from a batch. Batchable context must be set to allow this feature. |
+| Enforce Create Logs Permission          | ok\_\_Enforce_Create_Logs_Permission\_\_c          | boolean  | true     | Logger_Create_Logs permission is enforced before log events are published if checked.                                            |
+| Group Database Failures                 | ok\_\_Group_Database_Failures\_\_c                 | boolean  | true     | DML result failures are logged grouped in a single log by default. If checked, a log is created per one result.                  |
+| Insert Logs                             | ok\_\_Insert_Logs\_\_c                             | boolean  | true     | Insert logs into the Log\_\_c table.                                                                                             |
+| Lifespan Debug                          | ok\_\_Lifespan_Debug\_\_c                          | double   | false    | Logs will be deleted after this number of days. Keep blank to never delete. Logs Cleaner must be scheduled.                      |
+| Lifespan Error                          | ok\_\_Lifespan_Error\_\_c                          | double   | false    | Logs will be deleted after this number of days. Keep blank to never delete. Logs Cleaner must be scheduled.                      |
+| Lifespan Fine                           | ok\_\_Lifespan_Fine\_\_c                           | double   | false    | Logs will be deleted after this number of days. Keep blank to never delete. Logs Cleaner must be scheduled.                      |
+| Lifespan Finer                          | ok\_\_Lifespan_Finer\_\_c                          | double   | false    | Logs will be deleted after this number of days. Keep blank to never delete. Logs Cleaner must be scheduled.                      |
+| Lifespan Finest                         | ok\_\_Lifespan_Finest\_\_c                         | double   | false    | Logs will be deleted after this number of days. Keep blank to never delete. Logs Cleaner must be scheduled.                      |
+| Lifespan Info                           | ok\_\_Lifespan_Info\_\_c                           | double   | false    | Logs will be deleted after this number of days. Keep blank to never delete. Logs Cleaner must be scheduled.                      |
+| Lifespan Warn                           | ok\_\_Lifespan_Warn\_\_c                           | double   | false    | Logs will be deleted after this number of days. Keep blank to never delete. Logs Cleaner must be scheduled.                      |
+| Limits Aggregate Queries Threshold      | ok\_\_Limits_Aggregate_Queries_Threshold\_\_c      | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Callouts Threshold               | ok\_\_Limits_Callouts_Threshold\_\_c               | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Cpu Time Threshold               | ok\_\_Limits_Cpu_Time_Threshold\_\_c               | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits DML Rows Threshold               | ok\_\_Limits_DML_Rows_Threshold\_\_c               | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits DML Statements Threshold         | ok\_\_Limits_DML_Statements_Threshold\_\_c         | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Email Invocations Threshold      | ok\_\_Limits_Email_Invocations_Threshold\_\_c      | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Future Calls Threshold           | ok\_\_Limits_Future_Calls_Threshold\_\_c           | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Heap Size Threshold              | ok\_\_Limits_Heap_Size_Threshold\_\_c              | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Mobile Push Apex Calls Threshold | ok\_\_Limits_Mobile_Push_Apex_Calls_Threshold\_\_c | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Publish Immediate DML Threshold  | ok\_\_Limits_Publish_Immediate_DML_Threshold\_\_c  | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Queries Threshold                | ok\_\_Limits_Queries_Threshold\_\_c                | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Query Locator Rows Threshold     | ok\_\_Limits_Query_Locator_Rows_Threshold\_\_c     | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Queueable Jobs Threshold         | ok\_\_Limits_Queueable_Jobs_Threshold\_\_c         | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Limits Sosl Queries Threshold           | ok\_\_Limits_Sosl_Queries_Threshold\_\_c           | percent  | false    | Limit threshold to alert logs. Keep blank for default value.                                                                     |
+| Log Name Pattern                        | ok\_\_Log_Name_Pattern\_\_c                        | string   | false    | Deprecated                                                                                                                       |
+| Logs Cleaner Batch Scope                | ok\_\_Logs_Cleaner_Batch_Scope\_\_c                | double   | false    | Number of records to be passed into the execute method for Logs Cleaner Batch processing. Default is 2000.                       |
+| System Debug Enabled                    | ok\_\_System_Debug_Enabled\_\_c                    | boolean  | true     | Deprecated. Use System Debug Disabled on Logger Hierarchy Settings instead.                                                      |
+| System Debug Pattern                    | ok\_\_System_Debug_Pattern\_\_c                    | string   | false    | Deprecated                                                                                                                       |

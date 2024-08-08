@@ -1,0 +1,141 @@
+site_name: One Logger
+site_description: Docs | One Logger
+site_author: Ondrej Kratochvil
+site_url: https://docs.kratapps.com/one-logger
+
+plugins:
+  - search:
+#      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s\u200b\-\.,!=\[\]()"`/]+'
+theme:
+  name: material
+  logo: ../images/logo_kratapps.svg
+  favicon: ../images/favicon.ico
+  features:
+  #  - index.pages
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    - navigation.path
+    # - navigation.prune
+    # - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+#    - toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      accent: custom
+#      toggle:
+#        icon: material/toggle-switch
+#        name: dark mode
+#    - scheme: slate
+#      primary: black
+#      accent: indigo
+#      toggle:
+#        icon: material/toggle-switch-off
+#        name: light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+extra:
+  homepage: /
+  generator: false
+  social:
+    - icon: fontawesome/regular/envelope
+      link: mailto:sales@kratapps.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/kratapps
+
+# Extra CSS or JavaScript files
+extra_css:
+  - ../stylesheets/extra.css
+  - ../stylesheets/hljs-kratapps.css
+extra_javascript:
+  - ../scripts/highlight.min.js
+  - ../scripts/highlightConfig.js
+
+nav:
+  - Home: index.md
+  - Docs:
+    - Getting Stared:
+      - Setup: docs/getting-started/setup.md
+      - Best Practices: docs/getting-started/best-practices.md
+    - Logger App:
+      - Logger App: docs/ui/index.md
+      - Logs Explorer: docs/ui/logs-explorer.md
+      - Logs Monitor: docs/ui/logs-monitor.md
+      - Logs Table: docs/ui/logs-table.md
+      - Admin Console: docs/ui/admin-console.md
+      - Logs Cleaner: docs/ui/logs-cleaner.md
+      - Permission Manager: docs/ui/permission-manager.md
+    - Logger API:
+      - Logger API: docs/api/index.md
+      - Log Lifecycle: docs/api/log-lifecycle.md
+      - Top Level Apex: docs/api/top-level-apex.md
+      - Logging Examples: docs/api/logging-examples.md
+      - Log Database Errors: docs/api/log-database-errors.md
+      - Async Job Logging: docs/api/async-job-logging.md
+      - Flow Logging: docs/api/flow-logging.md
+      - LWC Logging: docs/api/lwc-logging.md
+      - Unit Testing: docs/api/unit-testing.md
+      - Log External: docs/api/log-external.md
+      - Permission Manager: docs/api/permission-manager.md
+      - Plugin Development: docs/api/plugin-development.md
+      - Logger for ISV: docs/api/logger-for-isv.md
+  - Reference:
+    - Objet Reference:
+      - Log: docs/reference/ok__Log__c.md
+      - Transaction Log: docs/reference/ok__Transaction_Log__c.md
+      - Log Event: docs/reference/ok__Log_Event__e.md
+      - Tag: docs/reference/ok__Tag__c.md
+      - Log Tag: docs/reference/ok__Log_Tag__c.md
+      - Log Search: docs/reference/ok__Log_Search__c.md
+      - Log Filter: docs/reference/ok__Log_Filter__mdt.md
+      - Logger Settings: docs/reference/ok__Logger_Settings__mdt.md
+      - Logger Hierarchy Settings: docs/reference/ok__Logger_Hierarchy_Settings__c.md
+      - External Log Import: docs/reference/ok__External_Log_Import__mdt.md
+      - External Log Field Mapping: docs/reference/ok__External_Log_Field_Mapping__mdt.md
+    - Apex Reference:
+      - Log: docs/reference/Log.md
+      - Logger: docs/reference/Logger.md
+      - InvocableLog: docs/reference/InvocableLog.md
+      - InvocableErrorLogger: docs/reference/InvocableErrorLogger.md
+      - PermissionManager: docs/reference/PermissionManager.md
+      - LoggerTestUtil: docs/reference/LoggerTestUtil.md
+  - Release Notes:
+    - latest: docs/release-notes/latest.md
+    - "1.51": docs/release-notes/1.51.md
+    - "1.50": docs/release-notes/1.50.md
+    - 1.49: docs/release-notes/1.49.md
+    - 1.48: docs/release-notes/1.48.md
+    - 1.47: docs/release-notes/1.47.md
+    - 1.46: docs/release-notes/1.46.md
+    - 1.45: docs/release-notes/1.45.md
+    - 1.44: docs/release-notes/1.44.md
+    - 1.43: docs/release-notes/1.43.md
+  - Plugins:
+    - Slack for One Logger: docs/plugins/slack-for-one-logger.md
+  - Extensions:
+    - External Logs:
+      - Overview: docs/extensions/external-logs/index.md
+      - Declarative Lookup Rollup Summaries Tool (DLRS): docs/extensions/external-logs/dlrs.md
+      - Medallia: docs/extensions/external-logs/medallia_xm.md
