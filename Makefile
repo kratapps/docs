@@ -10,6 +10,7 @@ mkdocs-build-multisite:
 	python3 -m mkdocs build --site-dir build/home --config-file mkdocs.yml
 	mv build/home/* site
 	# build subsites
+	make mkdocs-build-subsite SUBSITE="one-logger"
 	make mkdocs-build-subsite SUBSITE="component-library"
 	make mkdocs-build-subsite SUBSITE="test-data-factory"
 	make mkdocs-build-subsite SUBSITE="setup-audit-trail"
