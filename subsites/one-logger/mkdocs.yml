@@ -79,7 +79,7 @@ nav:
     - Getting Stared:
       - Setup: docs/getting-started/setup.md
       - Best Practices: docs/getting-started/best-practices.md
-    - Logger App:
+    - App's UI:
       - Logger App: docs/ui/index.md
       - Logs Explorer: docs/ui/logs-explorer.md
       - Logs Monitor: docs/ui/logs-monitor.md
