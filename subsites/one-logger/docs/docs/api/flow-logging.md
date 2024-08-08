@@ -16,8 +16,8 @@ Each invocation publishes logs immediately.
 > Flow logs and Apex logs in the same transaction are grouped in a Transaction
 > Log record.
 
-![Flow Logger](../images/invocable-logger.png "Flow Logger")
+![Flow Logger](../../images/invocable-logger.png "Flow Logger")
 
 Sample Error Logging using Fault Path in a flow:
 
-![Flow Fault Path Logging](../images/flow-fault-path-logging.png "Flow Fault Path Logging")
+![Flow Fault Path Logging](../../images/flow-fault-path-logging.png "Flow Fault Path Logging")
