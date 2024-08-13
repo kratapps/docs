@@ -2189,6 +2189,28 @@
 
 
 <h1 id="loggerinitclassmatchesclassname">LoggerInitClassMatchesClassName</h1>
+<p><strong>Since:</strong> 1.0.4</p>
+<p><strong>Priority:</strong> Medium (3)</p>
+<p>Ensure that the class passed as an argument to <code>ok.Logger.getLogger()</code> matches
+the class in which the logger is being called.</p>
+<p>Logger initialization is documented at
+<a href="https://docs.kratapps.com/one-logger/docs/api/log-lifecycle/">docs.kratapps.com</a>.</p>
+<p><strong>This rule is defined by the following Java class:</strong>
+<a href="https://github.com/kratapps/logger-pmd-rules/blob/main/src/main/java/com/kratapps/pmd/rules/LoggerInitClassMatchesClassName.java">com.kratapps.pmd.rules.LoggerInitClassMatchesClassName</a></p>
+<p><strong>Example(s):</strong></p>
+<pre><code class="language-apex">public class AccountService {
+    // Error: ContactFactory class is not AccountService class.
+    private static ok.Logger logger = ok.Logger.getLogger(ContactFactory.class);
+}
+
+public class AccountService {
+    // Good: getLogger input parameter matches class name.
+    private static ok.Logger logger = ok.Logger.getLogger(AccountService.class);
+}
+</code></pre>
+<p><strong>Use this rule by referencing it:</strong></p>
+<pre><code class="language-xml">&lt;rule ref=&quot;category/apex/logger.xml/LoggerInitClassMatchesClassName&quot; /&gt;
+</code></pre>
 
 
 

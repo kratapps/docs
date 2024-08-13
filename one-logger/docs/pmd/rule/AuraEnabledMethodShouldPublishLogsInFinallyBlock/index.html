@@ -2189,6 +2189,35 @@
 
 
 <h1 id="auraenabledmethodshouldpublishlogsinfinallyblock">AuraEnabledMethodShouldPublishLogsInFinallyBlock</h1>
+<p><strong>Since:</strong> 1.0.4</p>
+<p><strong>Priority:</strong> Medium (3)</p>
+<p>Ensure AuraEnabled methods have <code>ok.Logger.publish()</code> in finally block.</p>
+<p>This best practice is documented at
+<a href="https://docs.kratapps.com/one-logger/docs/api/top-level-apex/">docs.kratapps.com</a>.</p>
+<p><strong>This rule is defined by the following Java class:</strong>
+<a href="https://github.com/kratapps/logger-pmd-rules/blob/main/src/main/java/com/kratapps/pmd/rules/AuraEnabledMethodShouldPublishLogsInFinallyBlock.java">com.kratapps.pmd.rules.AuraEnabledMethodShouldPublishLogsInFinallyBlock</a></p>
+<p><strong>Example(s):</strong></p>
+<pre><code class="language-apex">@AuraEnabled
+public static List&lt;Account&gt; getAccounts() {
+    // Error: logs not published.
+    return new AccountSelector().query();
+}
+
+@AuraEnabled
+public static List&lt;Account&gt; getAccountsSafely() {
+    try {
+        return new AccountSelector().query();
+    } catch (Exception e) {
+        logger.error().addException(e).log('Something went wrong.');
+    } finally {
+        // Good: all logs published.
+        ok.Logger.publish();
+    }
+}
+</code></pre>
+<p><strong>Use this rule by referencing it:</strong></p>
+<pre><code class="language-xml">&lt;rule ref=&quot;category/apex/logger.xml/AuraEnabledMethodShouldPublishLogsInFinallyBlock&quot; /&gt;
+</code></pre>
 
 
 
