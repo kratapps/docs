@@ -101,6 +101,10 @@ nav:
       - Permission Manager: docs/api/permission-manager.md
       - Plugin Development: docs/api/plugin-development.md
       - Logger for ISV: docs/api/logger-for-isv.md
+    - PMD:
+      - Rules:
+        - AuraEnabled Method Should Publish Logs in Finally Block: docs/pmd/rule/AuraEnabledMethodShouldPublishLogsInFinallyBlock.md
+        - Logger Init Class Matches Class Name: docs/pmd/rule/LoggerInitClassMatchesClassName.md
   - Reference:
     - Objet Reference:
       - Log: docs/reference/ok__Log__c.md
