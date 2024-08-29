@@ -98,6 +98,7 @@ nav:
       - LWC Logging: docs/api/lwc-logging.md
       - Unit Testing: docs/api/unit-testing.md
       - Log External: docs/api/log-external.md
+      - REST API logging: docs/api/rest-api-logging.md
       - Permission Manager: docs/api/permission-manager.md
       - Plugin Development: docs/api/plugin-development.md
       - Logger for ISV: docs/api/logger-for-isv.md
@@ -127,6 +128,7 @@ nav:
       - LoggerTestUtil: docs/reference/LoggerTestUtil.md
   - Release Notes:
     - latest: docs/release-notes/latest.md
+    - "1.52": docs/release-notes/1.52.md
     - "1.51": docs/release-notes/1.51.md
     - "1.50": docs/release-notes/1.50.md
     - 1.49: docs/release-notes/1.49.md
