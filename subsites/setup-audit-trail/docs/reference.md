@@ -103,6 +103,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Skywalker, changed Data.com user from on to off
 -   changedknowledgeuseroffon (Manage Users) - For user Anakin Skywalker,
     changed Knowledge user from off to on
+-   changedliveagentuseroffon - For user Anakin Skywalker, changed Chat user
+    from off to on
 -   changedManager (Manage Users) - The manager for user Anakin Skywalker
     (UserID: [0052A00000EsOI0]) changed from Obi-Wan Kenobi to Sheev Palpatine
 -   changedmarketinguseroffon (Manage Users) - For user Anakin Skywalker,
@@ -177,7 +179,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedApproverRequestEmails','changedcommunitynickname','changedDelegateApprover','changedemail','changedfederationid','changedinteractionuseroffon','changedinteractionuseronoff','changedjigsawprospectinguseronoff','changedknowledgeuseroffon','changedManager','changedmarketinguseroffon','changedmarketinguseronoff','changedofflineuseroffon','changedofflineuseronoff','changedroleforuser','changedroleforuserfromnone','changedroleforusertonone','changedsfcontentuseroffon','changedsfcontentuseronoff','changedUserAdminVerifiedStatusUnverified','changedUserAdminVerifiedStatusVerified','changedUserEmailVerifiedStatusUnverified','changedUserEmailVerifiedStatusVerified','changedusername','changedUserPhoneNumber','changedUserPhoneVerifiedStatusUnverified','changedUserPhoneVerifiedStatusVerified','deleteAuthenticatorPairing','deleteTwoFactorInfo2','disableSIQUserNonEAC','flowMetricsManageFlowOnlyOff','insertAuthenticatorPairing','insertTwoFactorTempCode','registeredUserPhoneNumber','resetpassword','siqUserAcceptedInboxTOS','unregisterdUserPhoneNumber','userAllowForecastingOff','userAllowForecastingOn','useremailchangesent','zoomUserDeleted','zoomUserTosAccepted','zoomUserTosReset')
+WHERE Action IN ('changedApproverRequestEmails','changedcommunitynickname','changedDelegateApprover','changedemail','changedfederationid','changedinteractionuseroffon','changedinteractionuseronoff','changedjigsawprospectinguseronoff','changedknowledgeuseroffon','changedliveagentuseroffon','changedManager','changedmarketinguseroffon','changedmarketinguseronoff','changedofflineuseroffon','changedofflineuseronoff','changedroleforuser','changedroleforuserfromnone','changedroleforusertonone','changedsfcontentuseroffon','changedsfcontentuseronoff','changedUserAdminVerifiedStatusUnverified','changedUserAdminVerifiedStatusVerified','changedUserEmailVerifiedStatusUnverified','changedUserEmailVerifiedStatusVerified','changedusername','changedUserPhoneNumber','changedUserPhoneVerifiedStatusUnverified','changedUserPhoneVerifiedStatusVerified','deleteAuthenticatorPairing','deleteTwoFactorInfo2','disableSIQUserNonEAC','flowMetricsManageFlowOnlyOff','insertAuthenticatorPairing','insertTwoFactorTempCode','registeredUserPhoneNumber','resetpassword','siqUserAcceptedInboxTOS','unregisterdUserPhoneNumber','userAllowForecastingOff','userAllowForecastingOn','useremailchangesent','zoomUserDeleted','zoomUserTosAccepted','zoomUserTosReset')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -856,6 +858,9 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Start Permitted Users setting from All users may self-authorize to Admin
     approved users are pre-authorized
 -   deleteApplication (Application) - Deleted Connected App Death Star
+-   deleteApplicationCertificate (Remote Access) - Deleted Connected App
+    Certificate EMAILADDRESS=anakin@skywalker.com, CN=GE, OU=GalacticEmpire,
+    O=DeathStar, L=Tatooine, ST=CA, C=GE
 -   deleteConnectedApplication (Connected Apps) - Uninstalled Connected App
     DeathStar
 -   deleteCustomAttribute (Application) - Deleted custom attribute
@@ -885,7 +890,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('addOauthClientCredentialUser','adminApprovedAppsOnlyOffOn','adminApprovedAppsOnlyOnOff','blockConnectedApplication','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationNamedUserJwtEnabled','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationRefreshTokenRotationEnabled','changeApplicationSecretRequiredForRefreshToken','changeApplicationSecretRequiredForTokenExchange','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication','visualforceApiAccessAllowedOffOn','visualforceApiAccessAllowedOnOff')
+WHERE Action IN ('addOauthClientCredentialUser','adminApprovedAppsOnlyOffOn','adminApprovedAppsOnlyOnOff','blockConnectedApplication','changeApplicationCallbackUrl','changeApplicationCertificate','changeApplicationClientCredentialEnabled','changeApplicationCodeCredentialEnabled','changeApplicationCodeCredentialPostOnly','changeApplicationContactEmail','changeApplicationMobileSessionTimeout','changeApplicationNamedUserJwtEnabled','changeApplicationOptionalConsumerSecret','changeApplicationPinLength','changeApplicationPkceRequired','changeApplicationRefreshTokenRotationEnabled','changeApplicationSecretRequiredForRefreshToken','changeApplicationSecretRequiredForTokenExchange','changeApplicationTokenExchangeEnabled','changeIpRelaxationPolicy','changeOauthDefaultScope','changeUserRuntimeAccessPolicy','deleteApplication','deleteApplicationCertificate','deleteConnectedApplication','deleteCustomAttribute','dynamicInitialTokenGeneration','enableOauth','generateOauthStagedCredential','insertApplication','insertApplicationCertificate','insertConnectedApplication','insertConnectedAppSessionPolicy','unblockConnectedApplication','visualforceApiAccessAllowedOffOn','visualforceApiAccessAllowedOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -898,6 +903,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   nonSecurityReviewedManagedPackageInstalled - The managed package "Salesforce
     CPQ" version "Winter '24" has not been security reviewed and was installed
     by user "033a0000000pgefiak@00d60000000j3aqea0".
+-   package2VersionUpgradeDeprecate (Second Generation Package Version) -
+    Deprecated package member component "ExternalString" "usageWarningTooltip"
 -   purged_uninstall_export (Custom Apps) - Purged uninstall export for package
     Death Star (Version Name 6.11 (February 28, 2022))
 -   uninstalledpackagingapp (Custom Apps) - Uninstalled AppExchange package:
@@ -908,7 +915,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedTabSetName','installedpackagingapp','nonSecurityReviewedManagedPackageInstalled','purged_uninstall_export','uninstalledpackagingapp','upgradedpackagingapp')
+WHERE Action IN ('changedTabSetName','installedpackagingapp','nonSecurityReviewedManagedPackageInstalled','package2VersionUpgradeDeprecate','purged_uninstall_export','uninstalledpackagingapp','upgradedpackagingapp')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1041,6 +1048,10 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 ### Network
 
+-   AuthConfig_UsernamePasswordActivated_MyDomain - Displayed username-password
+    login form on the My Domain login page
+-   AuthConfig_UsernamePasswordDeactivated_MyDomain - Hid username-password
+    login form from the My Domain login page
 -   changedStaticResource (Static Resource) - Changed Static Resource
     deathStarResource
 -   changeServiceProviderAcsUrl (Service Provider) - ACS URL changed from
@@ -1123,7 +1134,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
+WHERE Action IN ('AuthConfig_UsernamePasswordActivated_MyDomain','AuthConfig_UsernamePasswordDeactivated_MyDomain','changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1751,6 +1762,11 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Error Message for Padawan to Sith cannot be a Padawan.
 -   filteredLookupDeactivate (Customize Opportunities) - Deactivated Lookup
     Filter for Padawan
+-   filteredLookupDelete (Customize Opportunities) - Deleted Lookup Filter from
+    Marketplace Account
+-   filteredLookupEdit (Customize Opportunities) - Changed Lookup Filter Error
+    Message for Capital City from Value does not exist to Value does not match
+    filter criteria
 -   filteredLookupOptional (Customize Opportunities) - Set lookup Filter for
     Padawan to optional
 -   filteredLookupRequired (Customize Opportunities) - Set lookup Filter for
@@ -1768,7 +1784,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('activatedPicklistValueWithColor','activatedPicklistValueWithColorCustom','changedCF','changedCF_RSFFilter','changedCF_RSFFilterCustom','changedCFCustom','changedCFDefault','changedCFDefaultCustom','changedCFDefaultFormula','changedCFDefaultFormulaCustom','changedCFDevName','changedCFDevNameCustom','changedCFFieldHelp','changedCFFieldHelpCustom','changedCFFormula','changedCFFormulaCustom','changedCFLength','changedCFLengthCustom','changedCFLineCustom','changedCFOptionOffOn','changedCFOptionOffOnCustom','changedCFOptionOnOff','changedCFOptionOnOffCustom','changedCFScale','changedCFScaleCustom','changedCFType','changedCFTypeCustom','changedCFTypeFormula','changedCFTypeFormulaCustom','changedCFUniqueOn','changedCustEntMaskFromNull','createdCF','createdCF_RSF','createdCF_RSFCustom','createdCFCustom','createdCFFormula','createdCFFormulaCustom','createdCFLookup','createdCFLookupCustom','createdCFMasterDetailCustom','createdDependency','dataClassificationNewField','dataClassificationUpdate','deactivatePicklistValueWithColor','deactivatePicklistValueWithColorCustom','deletedCF','deletedCFCustom','entity_history_field_tracked','entity_history_field_untracked','feed_field_tracked','feed_field_untracked','filteredLookupActivate','filteredLookupCreate','filteredLookupCreateNewField','filteredLookupDeactivate','filteredLookupOptional','filteredLookupRequired','hardDeletedCF','hardDeletedCFCustom','removedDependency','undeletedCF','updatedDependency')
+WHERE Action IN ('activatedPicklistValueWithColor','activatedPicklistValueWithColorCustom','changedCF','changedCF_RSFFilter','changedCF_RSFFilterCustom','changedCFCustom','changedCFDefault','changedCFDefaultCustom','changedCFDefaultFormula','changedCFDefaultFormulaCustom','changedCFDevName','changedCFDevNameCustom','changedCFFieldHelp','changedCFFieldHelpCustom','changedCFFormula','changedCFFormulaCustom','changedCFLength','changedCFLengthCustom','changedCFLineCustom','changedCFOptionOffOn','changedCFOptionOffOnCustom','changedCFOptionOnOff','changedCFOptionOnOffCustom','changedCFScale','changedCFScaleCustom','changedCFType','changedCFTypeCustom','changedCFTypeFormula','changedCFTypeFormulaCustom','changedCFUniqueOn','changedCustEntMaskFromNull','createdCF','createdCF_RSF','createdCF_RSFCustom','createdCFCustom','createdCFFormula','createdCFFormulaCustom','createdCFLookup','createdCFLookupCustom','createdCFMasterDetailCustom','createdDependency','dataClassificationNewField','dataClassificationUpdate','deactivatePicklistValueWithColor','deactivatePicklistValueWithColorCustom','deletedCF','deletedCFCustom','entity_history_field_tracked','entity_history_field_untracked','feed_field_tracked','feed_field_untracked','filteredLookupActivate','filteredLookupCreate','filteredLookupCreateNewField','filteredLookupDeactivate','filteredLookupDelete','filteredLookupEdit','filteredLookupOptional','filteredLookupRequired','hardDeletedCF','hardDeletedCFCustom','removedDependency','undeletedCF','updatedDependency')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -2249,6 +2265,9 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   changedCustLinkContentCustomPageItem
 -   changedCustLinkContentSource (Customize Cases) - Changed Death_Star_Position
     button or link content source from Visualforce Page to URL
+-   changedCustLinkContentSourceCustom (Custom Objects) - Changed
+    Add_Change_Address button or link content source on Contract Licenses from
+    Visualforce Page to URL
 -   changedCustLinkContentSourceCustomPageItem
 -   changedCustLinkDisplayType - Changed Death_Star_Position button or link
     display type from Detail Page Button to Detail Page Link
@@ -2293,7 +2312,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedCustLinkBehavior','changedCustLinkContent','changedCustLinkContentCustom','changedCustLinkContentCustomPageItem','changedCustLinkContentSource','changedCustLinkContentSourceCustomPageItem','changedCustLinkDisplayType','changedCustLinkLabel','changedCustLinkLabelCustom','changedCustLinkLabelCustomPageItem','changedQuickActionLabelCustom','changedQuickActionLayout','createdActionOverride','createdActionOverrideCustom','createdCustLink','createdCustLinkCustom','createdCustLinkCustomPageItem','createdQuickAction','createdQuickActionCustom','deletedActionOverride','deletedActionOverrideCustom','deletedCustLink','deletedCustLinkCustom','deletedCustLinkCustomPageItem','deletedQuickAction','deletedQuickActionCustom')
+WHERE Action IN ('changedCustLinkBehavior','changedCustLinkContent','changedCustLinkContentCustom','changedCustLinkContentCustomPageItem','changedCustLinkContentSource','changedCustLinkContentSourceCustom','changedCustLinkContentSourceCustomPageItem','changedCustLinkDisplayType','changedCustLinkLabel','changedCustLinkLabelCustom','changedCustLinkLabelCustomPageItem','changedQuickActionLabelCustom','changedQuickActionLayout','createdActionOverride','createdActionOverrideCustom','createdCustLink','createdCustLinkCustom','createdCustLinkCustomPageItem','createdQuickAction','createdQuickActionCustom','deletedActionOverride','deletedActionOverrideCustom','deletedCustLink','deletedCustLinkCustom','deletedCustLinkCustomPageItem','deletedQuickAction','deletedQuickActionCustom')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

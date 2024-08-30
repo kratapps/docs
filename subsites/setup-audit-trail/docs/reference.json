@@ -231,6 +231,20 @@
     "section": "Customize Assets"
   },
   {
+    "action": "AuthConfig_UsernamePasswordActivated_MyDomain",
+    "display": "Displayed username-password login form on the My Domain login page",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "AuthConfig_UsernamePasswordDeactivated_MyDomain",
+    "display": "Hid username-password login form from the My Domain login page",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "autonomousExperienceOffOn",
     "title": "Org Preferences",
     "category": "Organization Management"
@@ -783,6 +797,13 @@
     "section": "Customize Cases"
   },
   {
+    "action": "changedCustLinkContentSourceCustom",
+    "display": "Changed Add_Change_Address button or link content source on Contract Licenses from Visualforce Page to URL",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Custom Objects"
+  },
+  {
     "action": "changedCustLinkContentSourceCustomPageItem",
     "title": "Links, Buttons and Actions",
     "category": "UI"
@@ -938,6 +959,13 @@
     "title": "Lightning Components",
     "category": "UI",
     "section": "Lightning Components"
+  },
+  {
+    "action": "changedliveagentuseroffon",
+    "display": "For user Anakin Skywalker, changed Chat user from off to on",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": null
   },
   {
     "action": "changedManager",
@@ -2149,6 +2177,13 @@
     "section": "Application"
   },
   {
+    "action": "deleteApplicationCertificate",
+    "display": "Deleted Connected App Certificate EMAILADDRESS=anakin@skywalker.com, CN=GE, OU=GalacticEmpire, O=DeathStar, L=Tatooine, ST=CA, C=GE",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Remote Access"
+  },
+  {
     "action": "deleteAuthenticatorPairing",
     "display": "Salesforce Authenticator pairing \"Salesforce Authenticator Pairing\" removed for anakin@skywalker.com",
     "title": "User Detail",
@@ -3038,6 +3073,20 @@
     "section": "Customize Opportunities"
   },
   {
+    "action": "filteredLookupDelete",
+    "display": "Deleted Lookup Filter from Marketplace Account",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": "Customize Opportunities"
+  },
+  {
+    "action": "filteredLookupEdit",
+    "display": "Changed Lookup Filter Error Message for Capital City from Value does not exist to Value does not match filter criteria",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": "Customize Opportunities"
+  },
+  {
     "action": "filteredLookupOptional",
     "display": "Set lookup Filter for Padawan to optional",
     "title": "Custom Fields",
@@ -3918,6 +3967,13 @@
     "title": "Sharing Defaults",
     "category": "Data Management",
     "section": "Sharing Defaults"
+  },
+  {
+    "action": "package2VersionUpgradeDeprecate",
+    "display": " Deprecated package member component \"ExternalString\" \"usageWarningTooltip\"",
+    "title": "Custom Apps",
+    "category": "Organization Management",
+    "section": "Second Generation Package Version"
   },
   {
     "action": "passwordcomplexity",
