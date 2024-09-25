@@ -128,6 +128,7 @@ nav:
       - LoggerTestUtil: docs/reference/LoggerTestUtil.md
   - Release Notes:
     - latest: docs/release-notes/latest.md
+    - "1.55": docs/release-notes/1.55.md
     - "1.54": docs/release-notes/1.54.md
     - "1.53": docs/release-notes/1.53.md
     - "1.52": docs/release-notes/1.52.md
