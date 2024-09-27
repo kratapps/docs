@@ -51,6 +51,7 @@ plugins:
 #  - privacy
   - search:
       separator: '[\s\u200b\-\.,!=\[\]()"`/]+'
+  - section-index
   - minify:
       minify_html: true
     
