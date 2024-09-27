@@ -12,28 +12,28 @@
         <meta name="author" content="Ondrej Kratochvil">
       
       
-        <link rel="canonical" href="https://docs.kratapps.com/one-logger/docs/api/unit-testing/">
+        <link rel="canonical" href="https://docs.kratapps.com/one-logger/docs/pmd/">
       
       
-        <link rel="prev" href="../lwc-logging/">
+        <link rel="prev" href="../api/logger-for-isv/">
       
       
-        <link rel="next" href="../log-external/">
+        <link rel="next" href="rule/AuraEnabledMethodShouldPublishLogsInFinallyBlock/">
       
       
-      <link rel="icon" href="../../../../images/favicon.ico">
+      <link rel="icon" href="../../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
     
     
       
-        <title>Unit Testing - One Logger</title>
+        <title>One Logger PMD Rules - One Logger</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../../../stylesheets/hljs-kratapps.css">
+      <link rel="stylesheet" href="../../../stylesheets/hljs-kratapps.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unit-testing" class="md-skip">
+        <a href="#one-logger-pmd-rules" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="/" title="One Logger" class="md-header__button md-logo" aria-label="One Logger" data-md-component="logo">
       
-  <img src="../../../../images/logo_kratapps.svg" alt="logo">
+  <img src="../../../images/logo_kratapps.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Unit Testing
+              One Logger PMD Rules
             
           </span>
         </div>
@@ -203,7 +203,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../getting-started/setup/" class="md-tabs__link">
+        <a href="../getting-started/setup/" class="md-tabs__link">
           
   
   Docs
@@ -259,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../reference/ok__Log__c/" class="md-tabs__link">
+        <a href="../reference/ok__Log__c/" class="md-tabs__link">
           
   
   Reference
@@ -280,7 +280,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../release-notes/latest/" class="md-tabs__link">
+        <a href="../release-notes/latest/" class="md-tabs__link">
           
   
   Release Notes
@@ -298,7 +298,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../plugins/slack-for-one-logger/" class="md-tabs__link">
+        <a href="../plugins/slack-for-one-logger/" class="md-tabs__link">
           
   
   Plugins
@@ -322,7 +322,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../extensions/external-logs/" class="md-tabs__link">
+        <a href="../extensions/external-logs/" class="md-tabs__link">
           
   
   Extensions
@@ -360,7 +360,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="/" title="One Logger" class="md-nav__button md-logo" aria-label="One Logger" data-md-component="logo">
       
-  <img src="../../../../images/logo_kratapps.svg" alt="logo">
+  <img src="../../../images/logo_kratapps.svg" alt="logo">
 
     </a>
     One Logger
@@ -375,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -476,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/setup/" class="md-nav__link">
+      <a href="../getting-started/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/best-practices/" class="md-nav__link">
+      <a href="../getting-started/best-practices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -564,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ui/" class="md-nav__link">
+      <a href="../ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ui/logs-explorer/" class="md-nav__link">
+      <a href="../ui/logs-explorer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ui/logs-monitor/" class="md-nav__link">
+      <a href="../ui/logs-monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -627,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ui/logs-table/" class="md-nav__link">
+      <a href="../ui/logs-table/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ui/admin-console/" class="md-nav__link">
+      <a href="../ui/admin-console/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ui/logs-cleaner/" class="md-nav__link">
+      <a href="../ui/logs-cleaner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,11 +690,351 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ui/permission-manager/" class="md-nav__link">
+      <a href="../ui/permission-manager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Permission Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Logger API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Logger API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logger API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/log-lifecycle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log Lifecycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/top-level-apex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Top Level Apex
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/logging-examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logging Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/log-database-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log Database Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/async-job-logging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Async Job Logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/flow-logging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flow Logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/lwc-logging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LWC Logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/unit-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/log-external/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Log External
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/rest-api-logging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REST API logging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/permission-manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Permission Manager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/plugin-development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugin Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/logger-for-isv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logger for ISV
   </span>
   
 
@@ -731,194 +1071,26 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Logger API
+    PMD
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
-            Logger API
+            PMD
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Logger API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../log-lifecycle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Log Lifecycle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../top-level-apex/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Top Level Apex
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../logging-examples/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Logging Examples
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../log-database-errors/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Log Database Errors
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../async-job-logging/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Async Job Logging
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../flow-logging/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Flow Logging
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lwc-logging/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LWC Logging
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -936,246 +1108,7 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Unit Testing
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Unit Testing
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#enable-system-debug" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable system debug
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fail-tests-automatically-on-error" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fail tests automatically on error
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assert-registered-events" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assert registered events
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-event-publishing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable event publishing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../log-external/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Log External
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rest-api-logging/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    REST API logging
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../permission-manager/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Permission Manager
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../plugin-development/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Plugin Development
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../logger-for-isv/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Logger for ISV
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    PMD
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
-            <span class="md-nav__icon md-icon"></span>
-            PMD
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pmd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1184,6 +1117,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1234,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pmd/rule/AuraEnabledMethodShouldPublishLogsInFinallyBlock/" class="md-nav__link">
+      <a href="rule/AuraEnabledMethodShouldPublishLogsInFinallyBlock/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1255,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pmd/rule/LoggerInitClassMatchesClassName/" class="md-nav__link">
+      <a href="rule/LoggerInitClassMatchesClassName/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1375,7 +1309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Log__c/" class="md-nav__link">
+      <a href="../reference/ok__Log__c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1396,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Transaction_Log__c/" class="md-nav__link">
+      <a href="../reference/ok__Transaction_Log__c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1417,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Log_Event__e/" class="md-nav__link">
+      <a href="../reference/ok__Log_Event__e/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1438,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Tag__c/" class="md-nav__link">
+      <a href="../reference/ok__Tag__c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1459,7 +1393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Log_Tag__c/" class="md-nav__link">
+      <a href="../reference/ok__Log_Tag__c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1480,7 +1414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Log_Search__c/" class="md-nav__link">
+      <a href="../reference/ok__Log_Search__c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1501,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Log_Filter__mdt/" class="md-nav__link">
+      <a href="../reference/ok__Log_Filter__mdt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1522,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Logger_Settings__mdt/" class="md-nav__link">
+      <a href="../reference/ok__Logger_Settings__mdt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1543,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__Logger_Hierarchy_Settings__c/" class="md-nav__link">
+      <a href="../reference/ok__Logger_Hierarchy_Settings__c/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1564,7 +1498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__External_Log_Import__mdt/" class="md-nav__link">
+      <a href="../reference/ok__External_Log_Import__mdt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1585,7 +1519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/ok__External_Log_Field_Mapping__mdt/" class="md-nav__link">
+      <a href="../reference/ok__External_Log_Field_Mapping__mdt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1652,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/Log/" class="md-nav__link">
+      <a href="../reference/Log/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1673,7 +1607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/Logger/" class="md-nav__link">
+      <a href="../reference/Logger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1694,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/InvocableLog/" class="md-nav__link">
+      <a href="../reference/InvocableLog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1715,7 +1649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/InvocableErrorLogger/" class="md-nav__link">
+      <a href="../reference/InvocableErrorLogger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1736,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/PermissionManager/" class="md-nav__link">
+      <a href="../reference/PermissionManager/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1757,7 +1691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/LoggerTestUtil/" class="md-nav__link">
+      <a href="../reference/LoggerTestUtil/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1831,7 +1765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/latest/" class="md-nav__link">
+      <a href="../release-notes/latest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1852,7 +1786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.55/" class="md-nav__link">
+      <a href="../release-notes/1.55/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1873,7 +1807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.54/" class="md-nav__link">
+      <a href="../release-notes/1.54/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1894,7 +1828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.53/" class="md-nav__link">
+      <a href="../release-notes/1.53/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1915,7 +1849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.52/" class="md-nav__link">
+      <a href="../release-notes/1.52/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1936,7 +1870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.51/" class="md-nav__link">
+      <a href="../release-notes/1.51/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1957,7 +1891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.50/" class="md-nav__link">
+      <a href="../release-notes/1.50/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1978,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.49/" class="md-nav__link">
+      <a href="../release-notes/1.49/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1999,7 +1933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.48/" class="md-nav__link">
+      <a href="../release-notes/1.48/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2020,7 +1954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.47/" class="md-nav__link">
+      <a href="../release-notes/1.47/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2041,7 +1975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.46/" class="md-nav__link">
+      <a href="../release-notes/1.46/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2062,7 +1996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.45/" class="md-nav__link">
+      <a href="../release-notes/1.45/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2083,7 +2017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.44/" class="md-nav__link">
+      <a href="../release-notes/1.44/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2104,7 +2038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../release-notes/1.43/" class="md-nav__link">
+      <a href="../release-notes/1.43/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2170,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../plugins/slack-for-one-logger/" class="md-nav__link">
+      <a href="../plugins/slack-for-one-logger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2274,7 +2208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../extensions/external-logs/" class="md-nav__link">
+      <a href="../extensions/external-logs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2295,7 +2229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../extensions/external-logs/dlrs/" class="md-nav__link">
+      <a href="../extensions/external-logs/dlrs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2316,7 +2250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../extensions/external-logs/medallia_xm/" class="md-nav__link">
+      <a href="../extensions/external-logs/medallia_xm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2365,50 +2299,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#enable-system-debug" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable system debug
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fail-tests-automatically-on-error" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fail tests automatically on error
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assert-registered-events" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assert registered events
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-event-publishing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enable event publishing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2422,115 +2312,7 @@
                   
 
 
-<h1 id="unit-testing">Unit Testing</h1>
-<p>This page documents how to control the logging execution in your unit tests.</p>
-<p>See <a href="../../reference/LoggerTestUtil/">Logger Test Util Reference</a>.</p>
-<h2 id="enable-system-debug">Enable system debug</h2>
-<p>System debug (Apex Log) is disabled by default in unit tests, as the custom
-settings record does not exist. You can enable system debug in unit tests
-explicitly using <code>ok.LoggerTestUtil.enableDebugLogs();</code>.</p>
-<h2 id="fail-tests-automatically-on-error">Fail tests automatically on error</h2>
-<p>When an error is logged from within a unit test, an exception is thrown by
-default to fail the test automatically. Sometimes, it is expected in the test
-for an error to be logged. In that case, you can disable this behavior using
-<code>ok.LoggerTestUtil.disableErrorLoggedException();</code>.</p>
-<p>In the following example, the test method will fail and ends the test:</p>
-<pre><code class="language-apex">@IsTest
-static void testSpaceshipIsAccessible() {
-    // Next line will throw the ErrorLoggedException. This exception is thrown in unit tests only.
-    logger.error().log('Access denied.');
-}
-</code></pre>
-<p>Disable the <code>ErrorLoggedException</code> on a per-test method basis.</p>
-<pre><code class="language-apex">@IsTest
-static void testSpaceshipIsAccessible() {
-    ok.LoggerTestUtil.disableErrorLoggedException();
-    // Error logs will not throw the ErrorLoggedException in this test method.
-    logger.error().log('Access denied.');
-}
-</code></pre>
-<p>Disable <code>ErrorLoggedException</code> on a per-test class basis.</p>
-<pre><code class="language-apex">@IsTest
-private class SpaceshipControllerTest {
-    private static ok.Logger logger = ok.Logger.getLogger(SpaceshipControllerTest.class);
-
-    static {
-        ok.LoggerTestUtil.disableErrorLoggedException();
-    }
-
-    @IsTest
-    static void testSpaceshipIsAccessible() {
-        // Error logs will not throw the ErrorLoggedException in this test class.
-        logger.error().log('Access denied.');
-    }
-}
-</code></pre>
-<h2 id="assert-registered-events">Assert registered events</h2>
-<p>Publishing is disabled by default in unit tests to improve performance. If you
-need to assert expected logs, you can directly work with the registered events.
-Use the API to retrieve the last error event or all registered events, no need
-to query logs.</p>
-<p>Work with last error log event:</p>
-<pre><code class="language-apex">@IsTest
-static void lastErrorLogEventIsNullWhenNotLogged() {
-    // Log INFO.
-    logger.info().log('INFO');
-    // Last ERROR log event is null.
-    ok__Log_Event__e lastErrorLogEvent = ok.LoggerTestUtil.getLastErrorLogEvent();
-    Assert.isNull(lastErrorLogEvent, 'No error log is expected.');
-}
-
-@IsTest
-static void lastErrorLogEventIsNotNullWhenLogged() {
-    // Disable ErrorLoggedException.
-    ok.LoggerTestUtil.disableErrorLoggedException();
-    // Log ERROR.
-    logger.error().log('ERROR');
-    // Last ERROR log event is the one above.
-    ok__Log_Event__e lastErrorLogEvent = ok.LoggerTestUtil.getLastErrorLogEvent();
-    Assert.areEqual('Hello Test.', lastErrorLogEvent.ok__Message__c, 'Error log is expected.');
-}
-</code></pre>
-<p>Work with any log event:</p>
-<pre><code class="language-apex">@IsTest
-static void logEventsAreInCorrectOrder() {
-    // Log INFO.
-    logger.info().log('INFO');
-    // Log FINE.
-    logger.fine().log('FINE');
-
-    // Get all events.
-    List&lt;ok__Log_Event__e&gt; logEvents = ok.LoggerTestUtil.getLogEvents();
-    Assert.areEqual(2, logEvents.size(), 'Log events expected.');
-    Assert.areEqual('INFO', logEvents.get(0).ok__Log_Level__c, 'Incorrect log events order.');
-    Assert.areEqual('FINE', logEvents.get(1).ok__Log_Level__c, 'Incorrect log events order.');
-
-    // Get all INFO events.
-    List&lt;ok__Log_Event__e&gt; infoEvents = ok.LoggerTestUtil.getLogEvents(ok.LogLevel.INFO);
-    Assert.areEqual(1, infoEvents.size(), 'INFO event expected.');
-}
-</code></pre>
-<h2 id="enable-event-publishing">Enable event publishing</h2>
-<p>You can enable event publishing and log record insertion in unit tests by
-calling <code>ok.LoggerTestUtil.enableEventPublishing()</code>.</p>
-<blockquote>
-<p>⚠️ Enabling event publishing is not recommended as it affects unit test
-performance. Instead, consider using <code>getLogEvents</code> or <code>getLastErrorLogEvent</code>.</p>
-</blockquote>
-<pre><code class="language-apex">@IsTest
-static void logsAreInsertedWhenPublishingIsEnabled() {
-    // Enable publishing.
-    ok.LoggerTestUtil.enableEventPublishing();
-    // Log INFO.
-    logger.info().log('INFO');
-    // Deliver events.
-    ok.Logger.publish();
-    Test.getEventBus().deliver();
-    // Log records are created when publishing is enabled.
-    List&lt;ok__Log__c&gt; logs = [SELECT Id FROM ok__Log__c];
-    Assert.areEqual(1, logs.size(), 'Incorrect number of logs.');
-}
-</code></pre>
+<h1 id="one-logger-pmd-rules">One Logger PMD Rules</h1>
 
 
 
@@ -2566,7 +2348,7 @@ static void logsAreInsertedWhenPublishingIsEnabled() {
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../lwc-logging/" class="md-footer__link md-footer__link--prev" aria-label="Previous: LWC Logging">
+          <a href="../api/logger-for-isv/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Logger for ISV">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2576,20 +2358,20 @@ static void logsAreInsertedWhenPublishingIsEnabled() {
                 Previous
               </span>
               <div class="md-ellipsis">
-                LWC Logging
+                Logger for ISV
               </div>
             </div>
           </a>
         
         
           
-          <a href="../log-external/" class="md-footer__link md-footer__link--next" aria-label="Next: Log External">
+          <a href="rule/AuraEnabledMethodShouldPublishLogsInFinallyBlock/" class="md-footer__link md-footer__link--next" aria-label="Next: AuraEnabled Method Should Publish Logs in Finally Block">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Log External
+                AuraEnabled Method Should Publish Logs in Finally Block
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2641,14 +2423,14 @@ static void logsAreInsertedWhenPublishingIsEnabled() {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
       
-        <script src="../../../../scripts/highlight.min.js"></script>
+        <script src="../../../scripts/highlight.min.js"></script>
       
-        <script src="../../../../scripts/highlightConfig.js"></script>
+        <script src="../../../scripts/highlightConfig.js"></script>
       
     
   </body>

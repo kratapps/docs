@@ -2,266 +2,270 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.kratapps.com/one-logger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/pricing/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/async-job-logging/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/flow-logging/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/log-database-errors/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/log-external/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/log-lifecycle/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/logger-for-isv/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/logging-examples/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/lwc-logging/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/permission-manager/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/plugin-development/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/rest-api-logging/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/top-level-apex/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/api/unit-testing/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/extensions/external-logs/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/extensions/external-logs/dlrs/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/extensions/external-logs/medallia_xm/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/getting-started/best-practices/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/getting-started/setup/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/plugins/slack-for-one-logger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.kratapps.com/one-logger/docs/pmd/</loc>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/pmd/rule/AuraEnabledMethodShouldPublishLogsInFinallyBlock/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/pmd/rule/LoggerInitClassMatchesClassName/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/InvocableDebugLogger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/InvocableErrorLogger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/InvocableFineLogger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/InvocableInfoLogger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/InvocableLog/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/InvocableWarnLogger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/Log/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/Logger/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/LoggerTestUtil/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/PermissionManager/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__External_Log_Field_Mapping__mdt/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__External_Log_Import__mdt/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Log_Event__e/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Log_Filter__mdt/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Log_Search__c/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Log_Tag__c/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Log__c/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Logger_Hierarchy_Settings__c/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Logger_Settings__mdt/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Tag__c/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/reference/ok__Transaction_Log__c/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.43/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.44/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.45/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.46/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.47/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.48/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.49/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.50/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.51/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.52/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.53/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.54/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/1.55/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/release-notes/latest/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/ui/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/ui/admin-console/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/ui/logs-cleaner/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/ui/logs-explorer/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/ui/logs-monitor/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/ui/logs-table/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
     <url>
          <loc>https://docs.kratapps.com/one-logger/docs/ui/permission-manager/</loc>
-         <lastmod>2024-09-25</lastmod>
+         <lastmod>2024-09-27</lastmod>
     </url>
 </urlset>
