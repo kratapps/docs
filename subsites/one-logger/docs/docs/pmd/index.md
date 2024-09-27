@@ -1,0 +1,1 @@
+# One Logger PMD Rules

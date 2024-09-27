@@ -103,6 +103,7 @@ nav:
       - Plugin Development: docs/api/plugin-development.md
       - Logger for ISV: docs/api/logger-for-isv.md
     - PMD:
+      - docs/pmd/index.md
       - Rules:
         - AuraEnabled Method Should Publish Logs in Finally Block: docs/pmd/rule/AuraEnabledMethodShouldPublishLogsInFinallyBlock.md
         - Logger Init Class Matches Class Name: docs/pmd/rule/LoggerInitClassMatchesClassName.md
