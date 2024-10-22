@@ -34,8 +34,8 @@ theme:
     # - navigation.instant.progress
     - navigation.path
     # - navigation.prune
-    - navigation.sections
-#    - navigation.tabs
+    # - navigation.sections
+    - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -83,7 +83,7 @@ extra_javascript:
 
 # Navigation configuration
 nav:
-  - Home: docs/index.md
+  - Home: index.md
   - Release Notes:
     - latest: docs/release-notes/latest.md
     - "2.0": docs/release-notes/2.0.md
