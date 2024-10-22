@@ -50,6 +50,7 @@ plugins:
   - search:
       #      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       separator: '[\s\u200b\-\.,!=\[\]()"`/]+'
+  - section-index
   - minify:
       minify_html: true
 
@@ -82,8 +83,9 @@ extra_javascript:
 
 # Navigation configuration
 nav:
-  - Test Data Factory:
-    - Docs: index.md
-    - Release Notes:
-      - release-notes/1.4.md
-    - MIT License: https://github.com/kratapps/test-data-factory/blob/main/LICENSE
+  - Home: docs/index.md
+  - Release Notes:
+    - latest: docs/release-notes/latest.md
+    - "2.0": docs/release-notes/2.0.md
+    - "1.4": docs/release-notes/1.4.md
+  - MIT License: https://github.com/kratapps/test-data-factory/blob/main/LICENSE
