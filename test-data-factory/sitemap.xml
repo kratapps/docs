@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.kratapps.com/test-data-factory/</loc>
-         <lastmod>2024-09-27</lastmod>
+         <loc>https://docs.kratapps.com/test-data-factory/docs/</loc>
+         <lastmod>2024-10-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.kratapps.com/test-data-factory/release-notes/1.4/</loc>
-         <lastmod>2024-09-27</lastmod>
+         <loc>https://docs.kratapps.com/test-data-factory/docs/release-notes/1.4/</loc>
+         <lastmod>2024-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.kratapps.com/test-data-factory/docs/release-notes/2.0/</loc>
+         <lastmod>2024-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.kratapps.com/test-data-factory/docs/release-notes/latest/</loc>
+         <lastmod>2024-10-22</lastmod>
     </url>
 </urlset>
