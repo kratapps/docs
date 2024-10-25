@@ -88,4 +88,3 @@ nav:
     - latest: docs/release-notes/latest.md
     - "2.0": docs/release-notes/2.0.md
     - "1.4": docs/release-notes/1.4.md
-  - MIT License: https://github.com/kratapps/test-data-factory/blob/main/LICENSE

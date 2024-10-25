@@ -8,6 +8,7 @@
 [![App Exchange](https://img.shields.io/badge/AppExchange-Test%20Data%20Factory-blue?logo=salesforce)](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000FNCbZUAX)
 [![Security Review](https://img.shields.io/badge/Security%20Review-Passed-green)](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000FNCbZUAX)
 [![GitHub](https://img.shields.io/badge/GitHub-Public-black?logo=github)](https://github.com/kratapps/test-data-factory)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://docs.kratapps.com/test-data-factory/docs/license)
 
 Seamless creation of SObject records for unit tests.
 
