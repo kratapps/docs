@@ -83,7 +83,7 @@ extra_javascript:
 
 # Navigation configuration
 nav:
-  - Home: index.md
+  - Docs: index.md
   - Release Notes:
     - latest: docs/release-notes/latest.md
     - "2.0": docs/release-notes/2.0.md
