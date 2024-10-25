@@ -201,7 +201,7 @@ public without sharing class ContactFactory extends sobj.BaseSObjectFactory {
 
 ### Features
 
-### Created vs Mocked vs Inserted
+#### Created vs Mocked vs Inserted
 
 Create
 
@@ -264,7 +264,7 @@ List<Account> accounts = (List<Account>) new sobj.BaseSObjectFactory
 Assert.areEqual(200, accounts.size(), 'Different number of records created.');
 ```
 
-### Set Required Fields
+#### Set Required Fields
 
 ```apex
 Account account = (Account) new sobj.BaseSObjectFactory
@@ -275,7 +275,7 @@ Account account = (Account) new sobj.BaseSObjectFactory
 Assert.isNotNull(account.RequiredField__c, 'Required field not populated.');
 ```
 
-### Set Read Only Fields
+#### Set Read Only Fields
 
 ```apex
 Datetime mockedDatetime = Datetime.now();
@@ -287,7 +287,7 @@ Account account = (Account) new sobj.BaseSObjectFactory
 Assert.areEqual(mockedDatetime, account.LastModifiedDate, 'Read only field not populated.');
 ```
 
-### Set Children
+#### Set Children
 
 Simple use case for injecting related list records. Useful for mocking nested
 queries.
