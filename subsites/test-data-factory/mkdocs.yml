@@ -86,5 +86,6 @@ nav:
   - Docs: index.md
   - Release Notes:
     - latest: docs/release-notes/latest.md
+    - "2.1": docs/release-notes/2.1.md
     - "2.0": docs/release-notes/2.0.md
     - "1.4": docs/release-notes/1.4.md

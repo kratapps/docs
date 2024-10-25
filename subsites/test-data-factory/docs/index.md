@@ -58,23 +58,23 @@ You can either install our free
 [Managed Package](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000FNCbZUAX)
 or deploy code unpackaged.
 
-**Version ID:** 04tJ80000000RPFIA2
+**Version ID:** 04tJ80000000RPeIAM
 
 ### Managed Package
 
-[![Install Production](https://img.shields.io/badge/Managed%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPFIA2)  
-[![Install Sandbox](https://img.shields.io/badge/Managed%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPFIA2)
+[![Install Production](https://img.shields.io/badge/Managed%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPeIAM)  
+[![Install Sandbox](https://img.shields.io/badge/Managed%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPeIAM)
 
 Install Managed Package using this URL:
 
 ```text
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPFIA2
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPeIAM
 ```
 
 or using sf cli:
 
 ```shell
-sf package install -p 04tJ80000000RPFIA2 -o my-org
+sf package install -p 04tJ80000000RPeIAM -o my-org
 ```
 
 ### Unpackaged
