@@ -8,79 +8,96 @@
 [![App Exchange](https://img.shields.io/badge/AppExchange-Test%20Data%20Factory-blue?logo=salesforce)](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000FNCbZUAX)
 [![Security Review](https://img.shields.io/badge/Security%20Review-Passed-green)](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000FNCbZUAX)
 [![GitHub](https://img.shields.io/badge/GitHub-Public-black?logo=github)](https://github.com/kratapps/test-data-factory)
-[![Install Production](https://img.shields.io/badge/Managed%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t09000000vCWn)
-[![Install Sandbox](https://img.shields.io/badge/Managed%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t09000000vCWn)
+[![Install Production](https://img.shields.io/badge/Managed%20Package-Install%20Production-cyan)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPFIA2)
+[![Install Sandbox](https://img.shields.io/badge/Managed%20Package-Install%20Sandbox-cyan)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPFIA2)
 
-Create sObjects in unit tests seamlessly.
+Seamless creation of SObject records for unit tests.
 
--   Test Data Factory out-of-the-box creates records with all required fields
-    already populated.
--   Extend `SObjectFactory` class or add Custom Metadata to provide base records
-    for your unit tests. This way you can ensure records pass validation rules.
--   Do you need in some unit tests more customized records? Define your records
-    using the `SObjectFactoryScenario`.
--   Custom Settings and sObjects from managed packages can also be created.
+**Features**:
+
+-   **Built-in and Customizable Factory**: Provides an out-of-the-box SObject
+    factory, with an extensible base to define custom record templates.
+-   **Automatic Population of Required Fields**: Ensures mandatory fields are
+    pre-populated.
+-   **Support for Read-Only Fields**: Includes options to set values for
+    read-only fields, including system fields, formula fields, and child
+    records.
+-   **Managed Package Compatibility**: Fully supports managed package records.
 
 ## Example
 
 ```apex
-// create account, required fields are populated automatically
-// add fields specific for your unit test
-Account acc = (Account) factory
-    .inserted(new Account(
-        Description = 'My Account',
-        Parent = anotherAcc
-    ))
-    .toSObject();
-// create 5 contacts with 3 different descriptions
-List<Contact> created = (List<Contact>) factory
-    .rotate(Contact.Description, new List<String>{'desc 0', 'desc 1', 'desc 2'})
-    .inserted(5, new Contact())
-    .toList();
+// Use custom AccountFactory implementation with default account template.
+Account account = (Account) new AccountFactory()
+        // Make 1 mocked account with ID without DML.
+        .mocked()
+        // Override LastModifiedDate system value.
+        .setReadOnly(Schema.Account.LastModifiedDate, mockedDatetime)
+        // Override Name via test-specific target account record.
+        .build(new Account(Name = 'Target Name'))
+        .toSObject();
+
+Assert.isNotNull(account.Id, 'Account ID was not mocked.');
+
+// Use out-of-the-box generic contact factory.
+List<Contact> contacts = (List<Contact>) new sobj.BaseSObjectFactory()
+        // Create 5 contacts.
+        .created(5)
+        // Set Account relationship via test-specific  target contact record.
+        .build(new Contact(
+                AccountId = anotherAcc,
+                Description = 'Contact with mocked account example.'
+        ))
+        .toList();
+
+Assert.areEqual(5, contacts.size(), 'Expected number of contacts not created.');
 ```
 
 ## Installation
 
 You can either install our free
 [Managed Package](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N4V00000FNCbZUAX)
-or deploy code unpackaged. Do not modify the unpackaged code, we are not able to
-provide support if code deployed unpackaged.
+or deploy code unpackaged.
 
-Version ID: 04t09000000vCWn
+**Version ID:** 04tJ80000000RPFIA2
 
 ### Managed Package
 
 Install Managed Package using this URL:
 
 ```text
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04t09000000vCWn
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04tJ80000000RPFIA2
 ```
 
-or using sfdx cli:
+or using sf cli:
 
 ```shell
-sf package install -p 04t09000000vCWn -o my-org
+sf package install -p 04tJ80000000RPFIA2 -o my-org
 ```
 
 ### Unpackaged
 
-Use our sfdx plugin to install all components in the `src/main/core/` without
-cloning:
+Use our sfdx plugin to install all components in the `src/sobj/core/` and
+`src/sobj/example/` without cloning:
 
 ```shell
 sf kratapps remote deploy start \
     --repo-owner kratapps \
     --repo-name test-data-factory \
-    --source-dir src/main/core/ \
+    --source-dir src/sobj/core/ \
+    --source-dir src/sobj/example/ \
     -o my-org
 ```
 
-or clone the project and deploy using standard sfdx command:
+or clone the project and deploy using standard sf command:
 
 ```shell
 git clone https://github.com/kratapps/test-data-factory.git
 cd test-data-factory
-sf project deploy start --source-dir src/main/core/ -o my-org
+sf project deploy start \
+    --source-dir src/sobj/core/ \
+    --source-dir src/sobj/example/ \
+    -o my-org
 ```
 
 ## Usage
@@ -90,119 +107,73 @@ that are created only occasionally in unit tests. For other cases, we recommend
 extending `SObjectFactory` and/or `SObjectFactoryScenario` for each sObject
 type. `SObjectFactory/SObjectFactoryScenario` gives you more flexibility.
 
-### Test Data Factory
-
-Initialize TDF in your unit test class.
-
-```apex
-private static final sobj.TestDataFactory factory = new sobj.TestDataFactory();
-```
-
 ### Operations
 
 Choose one of these operations: create, mock and insert.  
-Prefer crete or mock over insert to improve performance.
+Prefer crete or mock over insert to improve performance by avoiding DML.
+
+**Usage Recommendation**: Select one of the following operations for making test
+data: `create`, `mock`, or `insert`.
+
+-   **create**: Generates `sObject` records without DML.
+-   **mock**: Mocks `sObject` records, avoiding DML and providing mock IDs.
+-   **insert**: Executes DML to insert records.
+
+> Favor `create` or `mock` over `insert` to improve performance by minimizing
+> DML operations.
 
 |                 | create | mock | insert |
 | --------------- | ------ | ---- | ------ |
 | Performance     | fast   | fast | slower |
-| With Ids        | ✕      | ✓    | ✓      |
+| With IDs        | ✕      | ✓    | ✓      |
 | Queryable       | ✕      | ✕    | ✓      |
 | Custom Settings | ✓      | ✓    | ✓      |
 | Custom Metadata | ✓      | ✓    | ✕      |
 
-Required fields are populated automatically. Default fields can be overridden
-using the target sObject provided.  
-The TDF will insert this account.
+### Custom Template SObject Factory
+
+You can either use generic sobj.BaseSObjectFactory implementation to make your
+records or ideally implement a SObject factory template for your SObjects.
+
+Main benefit on implementing templates is to provide a blueprint of your records
+to all apex tests. These blueprints/templates are called `defaults`. Each apex
+test can then override `defaults` using a `target` record, provided via `build`
+method.
+
+#### Template Example Implementation
+
+Template SObject factory class extends `sobj.BaseSObjectFactory`. Then in your
+apex test use your template factory instead of base SObject factory.
+
+-   Usage of custom template factory: `new ContactFactory().created()`
+-   Usage of base factory: `new sobj.BaseSObjectFactory().created()`
 
 ```apex
-Account acc = (Account) factory.inserted(new Account(
-        Description = 'Overridden Description'
-)).toSObject();
+@IsTest
+public without sharing class ContactFactory extends sobj.BaseSObjectFactory {
+    // Create template defaults, common for all tests using ContactFactory.
+    public SObject createDefaults(SObject target) {
+        return new Contact(FirstName = 'Jon', LastName = 'Doe', Email = 'jdoe@acme.com');
+    }
+
+    // Prepare required parent records.
+    public override SObject makeParent(SObjectField sObjectField, SObject target) {
+        if (sObjectField == Contact.AccountId) {
+            return new AccountFactory().inserted().build(new Account()).toSObject();
+        }
+        return null;
+    }
+
+    // We can include test method to verify a record is insertable without errors.
+    @IsTest
+    static void testInsert() {
+        Contact contact = (Contact) new ContactFactory().inserted().build(new Contact()).toSObject();
+        Assert.isNotNull(contact.Id, 'Record not inserted.');
+    }
+}
 ```
 
-This record will have the AccountId of the account created above.  
-Just assign the account and the Id will be populated automatically from the
-account sObject.  
-In case you created the `AccountFactory` class, the account won't be created in
-that class this case.  
-Create operation will not insert the record.
-
-```apex
-Contact con = (Contact) factory.created(new Contact(
-        Account = acc
-)).toSObject();
-```
-
-The mock operation will not insert the record. This record has generated Id, but
-the record does not exist in the database.
-
-```apex
-Contact con2 = (Contact) factory.mocked(new Contact()).toSObject();
-```
-
-Generate multiple records.
-
-```apex
-List<Contact> contacts = (List<Contact>) factory.inserted(200, new Contact()).toList();
-```
-
-Get mocked/inserted record by Id using getRecord static method
-
-```apex
-SObject sObj = sobj.TestDataFactory.getRecord(sObjectId);
-```
-
-### Default Values
-
-There are multiple ways how to set field values:
-
--   Fields in the `target` sObject. This is the sObject you pass to
-    created/inserted/mocked methods.
--   Fields in the `defaults` sObject. This is the sObject returned by
-    `createDefaults` method.
--   Fields in the `metadata defaults` sObject. This sObject is build from
-    Test_Data_Factory_Default\_\_mdt metadata.
-
-If you define a value for a same field more than once, the order is as follows:
-`target` > `defaults` > `metadata defaults`.
-
-### Metadata Defaults
-
-Define default fields values using Test_Data_Factory_Default\_\_mdt custom
-metadata. This way, you can set fields values without creating or modifying any
-Apex code. Set sObject API name, field API name, and value in each entry.
-Optionally, you can enable each default value to a subset of:
-
--   Custom Factory. Taken into account only if SObjectFactory for related
-    SObject is implemented and a scenario is not used.
--   Default Factory. Taken into account only if SObjectFactory for related
-    SObject is not implemented and a scenario is not used.
--   Scenario. Taken into account only if a scenario is used.
-
-### SObject Factories and Scenarios
-
-SObject Factories and Scenarios provide the same interface. Look at the table
-below to choose between SObject Factory and Scenario.
-
-|             | Factory                                                                 | Scenario                       |
-| ----------- | ----------------------------------------------------------------------- | ------------------------------ |
-| When to use | to create records with attributes for most unit tests                   | to create special case records |
-| Extends     | sobj.SObjectFactory                                                     | sobj.SObjectFactoryScenario    |
-| Class Name  | SObject Api Name without '\_', '\_\_c', '\_\_mdt' followed by 'Factory' | anything                       |
-| Count       | only one per SObject                                                    | multiple per SObject           |
-| How to use  | don't use useScenario                                                   | use useScenario                |
-
-#### SObject Factory
-
-Make sure to
-
--   name the class after the SObject (without \_\_c and underscores) with
-    `Factory` suffix
--   make the class and its methods global
--   annotate the class with `@IsTest`
-
-##### Methods
+#### Template Methods
 
 -   createDefaults  
     This method creates a new record with default values. Avoid any DML
@@ -225,74 +196,128 @@ Make sure to
     You can disable this feature by overriding this method.
 
 -   autoPopulateRequiredFields (optional)  
-    This feature is enabled for every sObject without SObject Factory class.
-    Once you create the SObject Factory instance class, the feature is disabled
-    by default. Override this method and return true to enable it again. We
-    strongly recommend disabling this feature for sObjects with a lot of fields
-    to improve performance.
+    Auto-population of required fields. This feature is not deterministic and
+    can have impact on performance. Disabled by default.
 
-##### Example Implementation
+### Features
 
-```apex
-@IsTest
-global without sharing class ContactFactory extends sobj.SObjectFactory {
-    private final sobj.ITestDataFactory factory = new sobj.TestDataFactory();
+### Created vs Mocked vs Inserted
 
-    public SObject createDefaults(SObject target) {
-        return new Contact(
-                FirstName = 'First',
-                LastName = 'Last'
-        );
-    }
-    public override SObject makeParent(SObjectField sObjField, SObject target) {
-        if (sObjField == Contact.AccountId) {
-            return factory.inserted(new Account()).toSObject();
-        } else if (sObjField == ...) {
-            return ...
-        }
-        return null;
-    }
-}
-```
-
-#### SObject Factory Scenario
-
-Sometimes you need special factories for special use cases.
-
-For example, your open opportunity is quite different from the closed one. The
-closed one requires multiple related objects which are not required for the open
-one.  
-`OpportunityFactory` class will provide open opportunities. Then create
-`ClosedOpportunityFactory` that will provide closed opportunities. The
-`ClosedOpportunityFactory` will extend the `SObjectFactoryScenario` class.  
-To use the `ClosedOpportunityFactory` call the `useScenario` method.
+Create
 
 ```apex
-// this will use the OpportunityFactory
-Opportunity opp = (Opportunity) factory.inserted(new Opportunity()).toSObject();
-// this will use the ClosedOpportunityFactory
-Opportunity closedOpp = (Opportunity) factory
-    .useScenario(ClosedOpportunityFactory.class)
-    .inserted(new Opportunity())
-    .toSObject();
+Account account = (Account) new sobj.BaseSObjectFactory
+        .created()
+        .build(new Account())
+        .toSObject();
+Assert.isNull(account.Id, 'Record should not have ID.');
 ```
 
-### Rotations
-
-If you want your records to have different values, you can use `rotate` method.
-In the following example you we will create 5 contacts with 3 different
-descriptions:
+Mock
 
 ```apex
-List<Contact> created = (List<Contact>) factory
-    .rotate(Contact.Description, new List<String>{'desc 0', 'desc 1', 'desc 2'})
-    .rotate(Contact.AccountId, accountList)
-    .created(5, new Contact())
-    .toList();
+Account account = (Account) new sobj.BaseSObjectFactory
+        .mocked()
+        .build(new Account())
+        .toSObject();
+Assert.isNotNull(account.Id, 'Record should have mock ID.');
 ```
 
-If using rotation for a relationship field, use Id field and list of sObjects.
-In our example `.rotate(Contact.AccountId, accountList)`.
+Insert
+
+```apex
+Account account = (Account) new sobj.BaseSObjectFactory
+        .inserted()
+        .build(new Account())
+        .toSObject();
+Assert.isNotNull(account.Id, 'Record should have real ID.');
+```
+
+#### Build Single vs Multiple Records
+
+Create one record and cast to SObject.
+
+```apex
+Account account = (Account) new sobj.BaseSObjectFactory
+        .created()
+        .build(new Account())
+        .toSObject();
+```
+
+Create one record and cast to a list.
+
+```apex
+List<Account> accounts = (List<Account>) new sobj.BaseSObjectFactory
+        .created()
+        .build(new Account())
+        .toList();
+Assert.areEqual(1, accounts.size(), 'Different number of records created.');
+```
+
+Create 200 records and cast to a list.
+
+```apex
+List<Account> accounts = (List<Account>) new sobj.BaseSObjectFactory
+        .created(200)
+        .build(new Account())
+        .toList();
+Assert.areEqual(200, accounts.size(), 'Different number of records created.');
+```
+
+### Set Required Fields
+
+```apex
+Account account = (Account) new sobj.BaseSObjectFactory
+        .created()
+        .setRequiredFields()
+        .build(new Account())
+        .toList();
+Assert.isNotNull(account.RequiredField__c, 'Required field not populated.');
+```
+
+### Set Read Only Fields
+
+```apex
+Datetime mockedDatetime = Datetime.now();
+Account account = (Account) new sobj.BaseSObjectFactory
+        .created()
+        .setReadOnly(Schema.Account.LastModifiedDate, mockedDatetime)
+        .build(new Account())
+        .toList();
+Assert.areEqual(mockedDatetime, account.LastModifiedDate, 'Read only field not populated.');
+```
+
+### Set Children
+
+Simple use case for injecting related list records. Useful for mocking nested
+queries.
+
+```apex
+List<Account> children = (List<Account>) new sobj.BaseSObjectFactory()
+        .created(5)
+        .build(new Account(Name = 'child'))
+        .toList();
+Account parent = (Account) new sobj.BaseSObjectFactory()
+        .created()
+        .setChildren(Account.ParentId, children)
+        .build(new Account(Name = 'parent'))
+        .toSObject();
+Assert.areEqual(5, parent.ChildAccounts.size(), 'Expected 5 child accounts populated.');
+```
+
+### Utils
+
+Get mocked/inserted record by ID.
+
+```apex
+Id recordId = sobj.MockId.getMockId(Account.SObjectType);
+```
+
+Generate and set mock ID to a list of records.
+
+```apex
+sobj.MockId.setMockIds(accountList);
+```
 
 ## Best Practices
 
@@ -301,19 +326,14 @@ Common best practices while using this TDF.
 ### Insertable records
 
 You should be able to insert every record without providing any values in the
-call. The following snippet should work in every unit test for all sObjects:
+call. The following snippet should work in every unit test for all SObjects:
 
 ```apex
-Contact con = (Contact) factory.inserted(new Contact()).toSObject();
+Contact contact = (Contact) new ContactFactory().inserted().build(new Contact()).toSObject();
+Assert.isNotNull(contact.Id, 'Record not inserted.');
 ```
-
-For example User requires ProfileId which is not possible to insert
-automatically. In case you want to create user objects in your unit tests you
-should create `UserFactory` class and assign ProfileId there. The ProfileId can
-be then overridden in the created/mocked/inserted method call in a unit test.
 
 ### Disable auto populate required fields
 
-When your sObject has hundreds of fields, you should disable auto populating to
-improve performance. Set `autoPopulateRequiredFields` false in your SObject
-Factory class.
+For SObjects with numerous fields, disable auto-population of required fields to
+enhance performance.
