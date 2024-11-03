@@ -18,3 +18,14 @@ Available on any record page.
 | iconName            | Icon Name            | text    | 'standard:knowledge' | The Lightning Design System name of the icon.                      |
 | title               | Title                | text    | 'Logs'               | Card's title.                                                      |
 | columns             | Columns              | text    | Default List         | Field names separated by semi-colons.                              |
+
+**LWC Example**
+
+```html
+<c-record-logs
+    record-id="{recordId}"
+    object-api-name="User"
+    title="User History"
+    columns="ok__Log_Level__c;ok__Datetime__c;ok__User_Name__c;ok__Message__c"
+></c-record-logs>
+```
