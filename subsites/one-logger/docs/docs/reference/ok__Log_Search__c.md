@@ -43,7 +43,8 @@ User defined log filters. Includes a list of logs, statistics, graphs.
 | Sandbox Name         | ok\_\_Sandbox_Name\_\_c         | string        | false    | Filter logs by sandbox name.                                                                                           |
 | Search Text          | ok\_\_Search_Text\_\_c          | string        | false    | Search for logs by text. When used, log tables and log charts are limited to 2000 records.                             |
 | Start Time           | ok\_\_Start_Time\_\_c           | datetime      | false    |                                                                                                                        |
-| Table Fields         | ok\_\_Table_Fields\_\_c         | multipicklist | false    | Keep empty to auto-populate default list.                                                                              |
+| Table Columns        | ok\_\_Table_Columns\_\_c        | multipicklist | false    | Field names separated by semi-colons. Leave empty to use the default list.                                             |
+| Table Fields         | ok\_\_Table_Fields\_\_c         | multipicklist | false    | Deprecated. Leave empty to use the default list.                                                                       |
 | Tagged As            | ok\_\_Tagged_As\_\_c            | string        | false    |                                                                                                                        |
 | Time Preset          | ok\_\_Time_Preset\_\_c          | picklist      | false    |                                                                                                                        |
 | Trigger SObject Type | ok\_\_Trigger_SObject_Type\_\_c | string        | false    | Filter logs logged from a trigger on a specific SObject.                                                               |
