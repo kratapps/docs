@@ -1519,6 +1519,20 @@
     "section": "Session Settings"
   },
   {
+    "action": "cMSWorkspacesV1CreatePrefOffOn",
+    "display": "Organization setup action: cMSWorkspacesV1CreatePrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "cMSWorkspacesV1CreatePrefOnOff",
+    "display": "Organization setup action: cMSWorkspacesV1CreatePrefOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "codeBuilderOffOn",
     "display": "Organization setup action: codeBuilderOffOn has changed.",
     "title": "Org Preferences",
