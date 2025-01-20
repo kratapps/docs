@@ -748,6 +748,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Registration Handler
 -   changeAuthProviderConsumerKey (Auth. Providers) - Changed Auth. Provider
     Consumer Key
+-   changeAuthProviderConsumerSecret (Auth. Providers) - Changed Auth. Provider
+    Consumer Secret
 -   deleteAuthProvider (Auth. Providers) - Deleted Auth. Provider Meta Ads Data
     Cloud
 -   insertAuthProvider (Auth. Providers) - Created Auth. Provider Meta Ads Data
@@ -757,7 +759,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('addAuthProviderExecutionUser','addAuthProviderPortal','addAuthProviderRegistrationHandlerCreate','changeAuthProviderConsumerKey','deleteAuthProvider','insertAuthProvider','removeAuthProviderPortal')
+WHERE Action IN ('addAuthProviderExecutionUser','addAuthProviderPortal','addAuthProviderRegistrationHandlerCreate','changeAuthProviderConsumerKey','changeAuthProviderConsumerSecret','deleteAuthProvider','insertAuthProvider','removeAuthProviderPortal')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

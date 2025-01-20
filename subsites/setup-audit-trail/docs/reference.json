@@ -467,6 +467,13 @@
     "section": "Auth. Providers"
   },
   {
+    "action": "changeAuthProviderConsumerSecret",
+    "display": "Changed Auth. Provider Consumer Secret",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
     "action": "changedApexClass",
     "display": "Changed DeathStarController Apex Class code",
     "title": "Apex",
