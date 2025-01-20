@@ -879,6 +879,13 @@
     "section": null
   },
   {
+    "action": "changedCustLinkDisplayTypeCustom",
+    "display": "Changed Galactic_Empire button or link display type on Quotes from Detail Page Link to Detail Page Button",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Custom Objects"
+  },
+  {
     "action": "changedCustLinkLabel",
     "display": "Changed Death_Star_Position button or link label from Death Star Coordinates to Death Star Position",
     "title": "Links, Buttons and Actions",
@@ -1631,6 +1638,13 @@
     "section": null
   },
   {
+    "action": "copilotAnalyticsEnabledOnOff",
+    "display": "Organization setup action: copilotAnalyticsEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "createAllowedEmailDomain",
     "display": "Allowed email domain death-star.com added.",
     "title": "Org Config",
@@ -2261,6 +2275,13 @@
     "section": "Sharing Defaults"
   },
   {
+    "action": "defaultpbkaccess",
+    "display": "Changed default internal access for price book from Public Read Only to Public Read/Write",
+    "title": "Sharing Rules",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
+  },
+  {
     "action": "deferRenderingWorkspacePageOffOn",
     "display": "Organization setup action: deferRenderingWorkspacePageOffOn has changed.",
     "title": "Org Preferences",
@@ -2779,6 +2800,13 @@
     "section": "My Domain"
   },
   {
+    "action": "disabledForIntegrations",
+    "display": "Removed User Package License for Platform Integration User with ID 0050z000007GL6j and Package License with ID: 0500z0000008mU1",
+    "title": "User Permissions",
+    "category": "User Management",
+    "section": "Custom App Licenses"
+  },
+  {
     "action": "disableIdp",
     "display": "Disabled Identity Provider",
     "title": "Identity Provider",
@@ -2952,6 +2980,13 @@
     "title": "Network",
     "category": "Organization Management",
     "section": "My Domain"
+  },
+  {
+    "action": "enabledForIntegrations",
+    "display": "Added User Package License for Platform Integration User with ID 0050z000007GL6j and Package License with ID: 0500z0000008mU1",
+    "title": "User Permissions",
+    "category": "User Management",
+    "section": "Custom App Licenses"
   },
   {
     "action": "enableIdp",
