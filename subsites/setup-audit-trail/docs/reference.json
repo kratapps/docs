@@ -4639,6 +4639,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "profileDefaultRecordTypeChangedCustom",
+    "display": "Changed profile Stormtrooper: default record type for Contact changed from Manager Contact to --Master--",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "profileDefaultRecordTypeChangedStandard",
     "display": "Changed profile Stormtrooper: default record type for Weapon changed from --Master-- to Blaster Rifle",
     "title": "Profiles",
