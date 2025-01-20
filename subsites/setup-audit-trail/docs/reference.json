@@ -2030,6 +2030,13 @@
     "section": null
   },
   {
+    "action": "crtSetupLightningUiPrefOffOn",
+    "display": "Organization setup action: crtSetupLightningUiPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "CSPAccountDisabled",
     "display": "Account Confederacy of Independent Systems disabled as a Customer Portal account",
     "title": "Portal",
@@ -2224,6 +2231,13 @@
     "title": "Sharing Defaults",
     "category": "Data Management",
     "section": "Sharing Defaults"
+  },
+  {
+    "action": "deferRenderingWorkspacePageOffOn",
+    "display": "Organization setup action: deferRenderingWorkspacePageOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "delete_external_id",
@@ -3689,6 +3703,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "lWCFileUploadPrefOffOn",
+    "display": "Organization setup action: lWCFileUploadPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "mailAppProductivityEnabledOffOn",
     "display": "Organization setup action: mailAppProductivityEnabledOffOn has changed.",
     "title": "Org Preferences",
@@ -3790,6 +3811,20 @@
     "action": "mobileSdkNativeBrowserOnOff",
     "display": "Disabled use of the native browser for user authentication on iOS",
     "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "multiColumnSortLvOffOn",
+    "display": "Organization setup action: multiColumnSortLvOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "multiColumnSortRlOffOn",
+    "display": "Organization setup action: multiColumnSortRlOffOn has changed.",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
@@ -4350,6 +4385,13 @@
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
+  },
+  {
+    "action": "permsetLicenseUserPermRevoked",
+    "display": "Removed the AutomaticActivityCapture user permission as allowed by Permission Set License 0PL4W000000tpqk",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": null
   },
   {
     "action": "PermSetRecordTypeAdded",
@@ -5434,6 +5476,13 @@
     "section": null
   },
   {
+    "action": "standardApprovalsEnabledOffOn",
+    "display": "Organization setup action: standardApprovalsEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "suggestedForYouOffOn",
     "display": "Changed Suggested for You from off to on",
     "title": "Adoption Assistance",
@@ -5770,6 +5819,13 @@
     "section": null
   },
   {
+    "action": "useIntLinkPwdResetPrefOffOn",
+    "display": "Organization setup action: useIntLinkPwdResetPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "userAccessPoliciesEnabledOffOn",
     "display": "Changed User Access Policies from off to on",
     "title": "User Management Settings",
@@ -5989,6 +6045,13 @@
   {
     "action": "verifyOnEmailChangeOnOff",
     "display": "Organization setup action: verifyOnEmailChangeOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "vertNavThemedIconsEnabledOffOn",
+    "display": "Organization setup action: vertNavThemedIconsEnabledOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
