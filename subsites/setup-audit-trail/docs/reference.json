@@ -1561,6 +1561,13 @@
     "section": null
   },
   {
+    "action": "confettiEffectOffOn",
+    "display": "Organization setup action: confettiEffectOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "contactInspectorPrefOffOn",
     "display": "Organization setup action: contactInspectorPrefOffOn has changed.",
     "title": "Org Preferences",
@@ -2716,6 +2723,13 @@
     "section": "Deployment Connections"
   },
   {
+    "action": "deployConnectionDeauthorized",
+    "display": "Deauthorized inbound changes from: UAT (Developer Pro Sandbox)",
+    "title": "Deployment Connections",
+    "category": "Organization Management",
+    "section": "Deployment Connections"
+  },
+  {
     "action": "deployedchangeset",
     "display": "Deployed Change Set: Quoting Process",
     "title": "Sandboxes",
@@ -2947,6 +2961,13 @@
     "section": "Identity Provider"
   },
   {
+    "action": "enablementEnabledOffOn",
+    "display": "Organization setup action: enablementEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "enablementPartnerPrgmEmailsOffOn",
     "display": "Organization setup action: enablementPartnerPrgmEmailsOffOn has changed.",
     "title": "Org Preferences",
@@ -2973,6 +2994,13 @@
     "title": "Network",
     "category": "Organization Management",
     "section": "My Domain"
+  },
+  {
+    "action": "enableSIQUserEAC",
+    "display": "Enabled Einstein Activity Capture for user: Darth Vader",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Inbox mobile and legacy desktop apps"
   },
   {
     "action": "enableSIQUserInbox",
@@ -3428,6 +3456,13 @@
     "title": "Org Config",
     "category": "Organization Management",
     "section": "Holidays"
+  },
+  {
+    "action": "InactiveUserSweeperInfo",
+    "display": "6 users were frozen in this sandbox because they didn't log in within the first 60 days of it being created, cloned, or refreshed.",
+    "title": "Sandboxes",
+    "category": "Organization Management",
+    "section": "Sandboxes"
   },
   {
     "action": "insertApplication",
@@ -3941,11 +3976,25 @@
     "section": "Experiences network Member Group"
   },
   {
+    "action": "NetworksChangedSendWelcomeEmailOff",
+    "display": "Disabled welcome emails for DepotFinder ",
+    "title": "Portal",
+    "category": "Organization Management",
+    "section": "Experiences send welcome email pref"
+  },
+  {
     "action": "NetworksChangedSendWelcomeEmailOn",
     "display": "Enabled welcome emails for Galactic Empire Community ",
     "title": "Portal",
     "category": "Organization Management",
     "section": "Experiences send welcome email pref"
+  },
+  {
+    "action": "NetworksChangedStatusOff",
+    "display": "Deactivated GalacticEmpire site ",
+    "title": "Portal",
+    "category": "Organization Management",
+    "section": "Experiences network status"
   },
   {
     "action": "NetworksChangedStatusOn",
@@ -4518,6 +4567,13 @@
     "title": "Layouts",
     "category": "UI",
     "section": "Customize Products"
+  },
+  {
+    "action": "profileClonedCustom",
+    "display": "Created profile Minimum Access - Galactic Empire: Cloned from profile Minimum Access - Republic",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
   },
   {
     "action": "profileClonedStandard",
@@ -5129,6 +5185,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "sessiontimeoutForProfile",
+    "display": "Changed profile IT Support: Changed Session Timeout Value from 120 to 240 minutes",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
+  },
+  {
     "action": "setMatchEngine",
     "display": "For matching rule Standard Account Matching Rule, matching engine set to Fuzzy Match Engine.",
     "title": "Matching and Duplicate Rules",
@@ -5291,6 +5354,13 @@
   {
     "action": "SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledCustom",
     "display": "Changed profile Stormtrooper: Control Room Access Custom Metadata Type was disabled",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledStandard",
+    "display": "Changed profile Minimum Access - API Only Integrations: Control Panel Custom Metadata Type was disabled",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -5492,6 +5562,13 @@
   {
     "action": "socialProfilesEnableOnOff",
     "display": "Organization setup action: socialProfilesEnableOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "sourceTrackingSandboxesOffOn",
+    "display": "Organization setup action: sourceTrackingSandboxesOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -5971,6 +6048,13 @@
     "title": "Chatter Settings",
     "category": "Organization Management",
     "section": "Chatter Settings"
+  },
+  {
+    "action": "value_DEFAULT_QUEUEABLE_DELAY",
+    "display": "Changed default queueable delay from \"\" to 30",
+    "title": "Apex",
+    "category": "Automation",
+    "section": null
   },
   {
     "action": "value_MAX_STREAMING_TOPICS_PROV",
