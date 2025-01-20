@@ -133,6 +133,27 @@
     "section": "Company Information"
   },
   {
+    "action": "addAuthProviderExecutionUser",
+    "display": "Added Auth. Provider Execution User Emperor",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
+    "action": "addAuthProviderPortal",
+    "display": "Added Auth. Provider Portal Partner Portal",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
+    "action": "addAuthProviderRegistrationHandlerCreate",
+    "display": "Autocreated Auth. Provider Registration Handler",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "adddelegatedgroup",
     "display": "Added new delegated group: Confederacy_of_Independent_Systems",
     "title": "Security Controls",
@@ -437,6 +458,13 @@
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
+  },
+  {
+    "action": "changeAuthProviderConsumerKey",
+    "display": "Changed Auth. Provider Consumer Key",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
   },
   {
     "action": "changedApexClass",
@@ -2695,6 +2723,13 @@
     "section": "My Domain"
   },
   {
+    "action": "disableIdp",
+    "display": "Disabled Identity Provider",
+    "title": "Identity Provider",
+    "category": "Organization Management",
+    "section": "Identity Provider"
+  },
+  {
     "action": "disableRequireLoginFromOrgDomain",
     "display": "Disabled user logins from https://test.salesforce.com",
     "title": "Network",
@@ -2861,6 +2896,13 @@
     "title": "Network",
     "category": "Organization Management",
     "section": "My Domain"
+  },
+  {
+    "action": "enableIdp",
+    "display": "Enabled the Identity Provider with Certificate galacticempire",
+    "title": "Identity Provider",
+    "category": "Organization Management",
+    "section": "Identity Provider"
   },
   {
     "action": "enablementPartnerPrgmEmailsOffOn",
@@ -4632,6 +4674,13 @@
     "section": "Security Controls"
   },
   {
+    "action": "removeAuthProviderPortal",
+    "display": "Removed Auth. Provider Portal",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
     "action": "removedDependency",
     "display": "Removed dependency for \"Tested Field\" controlled by \"Tested Object\" on object Error Condition",
     "title": "Custom Fields",
@@ -4856,6 +4905,13 @@
     "section": "Inbox mobile and legacy desktop apps"
   },
   {
+    "action": "samlEnabled",
+    "display": "SAML Enabled",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
     "action": "samlSsoConfig_audience",
     "display": "Changed Entity Id of Auth0 SAML from https://galacticempire--uat.sandbox.my.site.com to https://galacticempire--uat.sandbox.my.site.com/partners/",
     "title": "SAML Configuration",
@@ -4865,6 +4921,34 @@
   {
     "action": "samlSsoConfig_create",
     "display": "Created SAML Configuration Migrated SAML Config",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_delete",
+    "display": "Deleted SAML Configuration GalacticEmpireRebelsBackdoor",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_jitDisabled",
+    "display": "Disabled User Provisioning for galacticempire_rebels_backdoor",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_jitEnabled",
+    "display": "Enabled User Provisioning for galacticempire_rebels_backdoor",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_signCert",
+    "display": "Changed Request Signing Certificate of galacticempire_rebels_backdoor to galacticempire",
     "title": "SAML Configuration",
     "category": "Organization Management",
     "section": "SAML Configuration"
@@ -5586,6 +5670,13 @@
     "title": "Miscellaneous",
     "category": "Data Management",
     "section": "Data Management"
+  },
+  {
+    "action": "updateIdp",
+    "display": "Changed the Identity Provider Certificate from Galactic Empire IDP to galacticempire",
+    "title": "Identity Provider",
+    "category": "Organization Management",
+    "section": "Identity Provider"
   },
   {
     "action": "updateLoginFlowProfile",

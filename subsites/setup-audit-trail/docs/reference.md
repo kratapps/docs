@@ -740,15 +740,24 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 ### Auth. Providers
 
+-   addAuthProviderExecutionUser (Auth. Providers) - Added Auth. Provider
+    Execution User Emperor
+-   addAuthProviderPortal (Auth. Providers) - Added Auth. Provider Portal
+    Partner Portal
+-   addAuthProviderRegistrationHandlerCreate - Autocreated Auth. Provider
+    Registration Handler
+-   changeAuthProviderConsumerKey (Auth. Providers) - Changed Auth. Provider
+    Consumer Key
 -   deleteAuthProvider (Auth. Providers) - Deleted Auth. Provider Meta Ads Data
     Cloud
 -   insertAuthProvider (Auth. Providers) - Created Auth. Provider Meta Ads Data
     Cloud
+-   removeAuthProviderPortal (Auth. Providers) - Removed Auth. Provider Portal
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('deleteAuthProvider','insertAuthProvider')
+WHERE Action IN ('addAuthProviderExecutionUser','addAuthProviderPortal','addAuthProviderRegistrationHandlerCreate','changeAuthProviderConsumerKey','deleteAuthProvider','insertAuthProvider','removeAuthProviderPortal')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -998,6 +1007,21 @@ ORDER BY CreatedDate DESC LIMIT 1000
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
 WHERE Action IN ('dkimRotationPreparationSuccessful','dkimRotationSuccessful','emailConsentManagementOff','emailConsentManagementOn','emailsenderidcomplianceoff','emailspfcomplianceoff','emailspfcomplianceon','handlebouncedemailsoff','handlebouncedemailson','resendBouncedEmailsoff','resendBouncedEmailson','restricttlstodomainsoff','restricttlstodomainson','sendEmailAccessControl','setupObjectChanged','setupObjectChangedSkipValue','setupObjectCreated','setupObjectDeleted','value_RESTRICT_TLS_TO_DOMAINS','value_TLS_SETTING','verifyemaildomainownershipbydkimoff','verifyemaildomainownershipbydkimon')
+ORDER BY CreatedDate DESC LIMIT 1000
+```
+
+### Identity Provider
+
+-   disableIdp (Identity Provider) - Disabled Identity Provider
+-   enableIdp (Identity Provider) - Enabled the Identity Provider with
+    Certificate galacticempire
+-   updateIdp (Identity Provider) - Changed the Identity Provider Certificate
+    from Galactic Empire IDP to galacticempire
+
+```
+SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
+FROM SetupAuditTrail
+WHERE Action IN ('disableIdp','enableIdp','updateIdp')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1550,16 +1574,25 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Migrated SAML Config
 -   multipleSamlEnabled (SAML Configuration) - Enabled Multiple SAML
     Configurations
+-   samlEnabled (SAML Configuration) - SAML Enabled
 -   samlSsoConfig_audience (SAML Configuration) - Changed Entity Id of Auth0
     SAML from https://galacticempire--uat.sandbox.my.site.com to
     https://galacticempire--uat.sandbox.my.site.com/partners/
 -   samlSsoConfig_create (SAML Configuration) - Created SAML Configuration
     Migrated SAML Config
+-   samlSsoConfig_delete (SAML Configuration) - Deleted SAML Configuration
+    GalacticEmpireRebelsBackdoor
+-   samlSsoConfig_jitDisabled (SAML Configuration) - Disabled User Provisioning
+    for galacticempire_rebels_backdoor
+-   samlSsoConfig_jitEnabled (SAML Configuration) - Enabled User Provisioning
+    for galacticempire_rebels_backdoor
+-   samlSsoConfig_signCert (SAML Configuration) - Changed Request Signing
+    Certificate of galacticempire_rebels_backdoor to galacticempire
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('multipleSamlConverted','multipleSamlEnabled','samlSsoConfig_audience','samlSsoConfig_create')
+WHERE Action IN ('multipleSamlConverted','multipleSamlEnabled','samlEnabled','samlSsoConfig_audience','samlSsoConfig_create','samlSsoConfig_delete','samlSsoConfig_jitDisabled','samlSsoConfig_jitEnabled','samlSsoConfig_signCert')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
