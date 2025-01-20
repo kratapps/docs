@@ -1946,6 +1946,13 @@
     "section": "Global Value Sets"
   },
   {
+    "action": "crmaDataflowDeleted",
+    "display": "Deleted CRMA Dataflow 02KO50000050VP9 ExternalFileDataflow06VO5000001dBCjMAM",
+    "title": "CRMA",
+    "category": "Data Cloud",
+    "section": "CRMA"
+  },
+  {
     "action": "crossOrgRedirectsEnabledOffOn",
     "display": "Organization setup action: crossOrgRedirectsEnabledOffOn has changed.",
     "title": "Org Preferences",
@@ -3112,6 +3119,13 @@
     "display": "Disabled “Users require the Manage Flow permission to view all Automation Home charts”",
     "title": "User Detail",
     "category": "User Management",
+    "section": null
+  },
+  {
+    "action": "flowNullPreviousValueFixOffOn",
+    "display": "Organization setup action: flowNullPreviousValueFixOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
     "section": null
   },
   {
