@@ -5679,6 +5679,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "uoesuloginaccessused",
+    "display": "Organization setup action: [Darth Vader, empire.com, inc., dvader@empire.com] has changed from {1} to {2}",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "updatedBusinessProcess",
     "display": "Updated business process \"Rebel Alliance Recruitment\"",
     "title": "Org Config",
