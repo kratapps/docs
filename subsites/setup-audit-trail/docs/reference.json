@@ -231,6 +231,13 @@
     "section": "Customize Assets"
   },
   {
+    "action": "AuthConfig_UsernamePasswordActivated_Experience",
+    "display": "Displayed username-password login form on the Experience Cloud site Galactic Empire",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "AuthConfig_UsernamePasswordActivated_MyDomain",
     "display": "Displayed username-password login form on the My Domain login page",
     "title": "Network",
@@ -238,8 +245,29 @@
     "section": null
   },
   {
+    "action": "AuthConfig_UsernamePasswordDeactivated_Experience",
+    "display": "Hid username-password login form from the Experience Cloud site Galactic Empire",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "AuthConfig_UsernamePasswordDeactivated_MyDomain",
     "display": "Hid username-password login form from the My Domain login page",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "AuthConfigProviderCreate_Experience",
+    "display": "Displayed SFDC (UAT) IDP SAML login option on the Experience Cloud site Galactic Empire",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "AuthConfigProviderDelete_Experience",
+    "display": "Hid SFDC (UAT) IDP SAML login option from the Experience Cloud site Galactic Empire",
     "title": "Network",
     "category": "Organization Management",
     "section": null

@@ -1048,10 +1048,18 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 ### Network
 
+-   AuthConfig_UsernamePasswordActivated_Experience - Displayed
+    username-password login form on the Experience Cloud site Galactic Empire
 -   AuthConfig_UsernamePasswordActivated_MyDomain - Displayed username-password
     login form on the My Domain login page
+-   AuthConfig_UsernamePasswordDeactivated_Experience - Hid username-password
+    login form from the Experience Cloud site Galactic Empire
 -   AuthConfig_UsernamePasswordDeactivated_MyDomain - Hid username-password
     login form from the My Domain login page
+-   AuthConfigProviderCreate_Experience - Displayed SFDC (UAT) IDP SAML login
+    option on the Experience Cloud site Galactic Empire
+-   AuthConfigProviderDelete_Experience - Hid SFDC (UAT) IDP SAML login option
+    from the Experience Cloud site Galactic Empire
 -   changedStaticResource (Static Resource) - Changed Static Resource
     deathStarResource
 -   changeServiceProviderAcsUrl (Service Provider) - ACS URL changed from
@@ -1134,7 +1142,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('AuthConfig_UsernamePasswordActivated_MyDomain','AuthConfig_UsernamePasswordDeactivated_MyDomain','changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
+WHERE Action IN ('AuthConfig_UsernamePasswordActivated_Experience','AuthConfig_UsernamePasswordActivated_MyDomain','AuthConfig_UsernamePasswordDeactivated_Experience','AuthConfig_UsernamePasswordDeactivated_MyDomain','AuthConfigProviderCreate_Experience','AuthConfigProviderDelete_Experience','changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
