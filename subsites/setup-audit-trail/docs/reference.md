@@ -1550,13 +1550,16 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Migrated SAML Config
 -   multipleSamlEnabled (SAML Configuration) - Enabled Multiple SAML
     Configurations
+-   samlSsoConfig_audience (SAML Configuration) - Changed Entity Id of Auth0
+    SAML from https://galacticempire--uat.sandbox.my.site.com to
+    https://galacticempire--uat.sandbox.my.site.com/partners/
 -   samlSsoConfig_create (SAML Configuration) - Created SAML Configuration
     Migrated SAML Config
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('multipleSamlConverted','multipleSamlEnabled','samlSsoConfig_create')
+WHERE Action IN ('multipleSamlConverted','multipleSamlEnabled','samlSsoConfig_audience','samlSsoConfig_create')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

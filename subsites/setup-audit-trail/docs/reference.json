@@ -4856,6 +4856,13 @@
     "section": "Inbox mobile and legacy desktop apps"
   },
   {
+    "action": "samlSsoConfig_audience",
+    "display": "Changed Entity Id of Auth0 SAML from https://galacticempire--uat.sandbox.my.site.com to https://galacticempire--uat.sandbox.my.site.com/partners/",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
     "action": "samlSsoConfig_create",
     "display": "Created SAML Configuration Migrated SAML Config",
     "title": "SAML Configuration",
