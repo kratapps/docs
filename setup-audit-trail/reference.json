@@ -133,6 +133,27 @@
     "section": "Company Information"
   },
   {
+    "action": "addAuthProviderExecutionUser",
+    "display": "Added Auth. Provider Execution User Emperor",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
+    "action": "addAuthProviderPortal",
+    "display": "Added Auth. Provider Portal Partner Portal",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
+    "action": "addAuthProviderRegistrationHandlerCreate",
+    "display": "Autocreated Auth. Provider Registration Handler",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "adddelegatedgroup",
     "display": "Added new delegated group: Confederacy_of_Independent_Systems",
     "title": "Security Controls",
@@ -231,6 +252,13 @@
     "section": "Customize Assets"
   },
   {
+    "action": "AuthConfig_UsernamePasswordActivated_Experience",
+    "display": "Displayed username-password login form on the Experience Cloud site Galactic Empire",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "AuthConfig_UsernamePasswordActivated_MyDomain",
     "display": "Displayed username-password login form on the My Domain login page",
     "title": "Network",
@@ -238,8 +266,29 @@
     "section": null
   },
   {
+    "action": "AuthConfig_UsernamePasswordDeactivated_Experience",
+    "display": "Hid username-password login form from the Experience Cloud site Galactic Empire",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "AuthConfig_UsernamePasswordDeactivated_MyDomain",
     "display": "Hid username-password login form from the My Domain login page",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "AuthConfigProviderCreate_Experience",
+    "display": "Displayed SFDC (UAT) IDP SAML login option on the Experience Cloud site Galactic Empire",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "AuthConfigProviderDelete_Experience",
+    "display": "Hid SFDC (UAT) IDP SAML login option from the Experience Cloud site Galactic Empire",
     "title": "Network",
     "category": "Organization Management",
     "section": null
@@ -409,6 +458,20 @@
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
+  },
+  {
+    "action": "changeAuthProviderConsumerKey",
+    "display": "Changed Auth. Provider Consumer Key",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
+  },
+  {
+    "action": "changeAuthProviderConsumerSecret",
+    "display": "Changed Auth. Provider Consumer Secret",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
   },
   {
     "action": "changedApexClass",
@@ -814,6 +877,13 @@
     "title": "Links, Buttons and Actions",
     "category": "UI",
     "section": null
+  },
+  {
+    "action": "changedCustLinkDisplayTypeCustom",
+    "display": "Changed Galactic_Empire button or link display type on Quotes from Detail Page Link to Detail Page Button",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Custom Objects"
   },
   {
     "action": "changedCustLinkLabel",
@@ -1456,6 +1526,20 @@
     "section": "Session Settings"
   },
   {
+    "action": "cMSWorkspacesV1CreatePrefOffOn",
+    "display": "Organization setup action: cMSWorkspacesV1CreatePrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "cMSWorkspacesV1CreatePrefOnOff",
+    "display": "Organization setup action: cMSWorkspacesV1CreatePrefOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "codeBuilderOffOn",
     "display": "Organization setup action: codeBuilderOffOn has changed.",
     "title": "Org Preferences",
@@ -1480,6 +1564,13 @@
     "action": "communitiesDefaultCdnPrefOnOff",
     "display": "Organization setup action: communitiesDefaultCdnPrefOnOff has changed.",
     "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "confettiEffectOffOn",
+    "display": "Organization setup action: confettiEffectOffOn has changed.",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
@@ -1542,6 +1633,13 @@
   {
     "action": "conversationZoomPrefOnOff",
     "display": "Organization setup action: conversationZoomPrefOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "copilotAnalyticsEnabledOnOff",
+    "display": "Organization setup action: copilotAnalyticsEnabledOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -1946,6 +2044,13 @@
     "section": "Global Value Sets"
   },
   {
+    "action": "crmaDataflowDeleted",
+    "display": "Deleted CRMA Dataflow 02KO50000050VP9 ExternalFileDataflow06VO5000001dBCjMAM",
+    "title": "CRMA",
+    "category": "Data Cloud",
+    "section": "CRMA"
+  },
+  {
     "action": "crossOrgRedirectsEnabledOffOn",
     "display": "Organization setup action: crossOrgRedirectsEnabledOffOn has changed.",
     "title": "Org Preferences",
@@ -1955,6 +2060,13 @@
   {
     "action": "crossOrgRedirectsEnabledOnOff",
     "display": "Organization setup action: crossOrgRedirectsEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "crtSetupLightningUiPrefOffOn",
+    "display": "Organization setup action: crtSetupLightningUiPrefOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -2149,11 +2261,32 @@
     "section": null
   },
   {
+    "action": "defaultCustomEntityAccess",
+    "display": "Changed default internal access for Country Region from Public Read Only to Public Read/Write",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
+  },
+  {
     "action": "defaultCustomEntityExtAccess",
     "display": "Changed default external access for Stormtrooper from Public Read Only to Private",
     "title": "Sharing Defaults",
     "category": "Data Management",
     "section": "Sharing Defaults"
+  },
+  {
+    "action": "defaultpbkaccess",
+    "display": "Changed default internal access for price book from Public Read Only to Public Read/Write",
+    "title": "Sharing Rules",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
+  },
+  {
+    "action": "deferRenderingWorkspacePageOffOn",
+    "display": "Organization setup action: deferRenderingWorkspacePageOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "delete_external_id",
@@ -2611,6 +2744,13 @@
     "section": "Deployment Connections"
   },
   {
+    "action": "deployConnectionDeauthorized",
+    "display": "Deauthorized inbound changes from: UAT (Developer Pro Sandbox)",
+    "title": "Deployment Connections",
+    "category": "Organization Management",
+    "section": "Deployment Connections"
+  },
+  {
     "action": "deployedchangeset",
     "display": "Deployed Change Set: Quoting Process",
     "title": "Sandboxes",
@@ -2658,6 +2798,20 @@
     "title": "Network",
     "category": "Organization Management",
     "section": "My Domain"
+  },
+  {
+    "action": "disabledForIntegrations",
+    "display": "Removed User Package License for Platform Integration User with ID 0050z000007GL6j and Package License with ID: 0500z0000008mU1",
+    "title": "User Permissions",
+    "category": "User Management",
+    "section": "Custom App Licenses"
+  },
+  {
+    "action": "disableIdp",
+    "display": "Disabled Identity Provider",
+    "title": "Identity Provider",
+    "category": "Organization Management",
+    "section": "Identity Provider"
   },
   {
     "action": "disableRequireLoginFromOrgDomain",
@@ -2828,6 +2982,27 @@
     "section": "My Domain"
   },
   {
+    "action": "enabledForIntegrations",
+    "display": "Added User Package License for Platform Integration User with ID 0050z000007GL6j and Package License with ID: 0500z0000008mU1",
+    "title": "User Permissions",
+    "category": "User Management",
+    "section": "Custom App Licenses"
+  },
+  {
+    "action": "enableIdp",
+    "display": "Enabled the Identity Provider with Certificate galacticempire",
+    "title": "Identity Provider",
+    "category": "Organization Management",
+    "section": "Identity Provider"
+  },
+  {
+    "action": "enablementEnabledOffOn",
+    "display": "Organization setup action: enablementEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "enablementPartnerPrgmEmailsOffOn",
     "display": "Organization setup action: enablementPartnerPrgmEmailsOffOn has changed.",
     "title": "Org Preferences",
@@ -2854,6 +3029,13 @@
     "title": "Network",
     "category": "Organization Management",
     "section": "My Domain"
+  },
+  {
+    "action": "enableSIQUserEAC",
+    "display": "Enabled Einstein Activity Capture for user: Darth Vader",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Inbox mobile and legacy desktop apps"
   },
   {
     "action": "enableSIQUserInbox",
@@ -3115,6 +3297,13 @@
     "section": null
   },
   {
+    "action": "flowNullPreviousValueFixOffOn",
+    "display": "Organization setup action: flowNullPreviousValueFixOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "flowsLightningAppOffOn",
     "display": "Organization setup action: flowsLightningAppOffOn has changed.",
     "title": "Org Preferences",
@@ -3302,6 +3491,13 @@
     "title": "Org Config",
     "category": "Organization Management",
     "section": "Holidays"
+  },
+  {
+    "action": "InactiveUserSweeperInfo",
+    "display": "6 users were frozen in this sandbox because they didn't log in within the first 60 days of it being created, cloned, or refreshed.",
+    "title": "Sandboxes",
+    "category": "Organization Management",
+    "section": "Sandboxes"
   },
   {
     "action": "insertApplication",
@@ -3598,6 +3794,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "lWCFileUploadPrefOffOn",
+    "display": "Organization setup action: lWCFileUploadPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "mailAppProductivityEnabledOffOn",
     "display": "Organization setup action: mailAppProductivityEnabledOffOn has changed.",
     "title": "Org Preferences",
@@ -3703,6 +3906,20 @@
     "section": null
   },
   {
+    "action": "multiColumnSortLvOffOn",
+    "display": "Organization setup action: multiColumnSortLvOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "multiColumnSortRlOffOn",
+    "display": "Organization setup action: multiColumnSortRlOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "multipleSAMLConfigsOffOn",
     "display": "Organization setup action: multipleSAMLConfigsOffOn has changed.",
     "title": "Org Preferences",
@@ -3794,11 +4011,25 @@
     "section": "Experiences network Member Group"
   },
   {
+    "action": "NetworksChangedSendWelcomeEmailOff",
+    "display": "Disabled welcome emails for DepotFinder ",
+    "title": "Portal",
+    "category": "Organization Management",
+    "section": "Experiences send welcome email pref"
+  },
+  {
     "action": "NetworksChangedSendWelcomeEmailOn",
     "display": "Enabled welcome emails for Galactic Empire Community ",
     "title": "Portal",
     "category": "Organization Management",
     "section": "Experiences send welcome email pref"
+  },
+  {
+    "action": "NetworksChangedStatusOff",
+    "display": "Deactivated GalacticEmpire site ",
+    "title": "Portal",
+    "category": "Organization Management",
+    "section": "Experiences network status"
   },
   {
     "action": "NetworksChangedStatusOn",
@@ -3950,6 +4181,13 @@
   {
     "action": "owdExternalUpdateStartedForEntity",
     "display": "Started default external access update for Stormtrooper from Public Read Only to Private",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
+  },
+  {
+    "action": "owdInternalUpdateStartedForEntity",
+    "display": "Started default internal access update for Country Region from Public Read Only to Public Read/Write",
     "title": "Sharing Defaults",
     "category": "Data Management",
     "section": "Sharing Defaults"
@@ -4261,6 +4499,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "permsetLicenseUserPermRevoked",
+    "display": "Removed the AutomaticActivityCapture user permission as allowed by Permission Set License 0PL4W000000tpqk",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": null
+  },
+  {
     "action": "PermSetRecordTypeAdded",
     "display": "Changed permission set Stormtrooper: Blaster Rifle record type was added to Weapon object",
     "title": "Permission Sets",
@@ -4359,6 +4604,13 @@
     "section": "Customize Products"
   },
   {
+    "action": "profileClonedCustom",
+    "display": "Created profile Minimum Access - Galactic Empire: Cloned from profile Minimum Access - Republic",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "profileClonedStandard",
     "display": "Created profile Minimum Access - Salesforce Clone: Cloned from profile Minimum Access - Salesforce",
     "title": "Profiles",
@@ -4382,6 +4634,13 @@
   {
     "action": "profileDefaultCustAppCustom",
     "display": "Changed profile Sith: DeathStart2 is now the default application",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "profileDefaultRecordTypeChangedCustom",
+    "display": "Changed profile Stormtrooper: default record type for Contact changed from Manager Contact to --Master--",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -4588,6 +4847,13 @@
     "title": "Network",
     "category": "Organization Management",
     "section": "Security Controls"
+  },
+  {
+    "action": "removeAuthProviderPortal",
+    "display": "Removed Auth. Provider Portal",
+    "title": "Auth. Providers",
+    "category": "Organization Management",
+    "section": "Auth. Providers"
   },
   {
     "action": "removedDependency",
@@ -4814,8 +5080,50 @@
     "section": "Inbox mobile and legacy desktop apps"
   },
   {
+    "action": "samlEnabled",
+    "display": "SAML Enabled",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_audience",
+    "display": "Changed Entity Id of Auth0 SAML from https://galacticempire--uat.sandbox.my.site.com to https://galacticempire--uat.sandbox.my.site.com/partners/",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
     "action": "samlSsoConfig_create",
     "display": "Created SAML Configuration Migrated SAML Config",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_delete",
+    "display": "Deleted SAML Configuration GalacticEmpireRebelsBackdoor",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_jitDisabled",
+    "display": "Disabled User Provisioning for galacticempire_rebels_backdoor",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_jitEnabled",
+    "display": "Enabled User Provisioning for galacticempire_rebels_backdoor",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_signCert",
+    "display": "Changed Request Signing Certificate of galacticempire_rebels_backdoor to galacticempire",
     "title": "SAML Configuration",
     "category": "Organization Management",
     "section": "SAML Configuration"
@@ -4917,6 +5225,13 @@
     "title": "User Activation and Auth",
     "category": "User Management",
     "section": "Manage Users"
+  },
+  {
+    "action": "sessiontimeoutForProfile",
+    "display": "Changed profile IT Support: Changed Session Timeout Value from 120 to 240 minutes",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
   },
   {
     "action": "setMatchEngine",
@@ -5081,6 +5396,13 @@
   {
     "action": "SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledCustom",
     "display": "Changed profile Stormtrooper: Control Room Access Custom Metadata Type was disabled",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledStandard",
+    "display": "Changed profile Minimum Access - API Only Integrations: Control Panel Custom Metadata Type was disabled",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -5287,8 +5609,22 @@
     "section": null
   },
   {
+    "action": "sourceTrackingSandboxesOffOn",
+    "display": "Organization setup action: sourceTrackingSandboxesOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "stackedModalManagerEnabledOffOn",
     "display": "Organization setup action: stackedModalManagerEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "standardApprovalsEnabledOffOn",
+    "display": "Organization setup action: standardApprovalsEnabledOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -5476,6 +5812,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "uoesuloginaccessused",
+    "display": "Organization setup action: [Darth Vader, empire.com, inc., dvader@empire.com] has changed from {1} to {2}",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "updatedBusinessProcess",
     "display": "Updated business process \"Rebel Alliance Recruitment\"",
     "title": "Org Config",
@@ -5537,6 +5880,13 @@
     "title": "Miscellaneous",
     "category": "Data Management",
     "section": "Data Management"
+  },
+  {
+    "action": "updateIdp",
+    "display": "Changed the Identity Provider Certificate from Galactic Empire IDP to galacticempire",
+    "title": "Identity Provider",
+    "category": "Organization Management",
+    "section": "Identity Provider"
   },
   {
     "action": "updateLoginFlowProfile",
@@ -5618,6 +5968,13 @@
   {
     "action": "useEmailHeadersForThreadingOffOn",
     "display": "Organization setup action: useEmailHeadersForThreadingOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "useIntLinkPwdResetPrefOffOn",
+    "display": "Organization setup action: useIntLinkPwdResetPrefOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -5735,6 +6092,13 @@
     "section": "Chatter Settings"
   },
   {
+    "action": "value_DEFAULT_QUEUEABLE_DELAY",
+    "display": "Changed default queueable delay from \"\" to 30",
+    "title": "Apex",
+    "category": "Automation",
+    "section": null
+  },
+  {
     "action": "value_MAX_STREAMING_TOPICS_PROV",
     "display": "Max number of streaming topics",
     "title": "Org Limits",
@@ -5842,6 +6206,13 @@
   {
     "action": "verifyOnEmailChangeOnOff",
     "display": "Organization setup action: verifyOnEmailChangeOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "vertNavThemedIconsEnabledOffOn",
+    "display": "Organization setup action: vertNavThemedIconsEnabledOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
