@@ -2226,6 +2226,13 @@
     "section": null
   },
   {
+    "action": "defaultCustomEntityAccess",
+    "display": "Changed default internal access for Country Region from Public Read Only to Public Read/Write",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
+  },
+  {
     "action": "defaultCustomEntityExtAccess",
     "display": "Changed default external access for Stormtrooper from Public Read Only to Private",
     "title": "Sharing Defaults",
@@ -4076,6 +4083,13 @@
   {
     "action": "owdExternalUpdateStartedForEntity",
     "display": "Started default external access update for Stormtrooper from Public Read Only to Private",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
+  },
+  {
+    "action": "owdInternalUpdateStartedForEntity",
+    "display": "Started default internal access update for Country Region from Public Read Only to Public Read/Write",
     "title": "Sharing Defaults",
     "category": "Data Management",
     "section": "Sharing Defaults"

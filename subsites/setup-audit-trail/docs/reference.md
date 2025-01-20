@@ -2128,12 +2128,17 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 ### Sharing Defaults
 
+-   defaultCustomEntityAccess (Sharing Defaults) - Changed default internal
+    access for Country Region from Public Read Only to Public Read/Write
 -   defaultCustomEntityExtAccess (Sharing Defaults) - Changed default external
     access for Stormtrooper from Public Read Only to Private
 -   extAccessChanged (Sharing Defaults) - Changed default external access for
     User from Public Read Only to Private
 -   owdExternalUpdateStartedForEntity (Sharing Defaults) - Started default
     external access update for Stormtrooper from Public Read Only to Private
+-   owdInternalUpdateStartedForEntity (Sharing Defaults) - Started default
+    internal access update for Country Region from Public Read Only to Public
+    Read/Write
 -   owdUpdateFinished (Sharing Defaults) - Finished Organization-Wide Defaults
     update
 -   owdUpdateStarted (Sharing Defaults) - Started Organization-Wide Defaults
@@ -2142,7 +2147,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('defaultCustomEntityExtAccess','extAccessChanged','owdExternalUpdateStartedForEntity','owdUpdateFinished','owdUpdateStarted')
+WHERE Action IN ('defaultCustomEntityAccess','defaultCustomEntityExtAccess','extAccessChanged','owdExternalUpdateStartedForEntity','owdInternalUpdateStartedForEntity','owdUpdateFinished','owdUpdateStarted')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
