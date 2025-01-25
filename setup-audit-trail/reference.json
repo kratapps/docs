@@ -1024,6 +1024,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "changedknowledgeuseronoff",
+    "display": "For user Anakin Skywalker, changed Knowledge user from on to off",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "changedLightningWebComponent",
     "display": "Changed deathStarTargetLookup Lightning Web Component",
     "title": "Lightning Components",
@@ -2478,6 +2485,13 @@
     "section": "Customize Home"
   },
   {
+    "action": "deletedCustMdType",
+    "display": "Deleted custom metadata type: Star Wars Character",
+    "title": "Custom Metadata",
+    "category": "Schema",
+    "section": "Custom Metadata Types"
+  },
+  {
     "action": "deletedCustomTab",
     "display": "Deleted custom Lightning Component tab: Death Star",
     "title": "Apps, Tabs and Pages",
@@ -2980,6 +2994,13 @@
     "title": "Network",
     "category": "Organization Management",
     "section": "My Domain"
+  },
+  {
+    "action": "Enabled Apply CSP directives for less common browsers in Session Settings.",
+    "display": "Organization setup action: Enabled Apply CSP directives for less common browsers in Session Settings. has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "enabledForIntegrations",
@@ -5208,6 +5229,13 @@
   {
     "action": "selNoOpptyOnLeadConvertOffOn",
     "display": "Organization setup action: selNoOpptyOnLeadConvertOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "sendCspForUncommonClientsOffOn",
+    "display": "Organization setup action: sendCspForUncommonClientsOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
