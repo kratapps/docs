@@ -126,6 +126,20 @@
     "section": "Workflow Rule"
   },
   {
+    "action": "activateRecordType",
+    "display": "Activated record type: Imperial Sales",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Customize Opportunities"
+  },
+  {
+    "action": "activateRecordTypeCustom",
+    "display": "Activated record type: Mission Imperial Sales on Missions",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "activitylayout",
     "display": "Changed Activity page layout Task Layout",
     "title": "Layouts",
@@ -245,8 +259,57 @@
     "section": null
   },
   {
+    "action": "agentforceSTDMEnabledOffOn",
+    "display": "Organization setup action: agentforceSTDMEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agentforceSTDMEnabledOnOff",
+    "display": "Organization setup action: agentforceSTDMEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agentHealthMonitoringGAOffOn",
+    "display": "Organization setup action: agentHealthMonitoringGAOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "agentPlatformEnabledOffOn",
     "display": "Organization setup action: agentPlatformEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agntfrcInteractionExplorerOffOn",
+    "display": "Organization setup action: agntfrcInteractionExplorerOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agntfrcInteractionExplorerOnOff",
+    "display": "Organization setup action: agntfrcInteractionExplorerOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "aIFeedbackWithDCEnabledOffOn",
+    "display": "Organization setup action: aIFeedbackWithDCEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "aIFeedbackWithDCEnabledOnOff",
+    "display": "Organization setup action: aIFeedbackWithDCEnabledOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -261,6 +324,13 @@
   {
     "action": "alarmResumeSameRunContextOffOn",
     "display": "Organization setup action: alarmResumeSameRunContextOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "aLMDevopsCorePrefOffOn",
+    "display": "Organization setup action: aLMDevopsCorePrefOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -593,6 +663,13 @@
     "section": "Change Data Capture"
   },
   {
+    "action": "changeDataCaptureDeletedWithChannel",
+    "display": "Removed Change Data Capture entity EmailMessage from channel ChangeEvents",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Change Data Capture"
+  },
+  {
     "action": "changedAuraComponent",
     "display": "Changed DeathStarPanel Aura Component",
     "title": "Lightning Components",
@@ -873,6 +950,13 @@
   {
     "action": "changedCustEntRecName",
     "display": "Changed record name of custom object Droid from Droid Name to Droid Serial Number",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
+    "action": "changedCustEntRptOff",
+    "display": "Changed Enable Reports setting for custom object Battleship from on to off",
     "title": "Custom Objects",
     "category": "Schema",
     "section": "Custom Objects"
@@ -1353,6 +1437,20 @@
     "section": "Manage Users"
   },
   {
+    "action": "changedsenderemail",
+    "display": "Changed email for user Lando Calrissian (UserID: [005RCMBg0Zsm0xM]) from lando@cloud-city.com to null",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": null
+  },
+  {
+    "action": "changedSenderEmailVerifiedStatusVerified",
+    "display": "For user lando@cloud-city.com, the Sender Verified Email status changed to verified",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": null
+  },
+  {
     "action": "changedsfcontentuseroffon",
     "display": "For user Anakin Skywalker, changed Salesforce CRM Content user from off to on",
     "title": "User Detail",
@@ -1664,6 +1762,20 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "configProfileAssignment",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with 3 profiles.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "configUserAssignment",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with 42 users.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
   },
   {
     "action": "contactInspectorPrefOffOn",
@@ -2107,6 +2219,13 @@
     "section": "Global Actions"
   },
   {
+    "action": "createdQuickActionDefaultCustom",
+    "display": "Created Send_Email Action default value on Opportunity: Send_Email",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Customize Opportunities"
+  },
+  {
     "action": "createdRecordTypeCustom",
     "display": "Created record type: Stormtrooper on Trooper",
     "title": "Custom Objects",
@@ -2345,6 +2464,27 @@
     "section": "Custom Objects"
   },
   {
+    "action": "deactivateRecordType",
+    "display": "Deactivated record type: Imperial Sales",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Customize Opportunities"
+  },
+  {
+    "action": "deactivateRecordTypeCustom",
+    "display": "Deactivated record type: Mission Imperial Sales on Missions",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
+    "action": "dealAgentEnabledOffOn",
+    "display": "Organization setup action: dealAgentEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "debugFlowAsAnotherUser",
     "display": "Started debug run of flow \"DeathStarControl\" version 10 as user \"darth@vader.com\"",
     "title": "Flows",
@@ -2455,6 +2595,13 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": "Call Centers"
+  },
+  {
+    "action": "deleteCertificate",
+    "display": "Deleted Certificate Imperial Shuttle",
+    "title": "Certificate and Key Management",
+    "category": "Organization Management",
+    "section": "Certificate and Key Management"
   },
   {
     "action": "deleteConnectedApplication",
@@ -2933,6 +3080,13 @@
     "section": null
   },
   {
+    "action": "diarizationUserEnabled",
+    "display": "Organization setup action: [Leia Organa] has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "disableAPILoginRequiresOrgDomain",
     "display": "Disabled SOAP API logins from https://test.salesforce.com",
     "title": "Network",
@@ -3043,6 +3197,13 @@
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
+  },
+  {
+    "action": "e360DedicatedUMSOptInOffOn",
+    "display": "Organization setup action: e360DedicatedUMSOptInOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "eACForEveryonePrefOffOn",
@@ -3199,6 +3360,20 @@
     "section": null
   },
   {
+    "action": "einsteinRAGMonitoringOffOn",
+    "display": "Organization setup action: einsteinRAGMonitoringOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "emailCaptureEnabled",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with Emails enabled.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
     "action": "emailConsentManagementOff",
     "display": "Changed Enforce email privacy settings from on to off",
     "title": "Email Administration",
@@ -3239,6 +3414,13 @@
     "title": "Einstein",
     "category": "Data Management",
     "section": "Inbox mobile and legacy desktop apps"
+  },
+  {
+    "action": "empEnblPgmOffOn",
+    "display": "Organization setup action: empEnblPgmOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "emptiedAdminRecycleBin",
@@ -3402,6 +3584,20 @@
     "section": null
   },
   {
+    "action": "eventManagerEventDestinationEnableStore",
+    "display": "Automated Process enabled storing on Security Defense Action Event.",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Event Manager"
+  },
+  {
+    "action": "eventRelayConfigCreated",
+    "display": "Event Relay DeathStarReplicationRelay (7k2kV8E7m8eBUSL) created having RUN state for /data/DataCloudEntities topic",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Event Bus Relay"
+  },
+  {
     "action": "expBundleMetadataPrefOffOn",
     "display": "Organization setup action: expBundleMetadataPrefOffOn has changed.",
     "title": "Org Preferences",
@@ -3472,6 +3668,13 @@
     "section": "External Credentials"
   },
   {
+    "action": "externalRedirectionChange",
+    "display": "Changed Allow redirections to untrusted URLs in Salesforce Classic from Always to With user’s permission",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "ExternalServicesCreate",
     "display": "Created External Service Registration ImperialAutoApprovals",
     "title": "Integrations",
@@ -3526,6 +3729,13 @@
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Feed Tracking"
+  },
+  {
+    "action": "Fields that display in the Forecasts page opportunity pane",
+    "display": "Organization setup action: Fields that display in the Forecasts page opportunity pane has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "Forecasts"
   },
   {
     "action": "filteredLookupActivate",
@@ -3694,6 +3904,13 @@
     "title": "Org Config",
     "category": "Organization Management",
     "section": "Groups"
+  },
+  {
+    "action": "guidanceCenterAllUsersOffOn",
+    "display": "Organization setup action: guidanceCenterAllUsersOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "handlebouncedemailsoff",
@@ -4053,6 +4270,13 @@
     "section": "Session Settings"
   },
   {
+    "action": "lockerServiceCSPOn",
+    "display": "Organization setup action: lockerServiceCSPOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "lockerServiceNextControlOn",
     "display": "Organization setup action: lockerServiceNextControlOn has changed.",
     "title": "Org Preferences",
@@ -4291,6 +4515,13 @@
     "section": null
   },
   {
+    "action": "multiLocationFeatureOrgPrefOffOn",
+    "display": "Organization setup action: multiLocationFeatureOrgPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "multipleSAMLConfigsOffOn",
     "display": "Organization setup action: multipleSAMLConfigsOffOn has changed.",
     "title": "Org Preferences",
@@ -4487,6 +4718,13 @@
     "section": "Password Policies"
   },
   {
+    "action": "OnlyLLPermUserAllowedChanged",
+    "display": "Organization setup action: OnlyLLPermUserAllowedChanged has changed from false to true",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "ootbProfExtUserOpsEnableOffOn",
     "display": "Organization setup action: ootbProfExtUserOpsEnableOffOn has changed.",
     "title": "Portal",
@@ -4524,6 +4762,13 @@
   {
     "action": "optimizerAppEnabledOffOn",
     "display": "Enabled the Salesforce Optimizer Lightning App",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "optOutEmailForInactiveWebToCaseOffOn",
+    "display": "Organization setup action: optOutEmailForInactiveWebToCaseOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -5010,6 +5255,13 @@
     "section": null
   },
   {
+    "action": "platformWebIdeOffOn",
+    "display": "Organization setup action: platformWebIdeOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "PRMAccountDisabled",
     "display": "Account Confederacy of Independent Systems disabled as a Partner account",
     "title": "Portal",
@@ -5325,6 +5577,13 @@
     "section": "Validation Rules"
   },
   {
+    "action": "removeServiceProviderStartUrl",
+    "display": "Removed Start URL from Service Provider: GalacticEmpire ",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": "Service Provider"
+  },
+  {
     "action": "renamedinteractiondefinition",
     "display": "Renamed flow from \"Send Death Star 2 Welcome Package\" to \"Sned Death Star Welcome Package\" for flow with Unique Name \"Send_Death_Star_2_Welcome_Package\"",
     "title": "Flows",
@@ -5400,6 +5659,13 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "restrictPasswordAuthEnabled",
+    "display": "Enabled Restrict Password Auth",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "Delegated Authentication Configuration"
   },
   {
     "action": "restrictPasswordAuthOffOn",
@@ -5696,6 +5962,13 @@
     "section": "Customize Leads"
   },
   {
+    "action": "selectNoOpptyOnLeadConvertOnOff",
+    "display": "Organization setup action: selectNoOpptyOnLeadConvertOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "Customize Leads"
+  },
+  {
     "action": "selfApiSetPasswordDisable",
     "display": "Disabled use of API setPassword() for self-resets",
     "title": "Password Policies",
@@ -5724,6 +5997,13 @@
     "section": null
   },
   {
+    "action": "selNoOpptyOnLeadConvertOnOff",
+    "display": "Organization setup action: selNoOpptyOnLeadConvertOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "sendCspForUncommonClientsOffOn",
     "display": "Organization setup action: sendCspForUncommonClientsOffOn has changed.",
     "title": "Org Preferences",
@@ -5742,6 +6022,13 @@
     "display": "Einstein Activity Capture sensitive email filtering was disabled.",
     "title": "Einstein",
     "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "sentOsPrefOffOn",
+    "display": "Organization setup action: sentOsPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
     "section": null
   },
   {
@@ -5790,6 +6077,13 @@
     "category": "Permission Management"
   },
   {
+    "action": "SetupEntityAccessAudit_PermissionSet_BotDefinition_Enabled",
+    "display": "Changed permission set Sith Lord: Protocol Droid Agent access was enabled",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled",
     "display": "Changed permission set DeathStar Service User Permissions: DeathStar connected app is disabled",
     "title": "Permission Sets",
@@ -5825,6 +6119,13 @@
   {
     "action": "SetupEntityAccessAudit_PermissionSet_CustomPermission_Enabled",
     "display": "Changed permission set Sith Lord: Death_Star_Access Custom Permission was enabled",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Disabled",
+    "display": "Changed permission set Sith Lord: Death_Star_Comms - Death_Star_Comms_Principal External Credential principal access was disabled",
     "title": "Permission Sets",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -6064,6 +6365,13 @@
     "section": null
   },
   {
+    "action": "showDeveloperConsoleWithWebIdeOffOn",
+    "display": "Organization setup action: showDeveloperConsoleWithWebIdeOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "showGeneratedEmailCheckboxOffOn",
     "display": "Organization setup action: showGeneratedEmailCheckboxOffOn has changed.",
     "title": "Org Preferences",
@@ -6260,8 +6568,36 @@
     "section": "Manage Users"
   },
   {
+    "action": "syncDirectionContactUpdated",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with the contact direction of Don't sync.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "syncDirectionEventUpdated",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with the event direction of Google to Salesforce.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
     "action": "syncEmailToCoreActivityOffOn",
     "display": "Organization setup action: syncEmailToCoreActivityOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "tableauPlatformEnabledOffOn",
+    "display": "Organization setup action: tableauPlatformEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "tableauPlatformEnabledOnOff",
+    "display": "Organization setup action: tableauPlatformEnabledOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -6288,6 +6624,20 @@
     "section": "Manage Territories"
   },
   {
+    "action": "transactableMarketplaceReceivePartnerOffersOffOn",
+    "display": "Changed AgentExchange Go-To-Market App Receive Partner Offers from off to on",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "AgentExchange Go-To-Market App"
+  },
+  {
+    "action": "transactableMarketplaceReceivePartnerOffersOnOff",
+    "display": "Changed AgentExchange Go-To-Market App Receive Partner Offers from on to off",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "AgentExchange Go-To-Market App"
+  },
+  {
     "action": "transactionSecurityPolicyCreatedDisabled",
     "display": "Darth Vader created a disabled transaction security policy \"Block Large Data Export\".",
     "title": "Transaction Security",
@@ -6312,6 +6662,13 @@
     "action": "transactionSecurityPolicyOffOn",
     "display": "Organization setup action: transactionSecurityPolicyOffOn has changed.",
     "title": "Transaction Security",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "tspWriteRestrictedOffOn",
+    "display": "Organization setup action: tspWriteRestrictedOffOn has changed.",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
@@ -6353,6 +6710,13 @@
   {
     "action": "unifiedActivitiesForECIOffOn",
     "display": "Organization setup action: unifiedActivitiesForECIOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "unifiedActivitiesForECIOnOff",
+    "display": "Organization setup action: unifiedActivitiesForECIOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -6610,6 +6974,13 @@
     "section": null
   },
   {
+    "action": "userLicenseUserPermRevoked",
+    "display": "Removed the DeathStarUser user permission as allowed by User License 100jT8KA7VvyM39",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": null
+  },
+  {
     "action": "userSelfDeactivateOffOn",
     "display": "Changed Allow External Users to Self Deactivate from off to on",
     "title": "User Management Settings",
@@ -6680,8 +7051,29 @@
     "section": null
   },
   {
+    "action": "value_EC_MAX_FLOW_CONNS",
+    "display": "Organization setup action: value_EC_MAX_FLOW_CONNS has changed from 2 to \"\"",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_MAX_COURTESY_FULL_SANDBOXES",
+    "display": "Organization setup action: value_MAX_COURTESY_FULL_SANDBOXES has changed from 1 to \"\"",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "value_MAX_STREAMING_TOPICS_PROV",
     "display": "Max number of streaming topics",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_MX_ALLOWED_FLOWS_WITH_EXT_CONN",
+    "display": "Organization setup action: value_MX_ALLOWED_FLOWS_WITH_EXT_CONN has changed from 2 to \"\"",
     "title": "Org Limits",
     "category": "Organization Management",
     "section": null
@@ -6739,6 +7131,13 @@
     "action": "value_RULES_ENGINE_CALLS_LIMIT",
     "display": "Organization setup action: value_RULES_ENGINE_CALLS_LIMIT has changed from 50000 to 50000",
     "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_SENTOS_AUTO_TURN_ON_STATE",
+    "display": "Organization setup action: value_SENTOS_AUTO_TURN_ON_STATE has changed from SETUP_COMPLETED to SUCCESS",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },

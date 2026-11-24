@@ -123,6 +123,10 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Skywalker from <None Specified> to Sith
 -   changedroleforusertonone (Manage Users) - Changed role for user Darth Vader
     from Sith Lord to <None Specified>
+-   changedsenderemail - Changed email for user Lando Calrissian (UserID:
+    [005RCMBg0Zsm0xM]) from lando@cloud-city.com to null
+-   changedSenderEmailVerifiedStatusVerified - For user lando@cloud-city.com,
+    the Sender Verified Email status changed to verified
 -   changedsfcontentuseroffon (Manage Users) - For user Anakin Skywalker,
     changed Salesforce CRM Content user from off to on
 -   changedsfcontentuseronoff (Manage Users) - For user Anakin Skywalker,
@@ -193,7 +197,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedApproverRequestEmails','changedcommunitynickname','changedDelegateApprover','changedemail','changedfederationid','changedinteractionuseroffon','changedinteractionuseronoff','changedjigsawprospectinguseronoff','changedknowledgeuseroffon','changedknowledgeuseronoff','changedliveagentuseroffon','changedManager','changedmarketinguseroffon','changedmarketinguseronoff','changedofflineuseroffon','changedofflineuseronoff','changedroleforuser','changedroleforuserfromnone','changedroleforusertonone','changedsfcontentuseroffon','changedsfcontentuseronoff','changedUserAdminVerifiedStatusUnverified','changedUserAdminVerifiedStatusVerified','changedUserEmailVerifiedStatusUnverified','changedUserEmailVerifiedStatusVerified','changedusername','changedUserPhoneNumber','changedUserPhoneVerifiedStatusUnverified','changedUserPhoneVerifiedStatusVerified','deleteAuthenticatorPairing','deleteTwoFactorInfo2','deleteTwoFactorTempCode','disableSIQUserEAC','disableSIQUserNonEAC','enableSIQUserEAC','flowMetricsManageFlowOnlyOff','insertAuthenticatorPairing','insertTwoFactorTempCode','registeredUserPhoneNumber','resetpassword','siqPurgeAllEmailAddressJobCreated','siqPurgeUserEmailsJobCreated','siqUserAcceptedInboxTOS','siqUserAcceptedTOS','unregisterdUserPhoneNumber','userAllowForecastingOff','userAllowForecastingOn','useremailchangesent','zoomUserDeleted','zoomUserTosAccepted','zoomUserTosReset')
+WHERE Action IN ('changedApproverRequestEmails','changedcommunitynickname','changedDelegateApprover','changedemail','changedfederationid','changedinteractionuseroffon','changedinteractionuseronoff','changedjigsawprospectinguseronoff','changedknowledgeuseroffon','changedknowledgeuseronoff','changedliveagentuseroffon','changedManager','changedmarketinguseroffon','changedmarketinguseronoff','changedofflineuseroffon','changedofflineuseronoff','changedroleforuser','changedroleforuserfromnone','changedroleforusertonone','changedsenderemail','changedSenderEmailVerifiedStatusVerified','changedsfcontentuseroffon','changedsfcontentuseronoff','changedUserAdminVerifiedStatusUnverified','changedUserAdminVerifiedStatusVerified','changedUserEmailVerifiedStatusUnverified','changedUserEmailVerifiedStatusVerified','changedusername','changedUserPhoneNumber','changedUserPhoneVerifiedStatusUnverified','changedUserPhoneVerifiedStatusVerified','deleteAuthenticatorPairing','deleteTwoFactorInfo2','deleteTwoFactorTempCode','disableSIQUserEAC','disableSIQUserNonEAC','enableSIQUserEAC','flowMetricsManageFlowOnlyOff','insertAuthenticatorPairing','insertTwoFactorTempCode','registeredUserPhoneNumber','resetpassword','siqPurgeAllEmailAddressJobCreated','siqPurgeUserEmailsJobCreated','siqUserAcceptedInboxTOS','siqUserAcceptedTOS','unregisterdUserPhoneNumber','userAllowForecastingOff','userAllowForecastingOn','useremailchangesent','zoomUserDeleted','zoomUserTosAccepted','zoomUserTosReset')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -438,6 +442,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     enabled
 -   SetupEntityAccessAudit_PermissionSet_ApexPage_Disabled
 -   SetupEntityAccessAudit_PermissionSet_ApexPage_Enabled
+-   SetupEntityAccessAudit_PermissionSet_BotDefinition_Enabled (Manage Users) -
+    Changed permission set Sith Lord: Protocol Droid Agent access was enabled
 -   SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled (Manage
     Users) - Changed permission set DeathStar Service User Permissions:
     DeathStar connected app is disabled
@@ -454,6 +460,9 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   SetupEntityAccessAudit_PermissionSet_CustomPermission_Enabled (Manage
     Users) - Changed permission set Sith Lord: Death_Star_Access Custom
     Permission was enabled
+-   SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Disabled
+    (Manage Users) - Changed permission set Sith Lord: Death_Star_Comms -
+    Death_Star_Comms_Principal External Credential principal access was disabled
 -   SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Enabled
     (Manage Users) - Changed permission set Sith Lord: Death_Star_Comms -
     Death_Star_Comms_Principal External Credential principal access was enabled
@@ -467,7 +476,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('PermSetC2CLicenselessMigration','PermSetCloneNoLicense','PermSetCreate','PermSetCreateNoLicense','PermSetDataspaceScopeAdded','PermSetDataspaceScopeRemoved','PermSetDelete','PermSetDescriptionChange','PermSetDeveloperNameChange','PermSetDisableUserPerm','PermSetEnableUserPerm','PermSetEntityPermChanged','PermSetFlsChanged','PermSetHasActivationRequiredChange','PermSetLabelChange','permsetLicenseUserPermRevoked','PermSetRecordTypeAdded','PermSetRecordTypeRemoved','PermSetTabSettingsChangedNew','SetupEntityAccessAudit_PermissionSet_ApexClass_Disabled','SetupEntityAccessAudit_PermissionSet_ApexClass_Enabled','SetupEntityAccessAudit_PermissionSet_ApexPage_Disabled','SetupEntityAccessAudit_PermissionSet_ApexPage_Enabled','SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled','SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Enabled','SetupEntityAccessAudit_PermissionSet_CustomEntityDefinition_Disabled','SetupEntityAccessAudit_PermissionSet_CustomEntityDefinition_Enabled','SetupEntityAccessAudit_PermissionSet_CustomPermission_Disabled','SetupEntityAccessAudit_PermissionSet_CustomPermission_Enabled','SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Enabled','SetupEntityAccessAudit_PermissionSet_FlowDefinition_Enabled','SetupEntityAccessAudit_PermissionSet_TabSet_Disabled','SetupEntityAccessAudit_PermissionSet_TabSet_Enabled')
+WHERE Action IN ('PermSetC2CLicenselessMigration','PermSetCloneNoLicense','PermSetCreate','PermSetCreateNoLicense','PermSetDataspaceScopeAdded','PermSetDataspaceScopeRemoved','PermSetDelete','PermSetDescriptionChange','PermSetDeveloperNameChange','PermSetDisableUserPerm','PermSetEnableUserPerm','PermSetEntityPermChanged','PermSetFlsChanged','PermSetHasActivationRequiredChange','PermSetLabelChange','permsetLicenseUserPermRevoked','PermSetRecordTypeAdded','PermSetRecordTypeRemoved','PermSetTabSettingsChangedNew','SetupEntityAccessAudit_PermissionSet_ApexClass_Disabled','SetupEntityAccessAudit_PermissionSet_ApexClass_Enabled','SetupEntityAccessAudit_PermissionSet_ApexPage_Disabled','SetupEntityAccessAudit_PermissionSet_ApexPage_Enabled','SetupEntityAccessAudit_PermissionSet_BotDefinition_Enabled','SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled','SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Enabled','SetupEntityAccessAudit_PermissionSet_CustomEntityDefinition_Disabled','SetupEntityAccessAudit_PermissionSet_CustomEntityDefinition_Enabled','SetupEntityAccessAudit_PermissionSet_CustomPermission_Disabled','SetupEntityAccessAudit_PermissionSet_CustomPermission_Enabled','SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Disabled','SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Enabled','SetupEntityAccessAudit_PermissionSet_FlowDefinition_Enabled','SetupEntityAccessAudit_PermissionSet_TabSet_Disabled','SetupEntityAccessAudit_PermissionSet_TabSet_Enabled')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -588,11 +597,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Trooper to Stormtrooper
 -   userLicenseEntityPermRevoked - Removed the Create on Account object
     permission as allowed by User License 100kzA0BRmG2Krr
+-   userLicenseUserPermRevoked - Removed the DeathStarUser user permission as
+    allowed by User License 100jT8KA7VvyM39
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('deletedLoginIpRange_withProfile','deletedprofile','deleteLoginFlow','insertLightningLoginFlow','loginIpRange','minimumPasswordLifetimeDisableForProfile','minimumPasswordLifetimeEnableForProfile','passwordexpiryForProfile','passwordhistoryForProfile','passwordmaxinvalidForProfile','PermissionSelfHealing','profileClonedCustom','profileClonedStandard','profileCustAppCustom','profileCustAppStandard','profileDefaultCustAppCustom','profileDefaultRecordTypeChangedCustom','profileDefaultRecordTypeChangedStandard','profileDescriptionChanged','profileEntityPermRemoved','profileFlsChangedCustom','profileFlsChangedStandard','profileOlpChangedCustom','profilePageLayoutChangedCustom','profilePageLayoutChangedStandard','profilePermChangedCustom','profileRecordTypeAddedCustom','profileRecordTypeAddedStandard','profileRecordTypeRemovedCustom','profileRecordTypeRemovedStandard','profileTabsetChangedCustom','profileTabsetChangedStandard','SetupEntityAccessAudit_Profile_ApexClass_DisabledCustom','SetupEntityAccessAudit_Profile_ApexClass_DisabledStandard','SetupEntityAccessAudit_Profile_ApexClass_EnabledCustom','SetupEntityAccessAudit_Profile_ApexClass_EnabledStandard','SetupEntityAccessAudit_Profile_ApexPage_DisabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_DisabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_DisabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_EnabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_EnabledStandard','updateLoginFlowProfile','userLicenseEntityPermRevoked')
+WHERE Action IN ('deletedLoginIpRange_withProfile','deletedprofile','deleteLoginFlow','insertLightningLoginFlow','loginIpRange','minimumPasswordLifetimeDisableForProfile','minimumPasswordLifetimeEnableForProfile','passwordexpiryForProfile','passwordhistoryForProfile','passwordmaxinvalidForProfile','PermissionSelfHealing','profileClonedCustom','profileClonedStandard','profileCustAppCustom','profileCustAppStandard','profileDefaultCustAppCustom','profileDefaultRecordTypeChangedCustom','profileDefaultRecordTypeChangedStandard','profileDescriptionChanged','profileEntityPermRemoved','profileFlsChangedCustom','profileFlsChangedStandard','profileOlpChangedCustom','profilePageLayoutChangedCustom','profilePageLayoutChangedStandard','profilePermChangedCustom','profileRecordTypeAddedCustom','profileRecordTypeAddedStandard','profileRecordTypeRemovedCustom','profileRecordTypeRemovedStandard','profileTabsetChangedCustom','profileTabsetChangedStandard','SetupEntityAccessAudit_Profile_ApexClass_DisabledCustom','SetupEntityAccessAudit_Profile_ApexClass_DisabledStandard','SetupEntityAccessAudit_Profile_ApexClass_EnabledCustom','SetupEntityAccessAudit_Profile_ApexClass_EnabledStandard','SetupEntityAccessAudit_Profile_ApexPage_DisabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledCustom','SetupEntityAccessAudit_Profile_ApexPage_EnabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_DisabledStandard','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledCustom','SetupEntityAccessAudit_Profile_ConnectedApplication_EnabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_DisabledStandard','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledCustom','SetupEntityAccessAudit_Profile_CustomEntityDefinition_EnabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_DisabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_DisabledStandard','SetupEntityAccessAudit_Profile_CustomPermission_EnabledCustom','SetupEntityAccessAudit_Profile_CustomPermission_EnabledStandard','updateLoginFlowProfile','userLicenseEntityPermRevoked','userLicenseUserPermRevoked')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -839,6 +850,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Certificate Unique Name from Death_Star_Comms_Cert to Death_Star_Comms_Cert3
 -   changeCertificateFriendlyName (Certificate and Key Management) - Changed
     Certificate Name from Death Star Comms Cert to Death Star Comms Cert3
+-   deleteCertificate (Certificate and Key Management) - Deleted Certificate
+    Imperial Shuttle
 -   insertCertificate (Certificate and Key Management) - Created Certificate
     DeathStarCert
 -   uploadCertificateChain (Certificate and Key Management) - Uploaded
@@ -847,7 +860,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changeCertificateDeveloperName','changeCertificateFriendlyName','insertCertificate','uploadCertificateChain')
+WHERE Action IN ('changeCertificateDeveloperName','changeCertificateFriendlyName','deleteCertificate','insertCertificate','uploadCertificateChain')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1255,6 +1268,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     authentication on iOS
 -   remoteproxy (Security Controls) - Remote Proxy insert CPI:
     https://death-star.com
+-   removeServiceProviderStartUrl (Service Provider) - Removed Start URL from
+    Service Provider: GalacticEmpire
 -   saveDomainProvisioned (My Domain) - Saved a change to My Domain details that
     started the provisioning process for galactic-empire.my.salesforce.com
     without enhanced domains. This change takes effect after the new My Domain
@@ -1279,7 +1294,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('AuthConfig_UsernamePasswordActivated_Experience','AuthConfig_UsernamePasswordActivated_MyDomain','AuthConfig_UsernamePasswordDeactivated_Experience','AuthConfig_UsernamePasswordDeactivated_MyDomain','AuthConfigProviderCreate_Experience','AuthConfigProviderCreate_MyDomain','AuthConfigProviderDelete_Experience','changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
+WHERE Action IN ('AuthConfig_UsernamePasswordActivated_Experience','AuthConfig_UsernamePasswordActivated_MyDomain','AuthConfig_UsernamePasswordDeactivated_Experience','AuthConfig_UsernamePasswordDeactivated_MyDomain','AuthConfigProviderCreate_Experience','AuthConfigProviderCreate_MyDomain','AuthConfigProviderDelete_Experience','changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','removeServiceProviderStartUrl','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1297,6 +1312,11 @@ ORDER BY CreatedDate DESC LIMIT 1000
     death-star.com deleted.
 -   deletedgroup (Groups) - Deleted Public Group Rebellion Members
 -   deletedrole (Manage Users) - Deleted role Sith Lord
+-   eventManagerEventDestinationEnableStore (Event Manager) - Automated Process
+    enabled storing on Security Defense Action Event.
+-   eventRelayConfigCreated (Event Bus Relay) - Event Relay
+    DeathStarReplicationRelay (7k2kV8E7m8eBUSL) created having RUN state for
+    /data/DataCloudEntities topic
 -   groupMemberAdded (Groups) - Added Han Solo (User, 0056zx8FGDsw5AA) to Public
     Group Rebel Alliance Supply Group
 -   groupMemberRemoved (Groups) - Removed Han Solo (User, 0056zx8FGDsw5AA) from
@@ -1330,7 +1350,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedconvrates','changedOrganizationAddress','changeServiceProviderSubjectType','createAllowedEmailDomain','createdgroup','createdrole','deleteAllowedEmailDomain','deletedgroup','deletedrole','groupMemberAdded','groupMemberRemoved','groupMembership','holiday_insert','inserteddatedexchrate','oauthCorsPolicyEnabledOffOn','oauthCorsPolicyEnabledOnOff','relationshipGraphPrefOffOn','role','SandboxCleanUp','ScvScrutiny','tm_forecastUserChangedFor','updatedBusinessProcess','updatedBusinessProcessValues','updateddatedexchrate','updatedgroup')
+WHERE Action IN ('changedconvrates','changedOrganizationAddress','changeServiceProviderSubjectType','createAllowedEmailDomain','createdgroup','createdrole','deleteAllowedEmailDomain','deletedgroup','deletedrole','eventManagerEventDestinationEnableStore','eventRelayConfigCreated','groupMemberAdded','groupMemberRemoved','groupMembership','holiday_insert','inserteddatedexchrate','oauthCorsPolicyEnabledOffOn','oauthCorsPolicyEnabledOnOff','relationshipGraphPrefOffOn','role','SandboxCleanUp','ScvScrutiny','tm_forecastUserChangedFor','updatedBusinessProcess','updatedBusinessProcessValues','updateddatedexchrate','updatedgroup')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1339,7 +1359,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   RateLimitingNotification (API Usage Notification) - API Usage Notification
     insert for TotalRequests Recipient: 005fZLhHaBMvgR9 Threshold / Interval: 50
     / 24
+-   value_EC_MAX_FLOW_CONNS - Organization setup action: value_EC_MAX_FLOW_CONNS
+    has changed from 2 to ""
+-   value_MAX_COURTESY_FULL_SANDBOXES - Organization setup action:
+    value_MAX_COURTESY_FULL_SANDBOXES has changed from 1 to ""
 -   value_MAX_STREAMING_TOPICS_PROV - Max number of streaming topics
+-   value_MX_ALLOWED_FLOWS_WITH_EXT_CONN - Organization setup action:
+    value_MX_ALLOWED_FLOWS_WITH_EXT_CONN has changed from 2 to ""
 -   value_OMNI_STUDIO_CALLS_LIMIT - Organization setup action:
     value_OMNI_STUDIO_CALLS_LIMIT has changed from 1000000 to 1000000
 -   value_PROV_SCRATCH_ACTIVE_LIMIT - Changed Provisioned Active Scratch Org
@@ -1356,7 +1382,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('RateLimitingNotification','value_MAX_STREAMING_TOPICS_PROV','value_OMNI_STUDIO_CALLS_LIMIT','value_PROV_SCRATCH_ACTIVE_LIMIT','value_PROV_SCRATCH_DAILY_LIMIT','value_PROV_SNAPSHOT_ACTIVE_LIMIT','value_PROV_SNAPSHOT_DAILY_LIMIT','value_RULES_ENGINE_CALLS_LIMIT')
+WHERE Action IN ('RateLimitingNotification','value_EC_MAX_FLOW_CONNS','value_MAX_COURTESY_FULL_SANDBOXES','value_MAX_STREAMING_TOPICS_PROV','value_MX_ALLOWED_FLOWS_WITH_EXT_CONN','value_OMNI_STUDIO_CALLS_LIMIT','value_PROV_SCRATCH_ACTIVE_LIMIT','value_PROV_SCRATCH_DAILY_LIMIT','value_PROV_SNAPSHOT_ACTIVE_LIMIT','value_PROV_SNAPSHOT_DAILY_LIMIT','value_RULES_ENGINE_CALLS_LIMIT')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1374,12 +1400,28 @@ ORDER BY CreatedDate DESC LIMIT 1000
     advancedCMTSecurityOnOff has changed.
 -   agentforceFlowAutomationOffOn - Organization setup action:
     agentforceFlowAutomationOffOn has changed.
+-   agentforceSTDMEnabledOffOn - Organization setup action:
+    agentforceSTDMEnabledOffOn has changed.
+-   agentforceSTDMEnabledOnOff - Organization setup action:
+    agentforceSTDMEnabledOnOff has changed.
+-   agentHealthMonitoringGAOffOn - Organization setup action:
+    agentHealthMonitoringGAOffOn has changed.
 -   agentPlatformEnabledOffOn - Organization setup action:
     agentPlatformEnabledOffOn has changed.
+-   agntfrcInteractionExplorerOffOn - Organization setup action:
+    agntfrcInteractionExplorerOffOn has changed.
+-   agntfrcInteractionExplorerOnOff - Organization setup action:
+    agntfrcInteractionExplorerOnOff has changed.
+-   aIFeedbackWithDCEnabledOffOn - Organization setup action:
+    aIFeedbackWithDCEnabledOffOn has changed.
+-   aIFeedbackWithDCEnabledOnOff - Organization setup action:
+    aIFeedbackWithDCEnabledOnOff has changed.
 -   aITrustPIIMaskingEnabledOffOn - Organization setup action:
     aITrustPIIMaskingEnabledOffOn has changed.
 -   alarmResumeSameRunContextOffOn - Organization setup action:
     alarmResumeSameRunContextOffOn has changed.
+-   aLMDevopsCorePrefOffOn - Organization setup action: aLMDevopsCorePrefOffOn
+    has changed.
 -   autonomousExperienceOffOn
 -   bYOLMigrationStatusPrefOffOn - Organization setup action:
     bYOLMigrationStatusPrefOffOn has changed.
@@ -1431,6 +1473,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     dataCloudReportingPrefOffOn has changed.
 -   dataSpacesPlatformSecurityOffOn - Organization setup action:
     dataSpacesPlatformSecurityOffOn has changed.
+-   dealAgentEnabledOffOn - Organization setup action: dealAgentEnabledOffOn has
+    changed.
 -   debugFlowAsAnotherUserEnabledOff (Process Automation Settings) - Changed Let
     admins debug flows as other users from on to off
 -   debugFlowAsAnotherUserEnabledOn (Process Automation Settings) - Changed Let
@@ -1455,6 +1499,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     changed.
 -   diarizationUserDisabled - Organization setup action: [Anakin Skywalker] has
     changed.
+-   diarizationUserEnabled - Organization setup action: [Leia Organa] has
+    changed.
 -   disableSocialProfilesTWOffOn - Organization setup action:
     disableSocialProfilesTWOffOn has changed.
 -   disableSocialProfilesYTOffOn - Organization setup action:
@@ -1463,12 +1509,17 @@ ORDER BY CreatedDate DESC LIMIT 1000
     disableSocialProfilesYTOnOff has changed.
 -   dxGlobalTermsAcceptedOffOn - Organization setup action:
     dxGlobalTermsAcceptedOffOn has changed.
+-   e360DedicatedUMSOptInOffOn - Organization setup action:
+    e360DedicatedUMSOptInOffOn has changed.
 -   eCIManualUploadOffOn - Organization setup action: eCIManualUploadOffOn has
     changed.
 -   eCIOutOfTheBoxFlowsOffOn - Organization setup action:
     eCIOutOfTheBoxFlowsOffOn has changed.
 -   eDCEinsteinFeatureEnabledOffOn - Organization setup action:
     eDCEinsteinFeatureEnabledOffOn has changed.
+-   einsteinRAGMonitoringOffOn - Organization setup action:
+    einsteinRAGMonitoringOffOn has changed.
+-   empEnblPgmOffOn - Organization setup action: empEnblPgmOffOn has changed.
 -   Enabled Apply CSP directives for less common browsers in Session Settings. -
     Organization setup action: Enabled Apply CSP directives for less common
     browsers in Session Settings. has changed.
@@ -1490,8 +1541,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
     expBundleMetadataPrefOffOn has changed.
 -   extensionHostUnrestrictedOffOn - Organization setup action:
     extensionHostUnrestrictedOffOn has changed.
+-   externalRedirectionChange - Changed Allow redirections to untrusted URLs in
+    Salesforce Classic from Always to With user’s permission
 -   fastVendorTranscriptOffOn - Organization setup action:
     fastVendorTranscriptOffOn has changed.
+-   Fields that display in the Forecasts page opportunity pane (Forecasts) -
+    Organization setup action: Fields that display in the Forecasts page
+    opportunity pane has changed.
 -   flowBlockAxsToSessionIdOffOn - Organization setup action:
     flowBlockAxsToSessionIdOffOn has changed.
 -   flowNullPreviousValueFixOffOn - Organization setup action:
@@ -1503,6 +1559,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   gCSCFMigrationMigratedOffOn - Organization setup action:
     gCSCFMigrationMigratedOffOn has changed.
 -   genECIOffOn - Organization setup action: genECIOffOn has changed.
+-   guidanceCenterAllUsersOffOn - Organization setup action:
+    guidanceCenterAllUsersOffOn has changed.
 -   inboxUseGraphApiOffOn - Organization setup action: inboxUseGraphApiOffOn has
     changed.
 -   inPersonMeetingsOffOn - Organization setup action: inPersonMeetingsOffOn has
@@ -1519,6 +1577,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     jSPublicLoggingLibAllowUIOnOff has changed.
 -   leadInspectorPrefOffOn - Organization setup action: leadInspectorPrefOffOn
     has changed.
+-   lockerServiceCSPOn - Organization setup action: lockerServiceCSPOn has
+    changed.
 -   lockerServiceNextControlOn - Organization setup action:
     lockerServiceNextControlOn has changed.
 -   lockerServiceNextOff - Organization setup action: lockerServiceNextOff has
@@ -1543,11 +1603,17 @@ ORDER BY CreatedDate DESC LIMIT 1000
     has changed.
 -   multiColumnSortRlOffOn - Organization setup action: multiColumnSortRlOffOn
     has changed.
+-   multiLocationFeatureOrgPrefOffOn - Organization setup action:
+    multiLocationFeatureOrgPrefOffOn has changed.
 -   multipleSAMLConfigsOffOn - Organization setup action:
     multipleSAMLConfigsOffOn has changed.
 -   negativeOIQuantityEnabledOffOn - Organization setup action:
     negativeOIQuantityEnabledOffOn has changed.
+-   OnlyLLPermUserAllowedChanged - Organization setup action:
+    OnlyLLPermUserAllowedChanged has changed from false to true
 -   optimizerAppEnabledOffOn - Enabled the Salesforce Optimizer Lightning App
+-   optOutEmailForInactiveWebToCaseOffOn - Organization setup action:
+    optOutEmailForInactiveWebToCaseOffOn has changed.
 -   orchestrationInSandboxOffOn - Organization setup action:
     orchestrationInSandboxOffOn has changed.
 -   orgWideMergeLeadsOnOff (Customize Leads) - Organization setup action:
@@ -1560,12 +1626,16 @@ ORDER BY CreatedDate DESC LIMIT 1000
     pipelineInspectionSetupPrefOffOn has changed.
 -   pipelineInspectorSglRollupOffOn - Organization setup action:
     pipelineInspectorSglRollupOffOn has changed.
+-   platformWebIdeOffOn - Organization setup action: platformWebIdeOffOn has
+    changed.
 -   requireLoginFromOrgDomainOnOff - Organization setup action:
     requireLoginFromOrgDomainOnOff has changed.
 -   restrictEmailDomainsEnabledOffOn - Organization setup action:
     restrictEmailDomainsEnabledOffOn has changed.
 -   restrictEmailDomainsEnabledOnOff - Organization setup action:
     restrictEmailDomainsEnabledOnOff has changed.
+-   restrictPasswordAuthEnabled (Delegated Authentication Configuration) -
+    Enabled Restrict Password Auth
 -   restrictPasswordAuthOffOn - Organization setup action:
     restrictPasswordAuthOffOn has changed.
 -   retainloginhintson - Organization setup action: retainloginhintson has
@@ -1594,14 +1664,21 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Removed darth@vader.com from org blocklist
 -   selectNoOpptyOnLeadConvertOffOn (Customize Leads) - Organization setup
     action: selectNoOpptyOnLeadConvertOffOn has changed.
+-   selectNoOpptyOnLeadConvertOnOff (Customize Leads) - Organization setup
+    action: selectNoOpptyOnLeadConvertOnOff has changed.
 -   sellerHomePrefOffOn - Organization setup action: sellerHomePrefOffOn has
     changed.
 -   sellerHomeSetupOffOn - Organization setup action: sellerHomeSetupOffOn has
     changed.
 -   selNoOpptyOnLeadConvertOffOn - Organization setup action:
     selNoOpptyOnLeadConvertOffOn has changed.
+-   selNoOpptyOnLeadConvertOnOff - Organization setup action:
+    selNoOpptyOnLeadConvertOnOff has changed.
 -   sendCspForUncommonClientsOffOn - Organization setup action:
     sendCspForUncommonClientsOffOn has changed.
+-   sentOsPrefOffOn - Organization setup action: sentOsPrefOffOn has changed.
+-   showDeveloperConsoleWithWebIdeOffOn - Organization setup action:
+    showDeveloperConsoleWithWebIdeOffOn has changed.
 -   showGeneratedEmailCheckboxOffOn - Organization setup action:
     showGeneratedEmailCheckboxOffOn has changed.
 -   showSalesblazerInGuidanceCenterOffOn - Organization setup action:
@@ -1631,13 +1708,27 @@ ORDER BY CreatedDate DESC LIMIT 1000
     standardApprovalsEnabledOffOn has changed.
 -   syncEmailToCoreActivityOffOn - Organization setup action:
     syncEmailToCoreActivityOffOn has changed.
+-   tableauPlatformEnabledOffOn - Organization setup action:
+    tableauPlatformEnabledOffOn has changed.
+-   tableauPlatformEnabledOnOff - Organization setup action:
+    tableauPlatformEnabledOnOff has changed.
 -   templateEnhancedFolderPrefOffOn - Enable Lightning Email Template Enhanced
     Folder Pref
 -   templateEnhancedFolderPrefOnOff - Disable Lightning Email Template Enhanced
     Folder Pref
+-   transactableMarketplaceReceivePartnerOffersOffOn (AgentExchange Go-To-Market
+    App) - Changed AgentExchange Go-To-Market App Receive Partner Offers from
+    off to on
+-   transactableMarketplaceReceivePartnerOffersOnOff (AgentExchange Go-To-Market
+    App) - Changed AgentExchange Go-To-Market App Receive Partner Offers from on
+    to off
+-   tspWriteRestrictedOffOn - Organization setup action: tspWriteRestrictedOffOn
+    has changed.
 -   u2FEnabledOffOn - Organization setup action: u2FEnabledOffOn has changed.
 -   unifiedActivitiesForECIOffOn - Organization setup action:
     unifiedActivitiesForECIOffOn has changed.
+-   unifiedActivitiesForECIOnOff - Organization setup action:
+    unifiedActivitiesForECIOnOff has changed.
 -   uoesuloginaccessused - Organization setup action: [Darth Vader, empire.com,
     inc., dvader@empire.com] has changed from {1} to {2}
 -   uploadFilesOnAttachmentsOffOn - Organization setup action:
@@ -1655,6 +1746,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     useSharingForFlowOrchObjectsOffOn has changed.
 -   value_RECORDING_FILE_FORMAT - Organization setup action:
     value_RECORDING_FILE_FORMAT has changed from mp3 to mp3
+-   value_SENTOS_AUTO_TURN_ON_STATE - Organization setup action:
+    value_SENTOS_AUTO_TURN_ON_STATE has changed from SETUP_COMPLETED to SUCCESS
 -   value_VIDEO_CONFERENCE_ZOOM_T_O_S - Organization setup action:
     value_VIDEO_CONFERENCE_ZOOM_T_O_S has changed from false to true
 -   verifyOn2faRegistrationOffOn - Organization setup action:
@@ -1681,7 +1774,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('aCATAcceptedOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','agentforceFlowAutomationOffOn','agentPlatformEnabledOffOn','aITrustPIIMaskingEnabledOffOn','alarmResumeSameRunContextOffOn','autonomousExperienceOffOn','bYOLMigrationStatusPrefOffOn','callSummarizationOffOn','cDPEnabledPrefOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','chatbotEnabledOffOn','cMSWorkspacesV1CreatePrefOffOn','cMSWorkspacesV1CreatePrefOnOff','codeBuilderOffOn','codeBuilderOnOff','confettiEffectOffOn','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contactUpdateProfileFLSOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','conversationZoomPrefOnOff','copilotAnalyticsEnabledOnOff','createIpWhiteList','crossOrgRedirectsEnabledOffOn','crossOrgRedirectsEnabledOnOff','crtSetupLightningUiPrefOffOn','dataCloudReportingPrefOffOn','dataSpacesPlatformSecurityOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','deferRenderingWorkspacePageOffOn','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','depriveSoqlAccessOffOn','diarizationPrefOffOn','diarizationPrefOnOff','diarizationUserDisabled','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','dxGlobalTermsAcceptedOffOn','eCIManualUploadOffOn','eCIOutOfTheBoxFlowsOffOn','eDCEinsteinFeatureEnabledOffOn','Enabled Apply CSP directives for less common browsers in Session Settings.','enablementEnabledOffOn','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','expBundleMetadataPrefOffOn','extensionHostUnrestrictedOffOn','fastVendorTranscriptOffOn','flowBlockAxsToSessionIdOffOn','flowNullPreviousValueFixOffOn','flowsLightningAppOffOn','flowUseApexExceptionEmailOffOn','gCSCFMigrationMigratedOffOn','genECIOffOn','inboxUseGraphApiOffOn','inPersonMeetingsOffOn','INSERTCallCenter','insightsInTimelineOnOff','inviteCsnUserEnabledOnOff','jSPublicLoggingLibAllowUIOffOn','jSPublicLoggingLibAllowUIOnOff','leadInspectorPrefOffOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','lWCFileUploadPrefOffOn','mailAppProductivityEnabledOffOn','manyWhoPreferenceOffOn','ManyWhoReadyOffOn','mFADirectUILoginOptInOffOn','mFADirectUILoginOptInOnOff','multiColumnSortLvOffOn','multiColumnSortRlOffOn','multipleSAMLConfigsOffOn','negativeOIQuantityEnabledOffOn','optimizerAppEnabledOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','pipelineInspectionPrefOffOn','pipelineInspectionPrefOnOff','pipelineInspectionSetupPrefOffOn','pipelineInspectorSglRollupOffOn','requireLoginFromOrgDomainOnOff','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthOffOn','retainloginhintson','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','rRHInExpAuraSitesPrefOffOn','s1encryptedstoragepref2off','s1encryptedstoragepref2on','s1EncryptedStoragePref2OnOff','salesforceEventsOnlyPrefOffOn','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','sellerHomePrefOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','sendCspForUncommonClientsOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','skipSFAWhenMFAUILoginOnOff','socialProfilesEnableOffOn','socialProfilesEnableOnOff','sourceTrackingSandboxesOffOn','stackedModalManagerEnabledOffOn','standardApprovalsEnabledOffOn','syncEmailToCoreActivityOffOn','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','u2FEnabledOffOn','unifiedActivitiesForECIOffOn','uoesuloginaccessused','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useIntLinkPwdResetPrefOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_RECORDING_FILE_FORMAT','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','vertNavThemedIconsEnabledOffOn','videoConferenceZoomOffOn','videoConferenceZoomOnOff','workOrdersEnabledOffOn','workOrdersEnabledOnOff','zeroOIQuantityEnabledOffOn')
+WHERE Action IN ('aCATAcceptedOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','agentforceFlowAutomationOffOn','agentforceSTDMEnabledOffOn','agentforceSTDMEnabledOnOff','agentHealthMonitoringGAOffOn','agentPlatformEnabledOffOn','agntfrcInteractionExplorerOffOn','agntfrcInteractionExplorerOnOff','aIFeedbackWithDCEnabledOffOn','aIFeedbackWithDCEnabledOnOff','aITrustPIIMaskingEnabledOffOn','alarmResumeSameRunContextOffOn','aLMDevopsCorePrefOffOn','autonomousExperienceOffOn','bYOLMigrationStatusPrefOffOn','callSummarizationOffOn','cDPEnabledPrefOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','chatbotEnabledOffOn','cMSWorkspacesV1CreatePrefOffOn','cMSWorkspacesV1CreatePrefOnOff','codeBuilderOffOn','codeBuilderOnOff','confettiEffectOffOn','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contactUpdateProfileFLSOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','conversationZoomPrefOnOff','copilotAnalyticsEnabledOnOff','createIpWhiteList','crossOrgRedirectsEnabledOffOn','crossOrgRedirectsEnabledOnOff','crtSetupLightningUiPrefOffOn','dataCloudReportingPrefOffOn','dataSpacesPlatformSecurityOffOn','dealAgentEnabledOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','deferRenderingWorkspacePageOffOn','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','depriveSoqlAccessOffOn','diarizationPrefOffOn','diarizationPrefOnOff','diarizationUserDisabled','diarizationUserEnabled','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','dxGlobalTermsAcceptedOffOn','e360DedicatedUMSOptInOffOn','eCIManualUploadOffOn','eCIOutOfTheBoxFlowsOffOn','eDCEinsteinFeatureEnabledOffOn','einsteinRAGMonitoringOffOn','empEnblPgmOffOn','Enabled Apply CSP directives for less common browsers in Session Settings.','enablementEnabledOffOn','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','expBundleMetadataPrefOffOn','extensionHostUnrestrictedOffOn','externalRedirectionChange','fastVendorTranscriptOffOn','Fields that display in the Forecasts page opportunity pane','flowBlockAxsToSessionIdOffOn','flowNullPreviousValueFixOffOn','flowsLightningAppOffOn','flowUseApexExceptionEmailOffOn','gCSCFMigrationMigratedOffOn','genECIOffOn','guidanceCenterAllUsersOffOn','inboxUseGraphApiOffOn','inPersonMeetingsOffOn','INSERTCallCenter','insightsInTimelineOnOff','inviteCsnUserEnabledOnOff','jSPublicLoggingLibAllowUIOffOn','jSPublicLoggingLibAllowUIOnOff','leadInspectorPrefOffOn','lockerServiceCSPOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','lWCFileUploadPrefOffOn','mailAppProductivityEnabledOffOn','manyWhoPreferenceOffOn','ManyWhoReadyOffOn','mFADirectUILoginOptInOffOn','mFADirectUILoginOptInOnOff','multiColumnSortLvOffOn','multiColumnSortRlOffOn','multiLocationFeatureOrgPrefOffOn','multipleSAMLConfigsOffOn','negativeOIQuantityEnabledOffOn','OnlyLLPermUserAllowedChanged','optimizerAppEnabledOffOn','optOutEmailForInactiveWebToCaseOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','pipelineInspectionPrefOffOn','pipelineInspectionPrefOnOff','pipelineInspectionSetupPrefOffOn','pipelineInspectorSglRollupOffOn','platformWebIdeOffOn','requireLoginFromOrgDomainOnOff','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthEnabled','restrictPasswordAuthOffOn','retainloginhintson','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','rRHInExpAuraSitesPrefOffOn','s1encryptedstoragepref2off','s1encryptedstoragepref2on','s1EncryptedStoragePref2OnOff','salesforceEventsOnlyPrefOffOn','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','selectNoOpptyOnLeadConvertOnOff','sellerHomePrefOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','selNoOpptyOnLeadConvertOnOff','sendCspForUncommonClientsOffOn','sentOsPrefOffOn','showDeveloperConsoleWithWebIdeOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','skipSFAWhenMFAUILoginOnOff','socialProfilesEnableOffOn','socialProfilesEnableOnOff','sourceTrackingSandboxesOffOn','stackedModalManagerEnabledOffOn','standardApprovalsEnabledOffOn','syncEmailToCoreActivityOffOn','tableauPlatformEnabledOffOn','tableauPlatformEnabledOnOff','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','transactableMarketplaceReceivePartnerOffersOffOn','transactableMarketplaceReceivePartnerOffersOnOff','tspWriteRestrictedOffOn','u2FEnabledOffOn','unifiedActivitiesForECIOffOn','unifiedActivitiesForECIOnOff','uoesuloginaccessused','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useIntLinkPwdResetPrefOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_RECORDING_FILE_FORMAT','value_SENTOS_AUTO_TURN_ON_STATE','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','vertNavThemedIconsEnabledOffOn','videoConferenceZoomOffOn','videoConferenceZoomOnOff','workOrdersEnabledOffOn','workOrdersEnabledOnOff','zeroOIQuantityEnabledOffOn')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -2077,10 +2170,16 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 ### Custom Objects
 
+-   activateRecordType (Customize Opportunities) - Activated record type:
+    Imperial Sales
+-   activateRecordTypeCustom (Custom Objects) - Activated record type: Mission
+    Imperial Sales on Missions
 -   add_external_id (Company Information) - Created external identifier
     designation: Account.Battleship Factory ID
 -   changeDataCaptureCreatedWithChannel (Change Data Capture) - Added Change
     Data Capture entity User to channel ChangeEvents
+-   changeDataCaptureDeletedWithChannel (Change Data Capture) - Removed Change
+    Data Capture entity EmailMessage from channel ChangeEvents
 -   changedCustEntActivityOn (Custom Objects) - Changed Track Activities setting
     for custom object Stormtrooper from off to on
 -   changedCustEntDeployment (Custom Objects) - Changed deployment status of
@@ -2093,6 +2192,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     custom object from Death_Star to Death_Star_2
 -   changedCustEntRecName (Custom Objects) - Changed record name of custom
     object Droid from Droid Name to Droid Serial Number
+-   changedCustEntRptOff (Custom Objects) - Changed Enable Reports setting for
+    custom object Battleship from on to off
 -   changedCustEntRptOn (Custom Objects) - Changed Enable Reports setting for
     custom object Battleship from off to on
 -   changedCustEntSearchIndexingOn (Custom Objects) - Changed Search Indexing
@@ -2103,6 +2204,10 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   createdFieldSet (Customize Assets) - Created Field Set Line Editor on Quote
 -   createdRecordTypeCustom (Custom Objects) - Created record type: Stormtrooper
     on Trooper
+-   deactivateRecordType (Customize Opportunities) - Deactivated record type:
+    Imperial Sales
+-   deactivateRecordTypeCustom (Custom Objects) - Deactivated record type:
+    Mission Imperial Sales on Missions
 -   delete_external_id (Company Information) - Dropped external identifier
     designation: Account.Battleship Factory ID
 -   deletedCustEnt (Custom Objects) - Deleted custom object: Battleship
@@ -2115,7 +2220,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('add_external_id','changeDataCaptureCreatedWithChannel','changedCustEntActivityOn','changedCustEntDeployment','changedCustEntLabel','changedCustEntMask','changedCustEntName','changedCustEntRecName','changedCustEntRptOn','changedCustEntSearchIndexingOn','changedCustEntTypeAutoNum','createdCustEnt','createdFieldSet','createdRecordTypeCustom','delete_external_id','deletedCustEnt','deletedFieldSet','feed_entity_untracked','hardDeletedCustEnt','updatedFieldSet')
+WHERE Action IN ('activateRecordType','activateRecordTypeCustom','add_external_id','changeDataCaptureCreatedWithChannel','changeDataCaptureDeletedWithChannel','changedCustEntActivityOn','changedCustEntDeployment','changedCustEntLabel','changedCustEntMask','changedCustEntName','changedCustEntRecName','changedCustEntRptOff','changedCustEntRptOn','changedCustEntSearchIndexingOn','changedCustEntTypeAutoNum','createdCustEnt','createdFieldSet','createdRecordTypeCustom','deactivateRecordType','deactivateRecordTypeCustom','delete_external_id','deletedCustEnt','deletedFieldSet','feed_entity_untracked','hardDeletedCustEnt','updatedFieldSet')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -2215,12 +2320,18 @@ ORDER BY CreatedDate DESC LIMIT 1000
     Rebel Alliance
 -   ci_updatedCUnknown (Einstein Email Insights) - Organization setup action:
     [Rebel Spy Mentioned] has changed.
+-   configProfileAssignment (Mobile Administration) - Einstein Activity Capture
+    configuration "Holonet Configuration" was saved with 3 profiles.
+-   configUserAssignment (Mobile Administration) - Einstein Activity Capture
+    configuration "Holonet Configuration" was saved with 42 users.
 -   dSThresholdNotificationOffOn - Einstein Activity Capture configuration: Data
     Source Threshold Notification was turned on.
 -   eACForEveryonePrefOffOn - Turned on Activity Sharing with Non–Einstein
     Activity Capture Users setting.
 -   eCIAutoOpptyMatchingPrefOffOn - Einstein Conversation Insights
     configuration: Turn On Related Record Matching was turned on.
+-   emailCaptureEnabled (Mobile Administration) - Einstein Activity Capture
+    configuration "Holonet Configuration" was saved with Emails enabled.
 -   emailStreamPrefOffOn (Inbox mobile and legacy desktop apps) - Enabled
     Einstein Activity Capture
 -   enableSIQUserNonEAC (Inbox mobile and legacy desktop apps) - Enabled
@@ -2228,11 +2339,17 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   s2XEnableOffOn - Enabled Lightning Sync or Einstein Activity Capture
 -   sensitiveEmailFilterOffOn - Einstein Activity Capture sensitive email
     filtering was disabled.
+-   syncDirectionContactUpdated (Mobile Administration) - Einstein Activity
+    Capture configuration "Holonet Configuration" was saved with the contact
+    direction of Don't sync.
+-   syncDirectionEventUpdated (Mobile Administration) - Einstein Activity
+    Capture configuration "Holonet Configuration" was saved with the event
+    direction of Google to Salesforce.
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('activitySyncEngineEnabledOffOn','automatedEmailFilterOffOn','ci_createdNew','ci_updatedCUnknown','dSThresholdNotificationOffOn','eACForEveryonePrefOffOn','eCIAutoOpptyMatchingPrefOffOn','emailStreamPrefOffOn','enableSIQUserNonEAC','s2XEnableOffOn','sensitiveEmailFilterOffOn')
+WHERE Action IN ('activitySyncEngineEnabledOffOn','automatedEmailFilterOffOn','ci_createdNew','ci_updatedCUnknown','configProfileAssignment','configUserAssignment','dSThresholdNotificationOffOn','eACForEveryonePrefOffOn','eCIAutoOpptyMatchingPrefOffOn','emailCaptureEnabled','emailStreamPrefOffOn','enableSIQUserNonEAC','s2XEnableOffOn','sensitiveEmailFilterOffOn','syncDirectionContactUpdated','syncDirectionEventUpdated')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -2609,6 +2726,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   createdQuickAction (Global Actions) - Created Action: Activate_Superlaser
 -   createdQuickActionCustom (Global Actions) - Created Action on DeathStar:
     Activate_Superlaser
+-   createdQuickActionDefaultCustom (Customize Opportunities) - Created
+    Send_Email Action default value on Opportunity: Send_Email
 -   deletedActionOverride - Reset standard button override:
     AddAccountDefaultTeam
 -   deletedActionOverrideCustom (Custom Objects) - Reset standard button
@@ -2626,7 +2745,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('changedActionOverrideContent','changedCustLinkBehavior','changedCustLinkContent','changedCustLinkContentCustom','changedCustLinkContentCustomPageItem','changedCustLinkContentSource','changedCustLinkContentSourceCustom','changedCustLinkContentSourceCustomPageItem','changedCustLinkDisplayType','changedCustLinkDisplayTypeCustom','changedCustLinkLabel','changedCustLinkLabelCustom','changedCustLinkLabelCustomPageItem','changedQuickActionLabelCustom','changedQuickActionLayout','createdActionOverride','createdActionOverrideCustom','createdCustLink','createdCustLinkCustom','createdCustLinkCustomPageItem','createdQuickAction','createdQuickActionCustom','deletedActionOverride','deletedActionOverrideCustom','deletedCustLink','deletedCustLinkCustom','deletedCustLinkCustomPageItem','deletedQuickAction','deletedQuickActionCustom')
+WHERE Action IN ('changedActionOverrideContent','changedCustLinkBehavior','changedCustLinkContent','changedCustLinkContentCustom','changedCustLinkContentCustomPageItem','changedCustLinkContentSource','changedCustLinkContentSourceCustom','changedCustLinkContentSourceCustomPageItem','changedCustLinkDisplayType','changedCustLinkDisplayTypeCustom','changedCustLinkLabel','changedCustLinkLabelCustom','changedCustLinkLabelCustomPageItem','changedQuickActionLabelCustom','changedQuickActionLayout','createdActionOverride','createdActionOverrideCustom','createdCustLink','createdCustLinkCustom','createdCustLinkCustomPageItem','createdQuickAction','createdQuickActionCustom','createdQuickActionDefaultCustom','deletedActionOverride','deletedActionOverrideCustom','deletedCustLink','deletedCustLinkCustom','deletedCustLinkCustomPageItem','deletedQuickAction','deletedQuickActionCustom')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
