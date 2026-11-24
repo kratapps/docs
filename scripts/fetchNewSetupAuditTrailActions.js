@@ -9,6 +9,7 @@
  * Usage: node scripts/fetchNewSetupAuditTrailActions.js --target-org <alias|username> [--limit 20000] [--out <file>]
  */
 const path = require('path');
+const os = require('os');
 const { execFile } = require('child_process');
 const { promisify } = require('util');
 const fs = require('fs-extra');
@@ -37,18 +38,62 @@ function parseArgs(argv) {
     return args;
 }
 
-async function query(targetOrg, limit) {
-    const soql = `SELECT Action, Section, Display, CreatedDate FROM SetupAuditTrail ORDER BY CreatedDate DESC LIMIT ${limit}`;
-    const { stdout } = await run('sf', ['data', 'query', '--target-org', targetOrg, '--query', soql, '--json'], {
-        maxBuffer: 512 * 1024 * 1024
+// SOQL statement length limit is 100 000 characters
+const MAX_SOQL_LENGTH = 100000;
+
+async function apiRequest(targetOrg, endpoint, body) {
+    const args = ['api', 'request', 'rest', endpoint, '--target-org', targetOrg];
+    let bodyFile;
+    if (body) {
+        bodyFile = path.join(os.tmpdir(), `setup-audit-trail-request-${process.pid}.json`);
+        await fs.writeJson(bodyFile, body);
+        args.push('--method', 'POST', '--body', `@${bodyFile}`);
+    }
+    try {
+        const { stdout } = await run('sf', args, { maxBuffer: 512 * 1024 * 1024 });
+        return JSON.parse(stdout);
+    } finally {
+        if (bodyFile) await fs.remove(bodyFile);
+    }
+}
+
+async function query(targetOrg, limit, knownActions) {
+    // Exclude documented actions in the query, so they do not use up the row limit.
+    const exclude = knownActions.length
+        ? `WHERE Action NOT IN (${knownActions.map((it) => `'${it.replace(/'/g, "\\'")}'`).join(',')}) `
+        : '';
+    const soql = `SELECT Action, Section, Display, CreatedDate FROM SetupAuditTrail ${exclude}ORDER BY CreatedDate DESC LIMIT ${limit}`;
+    if (soql.length > MAX_SOQL_LENGTH) {
+        throw new Error(`Query is ${soql.length} characters, over the ${MAX_SOQL_LENGTH} SOQL limit.`);
+    }
+    // The query is too long for a GET request URL (HTTP 414), so send it in a Composite API POST body.
+    const version = await getApiVersion(targetOrg);
+    const composite = await apiRequest(targetOrg, `/services/data/v${version}/composite`, {
+        allOrNone: true,
+        compositeRequest: [{ method: 'GET', referenceId: 'query', url: `/services/data/v${version}/query?q=${encodeURIComponent(soql)}` }]
     });
-    return JSON.parse(stdout).result.records;
+    const response = composite.compositeResponse[0];
+    if (response.httpStatusCode !== 200) {
+        throw new Error(`Query failed: ${JSON.stringify(response.body)}`);
+    }
+    let { records, done, nextRecordsUrl } = response.body;
+    let more;
+    while (!done) {
+        ({ records: more, done, nextRecordsUrl } = await apiRequest(targetOrg, nextRecordsUrl));
+        records = records.concat(more);
+    }
+    return records;
+}
+
+async function getApiVersion(targetOrg) {
+    const versions = await apiRequest(targetOrg, '/services/data');
+    return versions[versions.length - 1].version;
 }
 
 async function main() {
     const args = parseArgs(process.argv.slice(2));
     const known = new Set((await fs.readJson(actionsJsonFile)).map((it) => it.action));
-    const records = await query(args.targetOrg, args.limit);
+    const records = await query(args.targetOrg, args.limit, [...known]);
     // Records are newest first. Per action keep the newest record that has Display/Section, else the newest.
     const byAction = new Map();
     for (const r of records) {

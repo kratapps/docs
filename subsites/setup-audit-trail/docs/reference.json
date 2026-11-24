@@ -1,7 +1,21 @@
 [
   {
+    "action": "abacRuleCreated",
+    "display": "Created user rule Rule328f676226e236a23e238e3b1c77fc4c011f1bd38f1f34920fbd01f40072e3cf; IsActive=true.",
+    "title": "Security Controls",
+    "category": "Organization Management",
+    "section": "Field Restriction Rule"
+  },
+  {
     "action": "aCATAcceptedOffOn",
     "display": "Organization setup action: aCATAcceptedOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "aCAutoSendEmailOffOn",
+    "display": "Organization setup action: aCAutoSendEmailOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -49,6 +63,13 @@
     "section": "Data Management"
   },
   {
+    "action": "aCTargetAssigneeChangePrefOffOn",
+    "display": "Organization setup action: aCTargetAssigneeChangePrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "activatedinteractiondefinition",
     "display": "Activated flow version #11 \"Send Death Star Welcome Package\" for flow with Unique Name \"Send_Death_Star_Welcome_Package\"",
     "title": "Flows",
@@ -82,6 +103,13 @@
     "title": "Matching and Duplicate Rules",
     "category": "Data Management",
     "section": "Matching Rule"
+  },
+  {
+    "action": "activatedmobileconfig",
+    "display": "Activated Lightning Sync Configuration Holonet Configuration",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
   },
   {
     "action": "activatedPicklistValueWithColor",
@@ -119,11 +147,32 @@
     "section": "Workflow Rule"
   },
   {
+    "action": "activateRecordType",
+    "display": "Activated record type: Imperial Sales",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Customize Opportunities"
+  },
+  {
+    "action": "activateRecordTypeCustom",
+    "display": "Activated record type: Mission Imperial Sales on Missions",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "activitylayout",
     "display": "Changed Activity page layout Task Layout",
     "title": "Layouts",
     "category": "UI",
     "section": "Customize Activities"
+  },
+  {
+    "action": "activitySyncEngineEnabledOffOn",
+    "display": "Enabled Einstein Activity Capture",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": null
   },
   {
     "action": "add_external_id",
@@ -224,6 +273,69 @@
     "section": null
   },
   {
+    "action": "agentforceFlowAutomationOffOn",
+    "display": "Organization setup action: agentforceFlowAutomationOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agentforceSTDMEnabledOffOn",
+    "display": "Organization setup action: agentforceSTDMEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agentforceSTDMEnabledOnOff",
+    "display": "Organization setup action: agentforceSTDMEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agentHealthMonitoringGAOffOn",
+    "display": "Organization setup action: agentHealthMonitoringGAOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agentPlatformEnabledOffOn",
+    "display": "Organization setup action: agentPlatformEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agntfrcInteractionExplorerOffOn",
+    "display": "Organization setup action: agntfrcInteractionExplorerOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "agntfrcInteractionExplorerOnOff",
+    "display": "Organization setup action: agntfrcInteractionExplorerOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "aIFeedbackWithDCEnabledOffOn",
+    "display": "Organization setup action: aIFeedbackWithDCEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "aIFeedbackWithDCEnabledOnOff",
+    "display": "Organization setup action: aIFeedbackWithDCEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "aITrustPIIMaskingEnabledOffOn",
     "display": "Organization setup action: aITrustPIIMaskingEnabledOffOn has changed.",
     "title": "Org Preferences",
@@ -233,6 +345,13 @@
   {
     "action": "alarmResumeSameRunContextOffOn",
     "display": "Organization setup action: alarmResumeSameRunContextOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "aLMDevopsCorePrefOffOn",
+    "display": "Organization setup action: aLMDevopsCorePrefOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -287,10 +406,31 @@
     "section": null
   },
   {
+    "action": "AuthConfigProviderCreate_MyDomain",
+    "display": "Displayed Migrated SAML Config V2 login option on the My Domain login page",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "AuthConfigProviderDelete_Experience",
     "display": "Hid SFDC (UAT) IDP SAML login option from the Experience Cloud site Galactic Empire",
     "title": "Network",
     "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "autoAssociateEventsEnabled",
+    "display": "Einstein Activity Capture configuration \"Test\" was saved with Relate synced events to Salesforce records enabled.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "automatedEmailFilterOffOn",
+    "display": "Einstein Activity Capture automated email filtering was disabled",
+    "title": "Einstein",
+    "category": "Data Management",
     "section": null
   },
   {
@@ -318,6 +458,13 @@
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Connected Apps"
+  },
+  {
+    "action": "businessHoursOffOn",
+    "display": "Organization setup action: businessHoursOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "bYOLMigrationStatusPrefOffOn",
@@ -392,6 +539,20 @@
   {
     "action": "changeApplicationContactEmail",
     "display": "Changed Connected App Contact Email from anakin@skywalker.com to darth@vader.com",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
+  },
+  {
+    "action": "changeApplicationContactPhone",
+    "display": "Changed Connected App Contact Phone from none to 5550100123",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
+  },
+  {
+    "action": "changeApplicationDescription",
+    "display": "Changed Connected App Description",
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
@@ -474,6 +635,27 @@
     "section": "Auth. Providers"
   },
   {
+    "action": "changeCertificateDeveloperName",
+    "display": "Changed Certificate Unique Name from Death_Star_Comms_Cert to Death_Star_Comms_Cert3",
+    "title": "Certificate and Key Management",
+    "category": "Organization Management",
+    "section": "Certificate and Key Management"
+  },
+  {
+    "action": "changeCertificateFriendlyName",
+    "display": "Changed Certificate Name from Death Star Comms Cert to Death Star Comms Cert3",
+    "title": "Certificate and Key Management",
+    "category": "Organization Management",
+    "section": "Certificate and Key Management"
+  },
+  {
+    "action": "changedActionOverrideContent",
+    "display": "Changed View standard button override content from Account_Record_Page_Imperial_Navy to null",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Customize Accounts"
+  },
+  {
     "action": "changedApexClass",
     "display": "Changed DeathStarController Apex Class code",
     "title": "Apex",
@@ -511,6 +693,13 @@
   {
     "action": "changeDataCaptureCreatedWithChannel",
     "display": "Added Change Data Capture entity User to channel ChangeEvents",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Change Data Capture"
+  },
+  {
+    "action": "changeDataCaptureDeletedWithChannel",
+    "display": "Removed Change Data Capture entity EmailMessage from channel ChangeEvents",
     "title": "Custom Objects",
     "category": "Schema",
     "section": "Change Data Capture"
@@ -801,6 +990,13 @@
     "section": "Custom Objects"
   },
   {
+    "action": "changedCustEntRptOff",
+    "display": "Changed Enable Reports setting for custom object Battleship from on to off",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "changedCustEntRptOn",
     "display": "Changed Enable Reports setting for custom object Battleship from off to on",
     "title": "Custom Objects",
@@ -905,6 +1101,13 @@
     "category": "UI"
   },
   {
+    "action": "changedCustMdTypeLabel",
+    "display": "Changed label for custom metadata type from Hyperdrive_Configuration to Hyperdrive Configuration",
+    "title": "Custom Metadata",
+    "category": "Schema",
+    "section": "Custom Metadata Types"
+  },
+  {
     "action": "changedCustMdTypeToProtected",
     "display": "Changed Death Star Settings from public to protected",
     "title": "Custom Metadata",
@@ -994,6 +1197,13 @@
     "title": "Apps, Tabs and Pages",
     "category": "UI",
     "section": "Lightning Pages"
+  },
+  {
+    "action": "changedFormFactors",
+    "display": "Changed Form Factors from Large to Small, Large",
+    "title": "Custom Apps",
+    "category": "Organization Management",
+    "section": "Custom Apps"
   },
   {
     "action": "changedinteractionuseroffon",
@@ -1234,6 +1444,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "changedQuickActionDefaultFormulaCustom",
+    "display": "Changed Send_Email Action predefined formula value for RelationId on Opportunity from Opportunity.ds__Contact__c to Opportunity.Holocall_Contact__c",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Customize Opportunities"
+  },
+  {
     "action": "changedQuickActionLabelCustom",
     "display": "Changed Activate_Superlaser Action label on DeathStar from Activate Laser to Activate Superlaser",
     "title": "Links, Buttons and Actions",
@@ -1246,6 +1463,20 @@
     "title": "Links, Buttons and Actions",
     "category": "UI",
     "section": "Customize Opportunities"
+  },
+  {
+    "action": "changedRecordTypePicklist",
+    "display": "Changed picklist mapping for Fleet Type picklist of record type Supply Contract",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": "Customize Contracts"
+  },
+  {
+    "action": "changedRecordTypePicklistCustom",
+    "display": "Changed picklist mapping for Target Planet picklist of record type Hyperdrive Attribute on Hyperdrive Attributes",
+    "title": "Picklists",
+    "category": "Schema",
+    "section": "Custom Objects"
   },
   {
     "action": "changedroleforuser",
@@ -1267,6 +1498,20 @@
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
+  },
+  {
+    "action": "changedsenderemail",
+    "display": "Changed email for user Lando Calrissian (UserID: [005RCMBg0Zsm0xM]) from lando@cloud-city.com to null",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": null
+  },
+  {
+    "action": "changedSenderEmailVerifiedStatusVerified",
+    "display": "For user lando@cloud-city.com, the Sender Verified Email status changed to verified",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": null
   },
   {
     "action": "changedsfcontentuseroffon",
@@ -1561,6 +1806,13 @@
     "section": null
   },
   {
+    "action": "coepHeaderEnabledOffOn",
+    "display": "Changed Cross-Origin Embedder Policy from off to on",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "communitiesDefaultCdnPrefOffOn",
     "display": "Organization setup action: communitiesDefaultCdnPrefOffOn has changed.",
     "title": "Network",
@@ -1580,6 +1832,27 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "configDuringSaleCheckEnabledOffOn",
+    "display": "Organization setup action: configDuringSaleCheckEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "configProfileAssignment",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with 3 profiles.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "configUserAssignment",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with 42 users.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
   },
   {
     "action": "contactInspectorPrefOffOn",
@@ -1631,6 +1904,13 @@
     "section": null
   },
   {
+    "action": "conversationPilotPrefOnOff",
+    "display": "Organization setup action: conversationPilotPrefOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "conversationZoomPrefOffOn",
     "display": "Organization setup action: conversationZoomPrefOffOn has changed.",
     "title": "Org Preferences",
@@ -1641,6 +1921,13 @@
     "action": "conversationZoomPrefOnOff",
     "display": "Organization setup action: conversationZoomPrefOnOff has changed.",
     "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "coopHeaderEnabledOffOn",
+    "display": "Changed Cross-Origin Opener Policy from off to on",
+    "title": "Session Settings",
     "category": "Organization Management",
     "section": null
   },
@@ -1657,6 +1944,13 @@
     "title": "Org Config",
     "category": "Organization Management",
     "section": "Manage Users"
+  },
+  {
+    "action": "createAuthorizedEmailDomain",
+    "display": "Added authorized email domain, death-star.com",
+    "title": "Email Administration",
+    "category": "Organization Management",
+    "section": "Email Administration"
   },
   {
     "action": "createdActionOverride",
@@ -1731,6 +2025,13 @@
   {
     "action": "createdCF_RSFCustom",
     "display": "Created roll up summary field Planets in the Empire (count) on Galactic Empire ",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
+    "action": "createdCFAutoNumCustom",
+    "display": "Created Mission Number custom field (Auto Number: Starting from Roll-Up Summary) on Missions",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Custom Objects"
@@ -1855,6 +2156,13 @@
     "section": "Custom Tabs"
   },
   {
+    "action": "createdCustRowCause",
+    "display": "Created sharing type: Mission Team Member for object : Mission",
+    "title": "Sharing Rules",
+    "category": "Data Management",
+    "section": "Sharing Rules"
+  },
+  {
     "action": "createdDependency",
     "display": "Created dependency for \"Force Alignment\" controlled by \"Force Affinity\" on object Jedi Trial",
     "title": "Custom Fields",
@@ -1946,6 +2254,13 @@
     "section": "Matching Rule"
   },
   {
+    "action": "createdmobileconfiguration",
+    "display": "Created Lightning Sync Configuration: Test",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
     "action": "createdpartneruser",
     "display": "Created new Partner User Anakin Skywalker",
     "title": "User Activation and Auth",
@@ -2002,6 +2317,13 @@
     "section": "Global Actions"
   },
   {
+    "action": "createdQuickActionDefaultCustom",
+    "display": "Created Send_Email Action default value on Opportunity: Send_Email",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Customize Opportunities"
+  },
+  {
     "action": "createdRecordTypeCustom",
     "display": "Created record type: Stormtrooper on Trooper",
     "title": "Custom Objects",
@@ -2049,6 +2371,13 @@
     "title": "Picklists",
     "category": "Schema",
     "section": "Global Value Sets"
+  },
+  {
+    "action": "createIpWhiteList",
+    "display": "Added Ip AllowList from 203.0.113.10 to 203.0.113.10",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "Security Controls"
   },
   {
     "action": "crmaDataflowDeleted",
@@ -2198,6 +2527,13 @@
     "section": "Flows"
   },
   {
+    "action": "deactivatedmobileconfig",
+    "display": "Deactivated Lightning Sync Configuration Test",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
     "action": "deactivatedprocessdefinition",
     "display": "Deactivated Approval Process: OVisit Approval v2 for Object: Death Star Visit",
     "title": "Approval Process",
@@ -2231,6 +2567,41 @@
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Custom Objects"
+  },
+  {
+    "action": "deactivateRecordType",
+    "display": "Deactivated record type: Imperial Sales",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Customize Opportunities"
+  },
+  {
+    "action": "deactivateRecordTypeCustom",
+    "display": "Deactivated record type: Mission Imperial Sales on Missions",
+    "title": "Custom Objects",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
+    "action": "dealAgentAutoApproveTasksOffOn",
+    "display": "Organization setup action: dealAgentAutoApproveTasksOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "dealAgentAutoApproveTasksOnOff",
+    "display": "Organization setup action: dealAgentAutoApproveTasksOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "dealAgentEnabledOffOn",
+    "display": "Organization setup action: dealAgentEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "debugFlowAsAnotherUser",
@@ -2343,6 +2714,13 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": "Call Centers"
+  },
+  {
+    "action": "deleteCertificate",
+    "display": "Deleted Certificate Imperial Shuttle",
+    "title": "Certificate and Key Management",
+    "category": "Organization Management",
+    "section": "Certificate and Key Management"
   },
   {
     "action": "deleteConnectedApplication",
@@ -2576,6 +2954,20 @@
     "section": "Lightning Components"
   },
   {
+    "action": "deletedLoginIpRange_withProfile",
+    "display": "Deleted Login Ip Range to Minimum Access - API Only Integrations from 198.51.100.1 to 198.51.100.31",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": null
+  },
+  {
+    "action": "deletedmobileconfiguration",
+    "display": "Deleted Lightning Sync Configuration: Test",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
     "action": "deletedopplayout",
     "display": "Deleted Opportunity page layout Hutt Deal Registration - Direct Partner",
     "title": "Layouts",
@@ -2658,6 +3050,13 @@
     "title": "Links, Buttons and Actions",
     "category": "UI",
     "section": "Customize Cases"
+  },
+  {
+    "action": "deletedQuickActionDefaultCustom",
+    "display": "Deleted Send_Email Action on Opportunity: CcAddress",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Customize Opportunities"
   },
   {
     "action": "deletedReportJob",
@@ -2744,6 +3143,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "deleteTwoFactorTempCode",
+    "display": "Temporary verification code \"Salesforce generated code\" removed for darth@vader.com",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "deleteTwoFactorWebAuthN",
     "display": "Security Key credential 0moDp9cF4s0w7dR with nickname \"Padme\" removed for anakin@skywalker.com",
     "title": "User Activation and Auth",
@@ -2807,6 +3213,13 @@
     "section": null
   },
   {
+    "action": "diarizationUserEnabled",
+    "display": "Organization setup action: [Leia Organa] has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "disableAPILoginRequiresOrgDomain",
     "display": "Disabled SOAP API logins from https://test.salesforce.com",
     "title": "Network",
@@ -2828,11 +3241,25 @@
     "section": "Identity Provider"
   },
   {
+    "action": "disableParallelApexTestingOffOn",
+    "display": "Organization setup action: disableParallelApexTestingOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "disableRequireLoginFromOrgDomain",
     "display": "Disabled user logins from https://test.salesforce.com",
     "title": "Network",
     "category": "Organization Management",
     "section": "My Domain"
+  },
+  {
+    "action": "disableSIQUserEAC",
+    "display": "Disabled Einstein Activity Capture for user: Leia Organa",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Inbox mobile and legacy desktop apps"
   },
   {
     "action": "disableSIQUserNonEAC",
@@ -2891,6 +3318,20 @@
     "section": "My Domain"
   },
   {
+    "action": "dSThresholdNotificationOffOn",
+    "display": "Einstein Activity Capture configuration: Data Source Threshold Notification was turned on.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "dxGlobalTermsAcceptedOffOn",
+    "display": "Organization setup action: dxGlobalTermsAcceptedOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "dynamicInitialTokenGeneration",
     "display": "Generated a new initial access token for connected app Death Star",
     "title": "Connected Apps",
@@ -2898,10 +3339,157 @@
     "section": "Application"
   },
   {
+    "action": "e360DedicatedUMSOptInOffOn",
+    "display": "Organization setup action: e360DedicatedUMSOptInOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "eACForEveryonePrefOffOn",
+    "display": "Turned on Activity Sharing with Non–Einstein Activity Capture Users setting.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "eACForOpptyScoreOptInOffOn",
+    "display": "Organization setup action: eACForOpptyScoreOptInOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "ecAppChildEntityCreated",
+    "display": "Associated a new External Client App OAuth Policies called Death_Star_Events_oauthPlcy with the External Client App Death_Star_Events",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppChildEntityDeleted",
+    "display": "Disassociated the Death_Star_Events_oauth_defaultPolicy External Client App OAuth Policies file from the External Client App Death_Star_Events",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppChildEntityFieldCleared",
+    "display": "Updated the External Client App OAuth Policies Droid_Agent_oauthPlcy for Droid_Agent: Cleared Refresh Token Validity Period, which was 8760 and is now empty",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppChildEntityUpdated",
+    "display": "Updated the External Client App OAuth Policies DeathStarProspectorCanvas_oauthPlcy for DeathStarProspectorCanvas: Changed Named User JWT-Based Access Token Timeout from empty to UserSession",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppDeleteValidationCert",
+    "display": "Deleted the certificate C=SW, O=Galactic Empire, CN=DeathStarPartnerCentral for the external client app called Death Star Partner Central (dev)",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppEntityCreated",
+    "display": "Created an External Client App Policies: Death_Star_Events_plcy",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppEntityDeleted",
+    "display": "Deleted External Client App Policies: Death_Star_Events_defaultPolicy ",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppEntityUpdated",
+    "display": "Updated the External Client App Global Oauth Settings Death_Star_Events: Changed ID Token Validity from empty to 0",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppFieldCleared",
+    "display": "Updated the External Client App Policies DeathStarProspectorCanvas_plcy: Cleared Start URL, which was https://prospector.death-star.cloud/ and is now empty",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppGenerateConsumerKey",
+    "display": "Generated the consumer key for the External Client App called Death_Star_Events with a consumer ID of 888913yEjYsQcnp.",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppGenerateConsumerSecret",
+    "display": "Generated the consumer secret for the External Client App called Death_Star_Events with a consumer ID of 888913yEjYsQcnp.",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppInsertValidationCert",
+    "display": "Inserted a certificate CN=DeathStarUAT, OU=Engineering, O=Galactic Empire, L=Coruscant, ST=CW, C=SW for the external client app called Death Star Prospector Canvas",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecappOauthConsumerSecretGet",
+    "display": "A request was made to get the consumer secret for the external client app called External Client App Death_Star_Connector. The consumer secret was returned to the user",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
+    "action": "ecAppPolicyUpdated",
+    "display": "Updated the External Client App Global Oauth Settings Death Star Prospector Canvas: Changed NamedUserJwtEnabled from false to true",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "External Client Application"
+  },
+  {
     "action": "eCIAutoOpptyMatchingPrefOffOn",
     "display": "Einstein Conversation Insights configuration: Turn On Related Record Matching was turned on.",
     "title": "Einstein",
     "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "eCIAutoOpptyMatchingPrefOnOff",
+    "display": "Einstein Conversation Insights configuration: Turn On Related Record Matching was turned off.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "eCIManualUploadOffOn",
+    "display": "Organization setup action: eCIManualUploadOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "eCIManualUploadOnOff",
+    "display": "Organization setup action: eCIManualUploadOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "eCIOutOfTheBoxFlowsOffOn",
+    "display": "Organization setup action: eCIOutOfTheBoxFlowsOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
     "section": null
   },
   {
@@ -2940,6 +3528,20 @@
     "section": null
   },
   {
+    "action": "einsteinRAGMonitoringOffOn",
+    "display": "Organization setup action: einsteinRAGMonitoringOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "emailCaptureEnabled",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with Emails enabled.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
     "action": "emailConsentManagementOff",
     "display": "Changed Enforce email privacy settings from on to off",
     "title": "Email Administration",
@@ -2975,6 +3577,20 @@
     "section": "Email Administration"
   },
   {
+    "action": "emailStreamPrefOffOn",
+    "display": "Enabled Einstein Activity Capture",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Inbox mobile and legacy desktop apps"
+  },
+  {
+    "action": "empEnblPgmOffOn",
+    "display": "Organization setup action: empEnblPgmOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "emptiedAdminRecycleBin",
     "display": "Emptied 25596 record(s) from the organization's Recycle Bin",
     "title": "Mass Utility",
@@ -3008,6 +3624,13 @@
     "title": "User Permissions",
     "category": "User Management",
     "section": "Custom App Licenses"
+  },
+  {
+    "action": "enabledTokenExchangeFlowManageBit",
+    "display": "Enabled token exchange flow manage bit for connected app Death Star",
+    "title": "Connected Apps",
+    "category": "Organization Management",
+    "section": "Application"
   },
   {
     "action": "enableIdp",
@@ -3129,6 +3752,20 @@
     "section": null
   },
   {
+    "action": "eventManagerEventDestinationEnableStore",
+    "display": "Automated Process enabled storing on Security Defense Action Event.",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Event Manager"
+  },
+  {
+    "action": "eventRelayConfigCreated",
+    "display": "Event Relay DeathStarReplicationRelay (7k2kV8E7m8eBUSL) created having RUN state for /data/DataCloudEntities topic",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Event Bus Relay"
+  },
+  {
     "action": "expBundleMetadataPrefOffOn",
     "display": "Organization setup action: expBundleMetadataPrefOffOn has changed.",
     "title": "Org Preferences",
@@ -3199,6 +3836,13 @@
     "section": "External Credentials"
   },
   {
+    "action": "externalRedirectionChange",
+    "display": "Changed Allow redirections to untrusted URLs in Salesforce Classic from Always to With user’s permission",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "ExternalServicesCreate",
     "display": "Created External Service Registration ImperialAutoApprovals",
     "title": "Integrations",
@@ -3227,6 +3871,20 @@
     "section": "Sharing Defaults"
   },
   {
+    "action": "fastVendorTranscriptOffOn",
+    "display": "Organization setup action: fastVendorTranscriptOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "fastVendorTranscriptOnOff",
+    "display": "Organization setup action: fastVendorTranscriptOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "feed_entity_untracked",
     "display": "Feed Tracking for Asset off",
     "title": "Custom Objects",
@@ -3246,6 +3904,13 @@
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Feed Tracking"
+  },
+  {
+    "action": "Fields that display in the Forecasts page opportunity pane",
+    "display": "Organization setup action: Fields that display in the Forecasts page opportunity pane has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "Forecasts"
   },
   {
     "action": "filteredLookupActivate",
@@ -3353,6 +4018,13 @@
     "section": "Custom Objects"
   },
   {
+    "action": "forcesuloginoff",
+    "display": "Change Relogin After Login-As-User from on to off",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
+  },
+  {
     "action": "frozeuser",
     "display": "Froze user account for Darth Vader",
     "title": "User Activation and Auth",
@@ -3360,8 +4032,22 @@
     "section": "Manage Users"
   },
   {
+    "action": "gaplessTestAutoNumOffOn",
+    "display": "Organization setup action: gaplessTestAutoNumOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "gCSCFMigrationMigratedOffOn",
     "display": "Organization setup action: gCSCFMigrationMigratedOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "genECIOffOn",
+    "display": "Organization setup action: genECIOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -3381,11 +4067,39 @@
     "section": "Custom App Licenses"
   },
   {
+    "action": "graphQLApiOrgPrefForGuestUsersOffOn",
+    "display": "Organization setup action: graphQLApiOrgPrefForGuestUsersOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "groupMemberAdded",
+    "display": "Added Han Solo (User, 0056zx8FGDsw5AA) to Public Group Rebel Alliance Supply Group",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Groups"
+  },
+  {
+    "action": "groupMemberRemoved",
+    "display": "Removed Han Solo (User, 0056zx8FGDsw5AA) from Public Group Outer Rim (ORIM)",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Groups"
+  },
+  {
     "action": "groupMembership",
     "display": "Changed membership of Group Death Star Visitors",
     "title": "Org Config",
     "category": "Organization Management",
     "section": "Groups"
+  },
+  {
+    "action": "guidanceCenterAllUsersOffOn",
+    "display": "Organization setup action: guidanceCenterAllUsersOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "handlebouncedemailsoff",
@@ -3451,6 +4165,20 @@
     "section": "Global Value Sets"
   },
   {
+    "action": "highVelocitySalesPrefOffOn",
+    "display": "Organization setup action: highVelocitySalesPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "highVelocitySalesSetupPrefOffOn",
+    "display": "Organization setup action: highVelocitySalesSetupPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "HistoricalTrendingEntityDeleted",
     "display": "Historical Trending for Droid Upgrade Request deleted",
     "title": "Historical Trending",
@@ -3514,11 +4242,53 @@
     "section": "Holidays"
   },
   {
+    "action": "icorInstApiTrafficBlockedOffOn",
+    "display": "Enabled Block API traffic that uses any instanced URL",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "InactiveUserSweeperInfo",
     "display": "6 users were frozen in this sandbox because they didn't log in within the first 60 days of it being created, cloned, or refreshed.",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": "Sandboxes"
+  },
+  {
+    "action": "inboundCertificate_create",
+    "display": "Created Mutual Authentication Certificate Holonet Relay",
+    "title": "Certificate and Key Management",
+    "category": "Organization Management",
+    "section": "Certificate and Key Management"
+  },
+  {
+    "action": "inboundCertificate_delete",
+    "display": "Deleted Mutual Authentication Certificate Holonet Relay2",
+    "title": "Certificate and Key Management",
+    "category": "Organization Management",
+    "section": "Certificate and Key Management"
+  },
+  {
+    "action": "inboxUseGraphApiOffOn",
+    "display": "Organization setup action: inboxUseGraphApiOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "inPersonMeetingsOffOn",
+    "display": "Organization setup action: inPersonMeetingsOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "inPersonMeetingsOnOff",
+    "display": "Organization setup action: inPersonMeetingsOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "insertApplication",
@@ -3619,6 +4389,13 @@
     "section": "Sharing Rules"
   },
   {
+    "action": "insertSharingRuleWithPrincipals",
+    "display": "Created Account Criteria-Based Sharing Rule Outer Rim Access, shared with Public Group Outer Rim (ORIM)",
+    "title": "Sharing Rules",
+    "category": "Data Management",
+    "section": "Sharing Rules"
+  },
+  {
     "action": "insertSharingSets",
     "display": "Created sharing set Stormtroopers (0H27KnJprECbAyv ) ",
     "title": "Sharing Sets",
@@ -3647,11 +4424,25 @@
     "section": null
   },
   {
+    "action": "insightsInTimelineOnOff",
+    "display": "Organization setup action: insightsInTimelineOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "installedpackagingapp",
     "display": "Installed AppExchange package: Holonet Logger",
     "title": "Custom Apps",
     "category": "Organization Management",
     "section": "Custom Apps"
+  },
+  {
+    "action": "intAccessChanged",
+    "display": "Changed default internal access for Holocall from Private to Public Read Only",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
   },
   {
     "action": "inviteCsnUserEnabledOnOff",
@@ -3717,6 +4508,13 @@
     "section": "Session Settings"
   },
   {
+    "action": "lockerServiceCSPOn",
+    "display": "Organization setup action: lockerServiceCSPOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "lockerServiceNextControlOn",
     "display": "Organization setup action: lockerServiceNextControlOn has changed.",
     "title": "Org Preferences",
@@ -3750,6 +4548,20 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "lockipoff",
+    "display": "Change Lock Session IP from on to off",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
+  },
+  {
+    "action": "lockipon",
+    "display": "Change Lock Session IP from off to on",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
   },
   {
     "action": "logHostnameRedirectionsOffOn",
@@ -3817,6 +4629,13 @@
   {
     "action": "lWCFileUploadPrefOffOn",
     "display": "Organization setup action: lWCFileUploadPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "mailAppEnabledOffOn",
+    "display": "Organization setup action: mailAppEnabledOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -3941,6 +4760,20 @@
     "section": null
   },
   {
+    "action": "multiLocationFeatureOrgPrefOffOn",
+    "display": "Organization setup action: multiLocationFeatureOrgPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "multipleCadencesPrefOffOn",
+    "display": "Organization setup action: multipleCadencesPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "multipleSAMLConfigsOffOn",
     "display": "Organization setup action: multipleSAMLConfigsOffOn has changed.",
     "title": "Org Preferences",
@@ -4016,6 +4849,20 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "NetworkMemberAccessOffOn",
+    "display": "Changed Site User Visibility from off to on",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
+  },
+  {
+    "action": "NetworkMemberAccessOnOff",
+    "display": "Changed Site User Visibility from on to off",
+    "title": "Sharing Defaults",
+    "category": "Data Management",
+    "section": "Sharing Defaults"
   },
   {
     "action": "NetworkMemberGroupAdd",
@@ -4137,6 +4984,13 @@
     "section": "Password Policies"
   },
   {
+    "action": "OnlyLLPermUserAllowedChanged",
+    "display": "Organization setup action: OnlyLLPermUserAllowedChanged has changed from false to true",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "ootbProfExtUserOpsEnableOffOn",
     "display": "Organization setup action: ootbProfExtUserOpsEnableOffOn has changed.",
     "title": "Portal",
@@ -4151,11 +5005,25 @@
     "section": null
   },
   {
+    "action": "oppitemlayout",
+    "display": "Changed Opportunity Product page layout Opportunity Product Layout - Imperial Navy",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Opportunity Products"
+  },
+  {
     "action": "opplayout",
     "display": "Changed Opportunity page layout Opportunity Layout",
     "title": "Layouts",
     "category": "UI",
     "section": "Customize Opportunities"
+  },
+  {
+    "action": "opportunityScorePrefOffOn",
+    "display": "Organization setup action: opportunityScorePrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "opportunityteamreassign",
@@ -4167,6 +5035,13 @@
   {
     "action": "optimizerAppEnabledOffOn",
     "display": "Enabled the Salesforce Optimizer Lightning App",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "optOutEmailForInactiveWebToCaseOffOn",
+    "display": "Organization setup action: optOutEmailForInactiveWebToCaseOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -4228,11 +5103,32 @@
     "section": "Sharing Defaults"
   },
   {
+    "action": "oweaCreated",
+    "display": "Added darth@vader.com with Purpose User Selection in Organization-Wide Addresses",
+    "title": "Email Administration",
+    "category": "Organization Management",
+    "section": "Email Administration"
+  },
+  {
+    "action": "oweaVerified",
+    "display": "Verified the organization-wide email address darth@vader.com",
+    "title": "Email Administration",
+    "category": "Organization Management",
+    "section": "Email Administration"
+  },
+  {
     "action": "package2VersionUpgradeDeprecate",
     "display": " Deprecated package member component \"ExternalString\" \"usageWarningTooltip\"",
     "title": "Custom Apps",
     "category": "Organization Management",
     "section": "Second Generation Package Version"
+  },
+  {
+    "action": "ParallelJobAbort",
+    "display": "Job abort initiated: PkChunked Scrutiny",
+    "title": "Miscellaneous",
+    "category": "Data Management",
+    "section": "Background Jobs"
   },
   {
     "action": "passwordcomplexity",
@@ -4366,6 +5262,27 @@
     "section": "Permission Set Group"
   },
   {
+    "action": "PermissionSetGroupDescriptionChange",
+    "display": "Changed permission set group Sith_Lord: description was changed",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
+  },
+  {
+    "action": "PermissionSetGroupDeveloperNameChange",
+    "display": "Changed permission set group Sith_Lord_PSG: developer name was changed from Sith_Lord to Sith_Lord_PSG",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
+  },
+  {
+    "action": "PermissionSetGroupLabelChange",
+    "display": "Changed permission set group Sith_Lord_PSG: master label was changed from Sith Lord to Sith Lord PSG",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
+  },
+  {
     "action": "PermSetAssign",
     "display": "Permission set Sith Lord: assigned to user Darth Vader (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
@@ -4417,6 +5334,13 @@
   {
     "action": "PermSetDataspaceScopeAdded",
     "display": "Changed permission set Data Cloud User: Data Space default was added",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "PermSetDataspaceScopeRemoved",
+    "display": "Changed permission set AgentforceServiceAgentUserPsg: Data Space default was removed",
     "title": "Permission Sets",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -4478,6 +5402,20 @@
     "section": "Manage Users"
   },
   {
+    "action": "PermSetGroupEntityPermChanged",
+    "display": "Changed permission set group Sith Lord: Death Star object permissions were changed from No Access to Read, Create, Edit, Delete, View All Records, Modify All Records",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
+  },
+  {
+    "action": "PermSetGroupFlsChanged",
+    "display": "Changed permission set group Sith Lord: field-level security for Death Star: Capacity was changed from No Access to Read Only",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
+  },
+  {
     "action": "PermSetGroupStandardChange",
     "display": "Permission set group CodeBuilderGroup: was automatically updated to reflect changes to the standard permission set CodeBuilderUserPsl",
     "title": "Permission Set Groups",
@@ -4490,6 +5428,20 @@
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
+  },
+  {
+    "action": "PermSetGroupUserPermDisabled",
+    "display": "Changed permission set group Sith_Lord: CanApproveUninstalledApps permission was changed from enabled to disabled",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
+  },
+  {
+    "action": "PermSetGroupUserPermEnabled",
+    "display": "Changed permission set group Sith Lord: AutomaticActivityCapture permission was changed from disabled to enabled",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
   },
   {
     "action": "PermSetHasActivationRequiredChange",
@@ -4604,6 +5556,20 @@
     "section": null
   },
   {
+    "action": "platformWebIdeOffOn",
+    "display": "Organization setup action: platformWebIdeOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "postforsessionson",
+    "display": "Changed Use POST requests for cross-domain sessions attribute from off to on",
+    "title": "Session Settings",
+    "category": "Organization Management",
+    "section": "Session Settings"
+  },
+  {
     "action": "PRMAccountDisabled",
     "display": "Account Confederacy of Independent Systems disabled as a Partner account",
     "title": "Portal",
@@ -4711,6 +5677,13 @@
   {
     "action": "profileFlsChangedStandard",
     "display": "Changed profile Sith: field-level security for Opportunity: Type was changed from Read Only to Read/Write",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "profileModifyAllDataEnabledCustom",
+    "display": "Changed profile Sith Lord: Read, Create, Edit, Delete, View All, and Modify All has been enabled for all objects",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -4884,6 +5857,13 @@
     "section": "Field Dependencies"
   },
   {
+    "action": "removeDeletedEventsEnabled",
+    "display": "Einstein Activity Capture configuration \"Test\" was saved with Remove deleted events enabled.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
     "action": "removedFieldOnCompactLayout",
     "display": "Removed 00NDKzvtMzYbvrS field from Death_Star Compact Layout on Death Star",
     "title": "Layouts",
@@ -4919,6 +5899,13 @@
     "section": "Validation Rules"
   },
   {
+    "action": "removeServiceProviderStartUrl",
+    "display": "Removed Start URL from Service Provider: GalacticEmpire ",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": "Service Provider"
+  },
+  {
     "action": "renamedinteractiondefinition",
     "display": "Renamed flow from \"Send Death Star 2 Welcome Package\" to \"Sned Death Star Welcome Package\" for flow with Unique Name \"Send_Death_Star_2_Welcome_Package\"",
     "title": "Flows",
@@ -4938,6 +5925,13 @@
     "title": "Session Settings",
     "category": "Organization Management",
     "section": "Session Settings"
+  },
+  {
+    "action": "requireLoginFromOrgDomainOnOff",
+    "display": "Organization setup action: requireLoginFromOrgDomainOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "resendBouncedEmailsoff",
@@ -4987,6 +5981,13 @@
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
+  },
+  {
+    "action": "restrictPasswordAuthEnabled",
+    "display": "Enabled Restrict Password Auth",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "Delegated Authentication Configuration"
   },
   {
     "action": "restrictPasswordAuthOffOn",
@@ -5073,6 +6074,20 @@
     "section": null
   },
   {
+    "action": "s2XEnableOffOn",
+    "display": "Enabled Lightning Sync or Einstein Activity Capture",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "salesforceEventsOnlyPrefOffOn",
+    "display": "Turned on to view only Salesforce events (synced and manually added) on AT, dashboard, or AM.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "salesforceInboxReadReceiptsOffOn",
     "display": "Organization setup action: salesforceInboxReadReceiptsOffOn has changed.",
     "title": "Org Preferences",
@@ -5115,6 +6130,13 @@
     "section": "SAML Configuration"
   },
   {
+    "action": "samlSsoConfig_cert",
+    "display": "Uploaded new certificate for Migrated SAML Config",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
     "action": "samlSsoConfig_create",
     "display": "Created SAML Configuration Migrated SAML Config",
     "title": "SAML Configuration",
@@ -5124,6 +6146,13 @@
   {
     "action": "samlSsoConfig_delete",
     "display": "Deleted SAML Configuration GalacticEmpireRebelsBackdoor",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_issuer",
+    "display": "Changed Issuer of Migrated SAML Config from exkuGLCFCv7JWbfF9bgj to exkY0xH1wXBtvCYwQBML",
     "title": "SAML Configuration",
     "category": "Organization Management",
     "section": "SAML Configuration"
@@ -5143,6 +6172,27 @@
     "section": "SAML Configuration"
   },
   {
+    "action": "samlSsoConfig_loginUrl",
+    "display": "Changed Login URL of Migrated SAML Config to https://galactic-empire.okta.com/app/salesforce/exkY0xH1wXBtvCYwQBML/sso/saml",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_postBinding",
+    "display": "Changed Migrated SAML Config V2 to HTTP POST binding",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
+    "action": "samlSsoConfig_redirectBinding",
+    "display": "Changed Migrated SAML Config V2 to HTTP Redirect binding",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": "SAML Configuration"
+  },
+  {
     "action": "samlSsoConfig_signCert",
     "display": "Changed Request Signing Certificate of galacticempire_rebels_backdoor to galacticempire",
     "title": "SAML Configuration",
@@ -5150,11 +6200,39 @@
     "section": "SAML Configuration"
   },
   {
+    "action": "samlSsoConfig_useConfigSignature",
+    "display": "Changed Migrated SAML Config V2 to use the selected Request Signature Method for single logout",
+    "title": "SAML Configuration",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "SandboxCleanUp",
+    "display": "Salesforce Voice Sandbox Cleanup",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Salesforce Voice"
+  },
+  {
     "action": "SandboxLicenseMatch",
     "display": "License match requested, sandboxOrgId: 00Dq9hewY2gsmhF, requested by: 0052PpCxdC81jGP",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": "Sandboxes"
+  },
+  {
+    "action": "SandboxLicenseMatchSuccess",
+    "display": "License match completed, sandboxOrgId: 00DRQCeBEF8r5Gp, requested by: 005QZkma5fXCSpf",
+    "title": "Sandboxes",
+    "category": "Organization Management",
+    "section": "Sandboxes"
+  },
+  {
+    "action": "savedlistlayoutAccount",
+    "display": "Changed Account search layout Lookup Phone Dialogs",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Accounts"
   },
   {
     "action": "savedlistlayoutCase",
@@ -5192,6 +6270,20 @@
     "section": "My Domain"
   },
   {
+    "action": "ScvScrutiny",
+    "display": "Salesforce Voice AWS Account is adjusted due to Org status",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Salesforce Voice"
+  },
+  {
+    "action": "SearchKpPermafrostIndexDeleted",
+    "display": "Search KP permafrost index deleted for KP: a2k",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": "Search KP Permafrost"
+  },
+  {
     "action": "secureGuestUserRecordAccessEnabled",
     "display": "Enabled Secure Guest User Record Access",
     "title": "Sharing Rules",
@@ -5201,6 +6293,13 @@
   {
     "action": "selectNoOpptyOnLeadConvertOffOn",
     "display": "Organization setup action: selectNoOpptyOnLeadConvertOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "Customize Leads"
+  },
+  {
+    "action": "selectNoOpptyOnLeadConvertOnOff",
+    "display": "Organization setup action: selectNoOpptyOnLeadConvertOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": "Customize Leads"
@@ -5234,6 +6333,13 @@
     "section": null
   },
   {
+    "action": "selNoOpptyOnLeadConvertOnOff",
+    "display": "Organization setup action: selNoOpptyOnLeadConvertOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "sendCspForUncommonClientsOffOn",
     "display": "Organization setup action: sendCspForUncommonClientsOffOn has changed.",
     "title": "Org Preferences",
@@ -5246,6 +6352,20 @@
     "title": "Email Administration",
     "category": "Organization Management",
     "section": "Email Administration"
+  },
+  {
+    "action": "sensitiveEmailFilterOffOn",
+    "display": "Einstein Activity Capture sensitive email filtering was disabled.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": null
+  },
+  {
+    "action": "sentOsPrefOffOn",
+    "display": "Organization setup action: sentOsPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "sessiongen",
@@ -5293,6 +6413,13 @@
     "category": "Permission Management"
   },
   {
+    "action": "SetupEntityAccessAudit_PermissionSet_BotDefinition_Enabled",
+    "display": "Changed permission set Sith Lord: Protocol Droid Agent access was enabled",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "SetupEntityAccessAudit_PermissionSet_ConnectedApplication_Disabled",
     "display": "Changed permission set DeathStar Service User Permissions: DeathStar connected app is disabled",
     "title": "Permission Sets",
@@ -5328,6 +6455,27 @@
   {
     "action": "SetupEntityAccessAudit_PermissionSet_CustomPermission_Enabled",
     "display": "Changed permission set Sith Lord: Death_Star_Access Custom Permission was enabled",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Disabled",
+    "display": "Changed permission set Sith Lord: Death_Star_Comms - Death_Star_Comms_Principal External Credential principal access was disabled",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_PermissionSet_ExternalCredentialParameter_Enabled",
+    "display": "Changed permission set Sith Lord: Death_Star_Comms - Death_Star_Comms_Principal External Credential principal access was enabled",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
+    "action": "SetupEntityAccessAudit_PermissionSet_FlowDefinition_Enabled",
+    "display": "Changed permission set Sith Lord: Send Death Star Welcome Package Flow access was enabled",
     "title": "Permission Sets",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -5553,6 +6701,13 @@
     "section": null
   },
   {
+    "action": "showDeveloperConsoleWithWebIdeOffOn",
+    "display": "Organization setup action: showDeveloperConsoleWithWebIdeOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "showGeneratedEmailCheckboxOffOn",
     "display": "Organization setup action: showGeneratedEmailCheckboxOffOn has changed.",
     "title": "Org Preferences",
@@ -5574,8 +6729,29 @@
     "section": "Inbox mobile and legacy desktop apps"
   },
   {
+    "action": "siqPurgeAllEmailAddressJobCreated",
+    "display": "Logged request to delete all email and events that include darth@vader.com",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Inbox mobile and legacy desktop apps"
+  },
+  {
+    "action": "siqPurgeUserEmailsJobCreated",
+    "display": "Logged request to delete all email and events that include Darth Vader",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Inbox mobile and legacy desktop apps"
+  },
+  {
     "action": "siqUserAcceptedInboxTOS",
     "display": "User Anakin Skywalker accepted Inbox Terms of Service",
+    "title": "User Detail",
+    "category": "User Management",
+    "section": "Inbox mobile and legacy desktop apps"
+  },
+  {
+    "action": "siqUserAcceptedTOS",
+    "display": "User Obi-Wan Kenobi accepted Einstein Activity Capture Terms of Service",
     "title": "User Detail",
     "category": "User Management",
     "section": "Inbox mobile and legacy desktop apps"
@@ -5623,6 +6799,34 @@
     "section": null
   },
   {
+    "action": "slackBetaTOSOffOn",
+    "display": "Organization setup action: slackBetaTOSOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "slackRecordChannelsOffOn",
+    "display": "Organization setup action: slackRecordChannelsOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "SlackSeamlessAuthActivateConnection",
+    "display": "Slack connection activated for team ID: E0AgCmSbEBj",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "SlackSeamlessAuthApproveConnection",
+    "display": "Slack connection request approved for team ID: E0AgCmSbEBj",
+    "title": "Org Config",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "socialProfilesEnableOffOn",
     "display": "Organization setup action: socialProfilesEnableOffOn has changed.",
     "title": "Org Preferences",
@@ -5654,6 +6858,13 @@
     "action": "standardApprovalsEnabledOffOn",
     "display": "Organization setup action: standardApprovalsEnabledOffOn has changed.",
     "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "substituteEmailDomainOn",
+    "display": "Enabled Use a substitute email address for unverified domains",
+    "title": "Email Administration",
     "category": "Organization Management",
     "section": null
   },
@@ -5728,6 +6939,55 @@
     "section": "Manage Users"
   },
   {
+    "action": "syncDirectionContactUpdated",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with the contact direction of Don't sync.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "syncDirectionEventUpdated",
+    "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with the event direction of Google to Salesforce.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "syncEmailToCoreActivityOffOn",
+    "display": "Organization setup action: syncEmailToCoreActivityOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "syncEventSeriesDisabled",
+    "display": "Einstein Activity Capture configuration \"Test\" was saved with Sync recurring event series disabled.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "syncPrivateEventsDisabled",
+    "display": "Einstein Activity Capture configuration \"Test\" was saved with Sync private events disabled.",
+    "title": "Einstein",
+    "category": "Data Management",
+    "section": "Mobile Administration"
+  },
+  {
+    "action": "tableauPlatformEnabledOffOn",
+    "display": "Organization setup action: tableauPlatformEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "tableauPlatformEnabledOnOff",
+    "display": "Organization setup action: tableauPlatformEnabledOnOff has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "templateEnhancedFolderPrefOffOn",
     "display": "Enable Lightning Email Template Enhanced Folder Pref",
     "title": "Org Preferences",
@@ -5747,6 +7007,20 @@
     "title": "Org Config",
     "category": "Organization Management",
     "section": "Manage Territories"
+  },
+  {
+    "action": "transactableMarketplaceReceivePartnerOffersOffOn",
+    "display": "Changed AgentExchange Go-To-Market App Receive Partner Offers from off to on",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "AgentExchange Go-To-Market App"
+  },
+  {
+    "action": "transactableMarketplaceReceivePartnerOffersOnOff",
+    "display": "Changed AgentExchange Go-To-Market App Receive Partner Offers from on to off",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": "AgentExchange Go-To-Market App"
   },
   {
     "action": "transactionSecurityPolicyCreatedDisabled",
@@ -5773,6 +7047,20 @@
     "action": "transactionSecurityPolicyOffOn",
     "display": "Organization setup action: transactionSecurityPolicyOffOn has changed.",
     "title": "Transaction Security",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "transactionSecurityPolicyUpdatedFlow",
+    "display": "Darth Vader updated Flow from 301VSvQnHQEunps to 301NXu2LkrkFzcU for transaction security policy \"Prevent Large Report Download\".",
+    "title": "Transaction Security",
+    "category": "Organization Management",
+    "section": "Transaction Security"
+  },
+  {
+    "action": "tspWriteRestrictedOffOn",
+    "display": "Organization setup action: tspWriteRestrictedOffOn has changed.",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
@@ -5805,6 +7093,13 @@
     "section": "Customize Order Items"
   },
   {
+    "action": "undeletedCFCustom",
+    "display": "Undeleted custom field Credit Margin from Quotes",
+    "title": "Custom Fields",
+    "category": "Schema",
+    "section": "Custom Objects"
+  },
+  {
     "action": "unfrozeuser",
     "display": "Unfroze user account for Darth Vader",
     "title": "User Activation and Auth",
@@ -5814,6 +7109,13 @@
   {
     "action": "unifiedActivitiesForECIOffOn",
     "display": "Organization setup action: unifiedActivitiesForECIOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "unifiedActivitiesForECIOnOff",
+    "display": "Organization setup action: unifiedActivitiesForECIOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -5843,6 +7145,13 @@
     "action": "uoesuloginaccessused",
     "display": "Organization setup action: [Darth Vader, empire.com, inc., dvader@empire.com] has changed from {1} to {2}",
     "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "updated_policy_rule_version",
+    "display": "Record level policies were regenerated <a href=/9gZeSXYHewz6WfS>Details</a> status is ACTIVE. ",
+    "title": "Security Controls",
     "category": "Organization Management",
     "section": null
   },
@@ -5947,6 +7256,13 @@
   {
     "action": "updateSharingRule",
     "display": "Updated Opportunity Criteria-Based Sharing Rule Owned By Army: Changed Name from Owned By Navy to Owned By Army, DeveloperName from Owned_By_Navy to Owned_By_Army",
+    "title": "Sharing Rules",
+    "category": "Data Management",
+    "section": "Sharing Rules"
+  },
+  {
+    "action": "updateSharingRuleWithPrincipals",
+    "display": "Updated Account Criteria-Based Sharing Rule All Except Hidden, shared with All Internal Users: Changed Criteria from ((Account: Account.TextName not equal to HIDDEN) AND (Account: Owner Subdivision does not contain Outer Rim)) OR ((Account: Type equals Smuggler,Bounty Hunter) AND (Account: Owner Subdivision does not contain Outer Rim)) OR ((Account: Vertical not equal to Imperial Navy) AND (Account: Sub-vertical not equal to Stormtroopers,Sith,Clone Troopers,Death Star Crew)) to (((Account: Account.TextName not equal to HIDDEN) AND (Account: Owner Subdivision does not contain Outer Rim)) OR ((Account: Type equals Smuggler,Bounty Hunter) AND (Account: Owner Subdivision does not contain Outer Rim)) OR ((Account: Vertical not equal to Imperial Navy) AND (Account: Sub-vertical not equal to Stormtroopers,Sith,Clone Troopers,Death Star Crew)) ...",
     "title": "Sharing Rules",
     "category": "Data Management",
     "section": "Sharing Rules"
@@ -6057,6 +7373,13 @@
     "section": null
   },
   {
+    "action": "userLicenseUserPermRevoked",
+    "display": "Removed the DeathStarUser user permission as allowed by User License 100jT8KA7VvyM39",
+    "title": "Profiles",
+    "category": "Permission Management",
+    "section": null
+  },
+  {
     "action": "userSelfDeactivateOffOn",
     "display": "Changed Allow External Users to Self Deactivate from off to on",
     "title": "User Management Settings",
@@ -6127,8 +7450,29 @@
     "section": null
   },
   {
+    "action": "value_EC_MAX_FLOW_CONNS",
+    "display": "Organization setup action: value_EC_MAX_FLOW_CONNS has changed from 2 to \"\"",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_MAX_COURTESY_FULL_SANDBOXES",
+    "display": "Organization setup action: value_MAX_COURTESY_FULL_SANDBOXES has changed from 1 to \"\"",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "value_MAX_STREAMING_TOPICS_PROV",
     "display": "Max number of streaming topics",
+    "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_MX_ALLOWED_FLOWS_WITH_EXT_CONN",
+    "display": "Organization setup action: value_MX_ALLOWED_FLOWS_WITH_EXT_CONN has changed from 2 to \"\"",
     "title": "Org Limits",
     "category": "Organization Management",
     "section": null
@@ -6137,6 +7481,13 @@
     "action": "value_OMNI_STUDIO_CALLS_LIMIT",
     "display": "Organization setup action: value_OMNI_STUDIO_CALLS_LIMIT has changed from 1000000 to 1000000",
     "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_ORG_COMM_SVC_PROVIDER_ENABLED",
+    "display": "Organization setup action: value_ORG_COMM_SVC_PROVIDER_ENABLED has changed from true to false",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
@@ -6169,6 +7520,13 @@
     "section": null
   },
   {
+    "action": "value_RECORDING_FILE_FORMAT",
+    "display": "Organization setup action: value_RECORDING_FILE_FORMAT has changed from mp3 to mp3",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "value_RESTRICT_TLS_TO_DOMAINS",
     "display": "Restrict TLS to these domains changed from \"\" to skywalker.com",
     "title": "Email Administration",
@@ -6179,6 +7537,27 @@
     "action": "value_RULES_ENGINE_CALLS_LIMIT",
     "display": "Organization setup action: value_RULES_ENGINE_CALLS_LIMIT has changed from 50000 to 50000",
     "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_SECURITY_CONTACT_EMAIL",
+    "display": "Security contact email changed from \"\" to {\"name\":\"Darth Vader\",\"email\":\"darth@vader.com\",\"phone\":\"+1 555 0100123\"}.",
+    "title": "Security Controls",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_SENTOS_AUTO_TURN_ON_STATE",
+    "display": "Organization setup action: value_SENTOS_AUTO_TURN_ON_STATE has changed from SETUP_COMPLETED to SUCCESS",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_SENTOS_CRM_ACT_ENABLED",
+    "display": "Agentforce Coworker: Whether CRM source allows act has changed from false to true",
+    "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
   },
