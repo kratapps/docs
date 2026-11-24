@@ -1390,10 +1390,14 @@ ORDER BY CreatedDate DESC LIMIT 1000
 
 -   aCATAcceptedOffOn - Organization setup action: aCATAcceptedOffOn has
     changed.
+-   aCAutoSendEmailOffOn - Organization setup action: aCAutoSendEmailOffOn has
+    changed.
 -   accountInspectorPrefOffOn - Organization setup action:
     accountInspectorPrefOffOn has changed.
 -   accountInspectorSetupOffOn - Organization setup action:
     accountInspectorSetupOffOn has changed.
+-   aCTargetAssigneeChangePrefOffOn - Organization setup action:
+    aCTargetAssigneeChangePrefOffOn has changed.
 -   advancedCMTSecurityOffOn - Organization setup action:
     advancedCMTSecurityOffOn has changed.
 -   advancedCMTSecurityOnOff - Organization setup action:
@@ -1423,6 +1427,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   aLMDevopsCorePrefOffOn - Organization setup action: aLMDevopsCorePrefOffOn
     has changed.
 -   autonomousExperienceOffOn
+-   businessHoursOffOn - Organization setup action: businessHoursOffOn has
+    changed.
 -   bYOLMigrationStatusPrefOffOn - Organization setup action:
     bYOLMigrationStatusPrefOffOn has changed.
 -   callSummarizationOffOn - Organization setup action: callSummarizationOffOn
@@ -1559,8 +1565,14 @@ ORDER BY CreatedDate DESC LIMIT 1000
 -   gCSCFMigrationMigratedOffOn - Organization setup action:
     gCSCFMigrationMigratedOffOn has changed.
 -   genECIOffOn - Organization setup action: genECIOffOn has changed.
+-   graphQLApiOrgPrefForGuestUsersOffOn - Organization setup action:
+    graphQLApiOrgPrefForGuestUsersOffOn has changed.
 -   guidanceCenterAllUsersOffOn - Organization setup action:
     guidanceCenterAllUsersOffOn has changed.
+-   highVelocitySalesPrefOffOn - Organization setup action:
+    highVelocitySalesPrefOffOn has changed.
+-   highVelocitySalesSetupPrefOffOn - Organization setup action:
+    highVelocitySalesSetupPrefOffOn has changed.
 -   inboxUseGraphApiOffOn - Organization setup action: inboxUseGraphApiOffOn has
     changed.
 -   inPersonMeetingsOffOn - Organization setup action: inPersonMeetingsOffOn has
@@ -1591,6 +1603,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     has changed.
 -   lWCFileUploadPrefOffOn - Organization setup action: lWCFileUploadPrefOffOn
     has changed.
+-   mailAppEnabledOffOn - Organization setup action: mailAppEnabledOffOn has
+    changed.
 -   mailAppProductivityEnabledOffOn - Organization setup action:
     mailAppProductivityEnabledOffOn has changed.
 -   manyWhoPreferenceOffOn - Changed Shared Activities from off to on.
@@ -1605,6 +1619,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     has changed.
 -   multiLocationFeatureOrgPrefOffOn - Organization setup action:
     multiLocationFeatureOrgPrefOffOn has changed.
+-   multipleCadencesPrefOffOn - Organization setup action:
+    multipleCadencesPrefOffOn has changed.
 -   multipleSAMLConfigsOffOn - Organization setup action:
     multipleSAMLConfigsOffOn has changed.
 -   negativeOIQuantityEnabledOffOn - Organization setup action:
@@ -1774,7 +1790,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('aCATAcceptedOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','agentforceFlowAutomationOffOn','agentforceSTDMEnabledOffOn','agentforceSTDMEnabledOnOff','agentHealthMonitoringGAOffOn','agentPlatformEnabledOffOn','agntfrcInteractionExplorerOffOn','agntfrcInteractionExplorerOnOff','aIFeedbackWithDCEnabledOffOn','aIFeedbackWithDCEnabledOnOff','aITrustPIIMaskingEnabledOffOn','alarmResumeSameRunContextOffOn','aLMDevopsCorePrefOffOn','autonomousExperienceOffOn','bYOLMigrationStatusPrefOffOn','callSummarizationOffOn','cDPEnabledPrefOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','chatbotEnabledOffOn','cMSWorkspacesV1CreatePrefOffOn','cMSWorkspacesV1CreatePrefOnOff','codeBuilderOffOn','codeBuilderOnOff','confettiEffectOffOn','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contactUpdateProfileFLSOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','conversationZoomPrefOnOff','copilotAnalyticsEnabledOnOff','createIpWhiteList','crossOrgRedirectsEnabledOffOn','crossOrgRedirectsEnabledOnOff','crtSetupLightningUiPrefOffOn','dataCloudReportingPrefOffOn','dataSpacesPlatformSecurityOffOn','dealAgentEnabledOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','deferRenderingWorkspacePageOffOn','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','depriveSoqlAccessOffOn','diarizationPrefOffOn','diarizationPrefOnOff','diarizationUserDisabled','diarizationUserEnabled','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','dxGlobalTermsAcceptedOffOn','e360DedicatedUMSOptInOffOn','eCIManualUploadOffOn','eCIOutOfTheBoxFlowsOffOn','eDCEinsteinFeatureEnabledOffOn','einsteinRAGMonitoringOffOn','empEnblPgmOffOn','Enabled Apply CSP directives for less common browsers in Session Settings.','enablementEnabledOffOn','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','expBundleMetadataPrefOffOn','extensionHostUnrestrictedOffOn','externalRedirectionChange','fastVendorTranscriptOffOn','Fields that display in the Forecasts page opportunity pane','flowBlockAxsToSessionIdOffOn','flowNullPreviousValueFixOffOn','flowsLightningAppOffOn','flowUseApexExceptionEmailOffOn','gCSCFMigrationMigratedOffOn','genECIOffOn','guidanceCenterAllUsersOffOn','inboxUseGraphApiOffOn','inPersonMeetingsOffOn','INSERTCallCenter','insightsInTimelineOnOff','inviteCsnUserEnabledOnOff','jSPublicLoggingLibAllowUIOffOn','jSPublicLoggingLibAllowUIOnOff','leadInspectorPrefOffOn','lockerServiceCSPOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','lWCFileUploadPrefOffOn','mailAppProductivityEnabledOffOn','manyWhoPreferenceOffOn','ManyWhoReadyOffOn','mFADirectUILoginOptInOffOn','mFADirectUILoginOptInOnOff','multiColumnSortLvOffOn','multiColumnSortRlOffOn','multiLocationFeatureOrgPrefOffOn','multipleSAMLConfigsOffOn','negativeOIQuantityEnabledOffOn','OnlyLLPermUserAllowedChanged','optimizerAppEnabledOffOn','optOutEmailForInactiveWebToCaseOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','pipelineInspectionPrefOffOn','pipelineInspectionPrefOnOff','pipelineInspectionSetupPrefOffOn','pipelineInspectorSglRollupOffOn','platformWebIdeOffOn','requireLoginFromOrgDomainOnOff','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthEnabled','restrictPasswordAuthOffOn','retainloginhintson','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','rRHInExpAuraSitesPrefOffOn','s1encryptedstoragepref2off','s1encryptedstoragepref2on','s1EncryptedStoragePref2OnOff','salesforceEventsOnlyPrefOffOn','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','selectNoOpptyOnLeadConvertOnOff','sellerHomePrefOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','selNoOpptyOnLeadConvertOnOff','sendCspForUncommonClientsOffOn','sentOsPrefOffOn','showDeveloperConsoleWithWebIdeOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','skipSFAWhenMFAUILoginOnOff','socialProfilesEnableOffOn','socialProfilesEnableOnOff','sourceTrackingSandboxesOffOn','stackedModalManagerEnabledOffOn','standardApprovalsEnabledOffOn','syncEmailToCoreActivityOffOn','tableauPlatformEnabledOffOn','tableauPlatformEnabledOnOff','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','transactableMarketplaceReceivePartnerOffersOffOn','transactableMarketplaceReceivePartnerOffersOnOff','tspWriteRestrictedOffOn','u2FEnabledOffOn','unifiedActivitiesForECIOffOn','unifiedActivitiesForECIOnOff','uoesuloginaccessused','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useIntLinkPwdResetPrefOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_RECORDING_FILE_FORMAT','value_SENTOS_AUTO_TURN_ON_STATE','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','vertNavThemedIconsEnabledOffOn','videoConferenceZoomOffOn','videoConferenceZoomOnOff','workOrdersEnabledOffOn','workOrdersEnabledOnOff','zeroOIQuantityEnabledOffOn')
+WHERE Action IN ('aCATAcceptedOffOn','aCAutoSendEmailOffOn','accountInspectorPrefOffOn','accountInspectorSetupOffOn','aCTargetAssigneeChangePrefOffOn','advancedCMTSecurityOffOn','advancedCMTSecurityOnOff','agentforceFlowAutomationOffOn','agentforceSTDMEnabledOffOn','agentforceSTDMEnabledOnOff','agentHealthMonitoringGAOffOn','agentPlatformEnabledOffOn','agntfrcInteractionExplorerOffOn','agntfrcInteractionExplorerOnOff','aIFeedbackWithDCEnabledOffOn','aIFeedbackWithDCEnabledOnOff','aITrustPIIMaskingEnabledOffOn','alarmResumeSameRunContextOffOn','aLMDevopsCorePrefOffOn','autonomousExperienceOffOn','businessHoursOffOn','bYOLMigrationStatusPrefOffOn','callSummarizationOffOn','cDPEnabledPrefOffOn','changedCFUniqueOffCustom','changedCFUniqueOnCustom','changedOrgWideEmailAddress','chatbotEnabledOffOn','cMSWorkspacesV1CreatePrefOffOn','cMSWorkspacesV1CreatePrefOnOff','codeBuilderOffOn','codeBuilderOnOff','confettiEffectOffOn','contactInspectorPrefOffOn','contactLeadInspectorSetupOffOn','contactUpdateProfileFLSOffOn','contextualEverywhereEnabledOffOn','conversationPilotPrefOffOn','conversationZoomPrefOffOn','conversationZoomPrefOnOff','copilotAnalyticsEnabledOnOff','createIpWhiteList','crossOrgRedirectsEnabledOffOn','crossOrgRedirectsEnabledOnOff','crtSetupLightningUiPrefOffOn','dataCloudReportingPrefOffOn','dataSpacesPlatformSecurityOffOn','dealAgentEnabledOffOn','debugFlowAsAnotherUserEnabledOff','debugFlowAsAnotherUserEnabledOn','debugFlowAsAnotherUserOffOn','debugFlowAsAnotherUserOnOff','deferRenderingWorkspacePageOffOn','DELETECallCenter','deleteIpWhiteList','deployEdgeDuringRolloutOffOn','depriveSoqlAccessOffOn','diarizationPrefOffOn','diarizationPrefOnOff','diarizationUserDisabled','diarizationUserEnabled','disableSocialProfilesTWOffOn','disableSocialProfilesYTOffOn','disableSocialProfilesYTOnOff','dxGlobalTermsAcceptedOffOn','e360DedicatedUMSOptInOffOn','eCIManualUploadOffOn','eCIOutOfTheBoxFlowsOffOn','eDCEinsteinFeatureEnabledOffOn','einsteinRAGMonitoringOffOn','empEnblPgmOffOn','Enabled Apply CSP directives for less common browsers in Session Settings.','enablementEnabledOffOn','enablementPartnerPrgmEmailsOffOn','enableOverrideGrantAccessOnOff','enableSIQUserInbox','enhancedUserFieldMaskingOffOn','enhancedUserFieldMaskingOnOff','eventLogGenerationEnabledOffOn','expBundleMetadataPrefOffOn','extensionHostUnrestrictedOffOn','externalRedirectionChange','fastVendorTranscriptOffOn','Fields that display in the Forecasts page opportunity pane','flowBlockAxsToSessionIdOffOn','flowNullPreviousValueFixOffOn','flowsLightningAppOffOn','flowUseApexExceptionEmailOffOn','gCSCFMigrationMigratedOffOn','genECIOffOn','graphQLApiOrgPrefForGuestUsersOffOn','guidanceCenterAllUsersOffOn','highVelocitySalesPrefOffOn','highVelocitySalesSetupPrefOffOn','inboxUseGraphApiOffOn','inPersonMeetingsOffOn','INSERTCallCenter','insightsInTimelineOnOff','inviteCsnUserEnabledOnOff','jSPublicLoggingLibAllowUIOffOn','jSPublicLoggingLibAllowUIOnOff','leadInspectorPrefOffOn','lockerServiceCSPOn','lockerServiceNextControlOn','lockerServiceNextOff','lockerServiceNextOffOn','lockerServiceNextOn','lockerServiceNextOnOff','lWCFileUploadPrefOffOn','mailAppEnabledOffOn','mailAppProductivityEnabledOffOn','manyWhoPreferenceOffOn','ManyWhoReadyOffOn','mFADirectUILoginOptInOffOn','mFADirectUILoginOptInOnOff','multiColumnSortLvOffOn','multiColumnSortRlOffOn','multiLocationFeatureOrgPrefOffOn','multipleCadencesPrefOffOn','multipleSAMLConfigsOffOn','negativeOIQuantityEnabledOffOn','OnlyLLPermUserAllowedChanged','optimizerAppEnabledOffOn','optOutEmailForInactiveWebToCaseOffOn','orchestrationInSandboxOffOn','orgWideMergeLeadsOnOff','pipelineInspectionPrefOffOn','pipelineInspectionPrefOnOff','pipelineInspectionSetupPrefOffOn','pipelineInspectorSglRollupOffOn','platformWebIdeOffOn','requireLoginFromOrgDomainOnOff','restrictEmailDomainsEnabledOffOn','restrictEmailDomainsEnabledOnOff','restrictPasswordAuthEnabled','restrictPasswordAuthOffOn','retainloginhintson','rqrEmailChangeConfirmPrefOffOn','rqrEmailChangeConfirmPrefOnOff','rRHInExpAuraSitesPrefOffOn','s1encryptedstoragepref2off','s1encryptedstoragepref2on','s1EncryptedStoragePref2OnOff','salesforceEventsOnlyPrefOffOn','salesforceInboxReadReceiptsOffOn','salesforceInboxReadReceiptsOnOff','salesforceIqOrgBlocklistCreated','salesforceIqOrgBlocklistDeleted','selectNoOpptyOnLeadConvertOffOn','selectNoOpptyOnLeadConvertOnOff','sellerHomePrefOffOn','sellerHomeSetupOffOn','selNoOpptyOnLeadConvertOffOn','selNoOpptyOnLeadConvertOnOff','sendCspForUncommonClientsOffOn','sentOsPrefOffOn','showDeveloperConsoleWithWebIdeOffOn','showGeneratedEmailCheckboxOffOn','showSalesblazerInGuidanceCenterOffOn','siqOrgProvisionedOffOn','siqUserBlocklistCreated','siqUserBlocklistDeleted','skipAsyncApexValidationOffOn','skipSFAWhenMFAUILoginOffOn','skipSFAWhenMFAUILoginOnOff','socialProfilesEnableOffOn','socialProfilesEnableOnOff','sourceTrackingSandboxesOffOn','stackedModalManagerEnabledOffOn','standardApprovalsEnabledOffOn','syncEmailToCoreActivityOffOn','tableauPlatformEnabledOffOn','tableauPlatformEnabledOnOff','templateEnhancedFolderPrefOffOn','templateEnhancedFolderPrefOnOff','transactableMarketplaceReceivePartnerOffersOffOn','transactableMarketplaceReceivePartnerOffersOnOff','tspWriteRestrictedOffOn','u2FEnabledOffOn','unifiedActivitiesForECIOffOn','unifiedActivitiesForECIOnOff','uoesuloginaccessused','uploadFilesOnAttachmentsOffOn','uploadFilesOnAttachmentsOnOff','useApexExceptionEmailOn','useEmailHeadersForThreadingOffOn','useIntLinkPwdResetPrefOffOn','useSandboxOrgDomainPrefOffOn','useSharingForFlowOrchObjectsOffOn','value_RECORDING_FILE_FORMAT','value_SENTOS_AUTO_TURN_ON_STATE','value_VIDEO_CONFERENCE_ZOOM_T_O_S','verifyOn2faRegistrationOffOn','verifyOn2faRegistrationOnOff','verifyOnEmailChangeOffOn','verifyOnEmailChangeOnOff','vertNavThemedIconsEnabledOffOn','videoConferenceZoomOffOn','videoConferenceZoomOnOff','workOrdersEnabledOffOn','workOrdersEnabledOnOff','zeroOIQuantityEnabledOffOn')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 
@@ -1903,11 +1919,13 @@ ORDER BY CreatedDate DESC LIMIT 1000
     cloned, or refreshed.
 -   SandboxLicenseMatch (Sandboxes) - License match requested, sandboxOrgId:
     00Dq9hewY2gsmhF, requested by: 0052PpCxdC81jGP
+-   SandboxLicenseMatchSuccess (Sandboxes) - License match completed,
+    sandboxOrgId: 00DRQCeBEF8r5Gp, requested by: 005QZkma5fXCSpf
 
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('DeleteSandbox','deleteScratchOrg','deployedchangeset','DiscardSandbox','InactiveUserSweeperInfo','SandboxLicenseMatch')
+WHERE Action IN ('DeleteSandbox','deleteScratchOrg','deployedchangeset','DiscardSandbox','InactiveUserSweeperInfo','SandboxLicenseMatch','SandboxLicenseMatchSuccess')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

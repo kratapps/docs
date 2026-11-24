@@ -14,6 +14,13 @@
     "section": null
   },
   {
+    "action": "aCAutoSendEmailOffOn",
+    "display": "Organization setup action: aCAutoSendEmailOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "accountInspectorPrefOffOn",
     "display": "Organization setup action: accountInspectorPrefOffOn has changed.",
     "title": "Org Preferences",
@@ -54,6 +61,13 @@
     "title": "Mass Utility",
     "category": "Data Management",
     "section": "Data Management"
+  },
+  {
+    "action": "aCTargetAssigneeChangePrefOffOn",
+    "display": "Organization setup action: aCTargetAssigneeChangePrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "activatedinteractiondefinition",
@@ -430,6 +444,13 @@
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Connected Apps"
+  },
+  {
+    "action": "businessHoursOffOn",
+    "display": "Organization setup action: businessHoursOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "bYOLMigrationStatusPrefOffOn",
@@ -3885,6 +3906,13 @@
     "section": "Custom App Licenses"
   },
   {
+    "action": "graphQLApiOrgPrefForGuestUsersOffOn",
+    "display": "Organization setup action: graphQLApiOrgPrefForGuestUsersOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "groupMemberAdded",
     "display": "Added Han Solo (User, 0056zx8FGDsw5AA) to Public Group Rebel Alliance Supply Group",
     "title": "Org Config",
@@ -3974,6 +4002,20 @@
     "title": "Picklists",
     "category": "Schema",
     "section": "Global Value Sets"
+  },
+  {
+    "action": "highVelocitySalesPrefOffOn",
+    "display": "Organization setup action: highVelocitySalesPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "highVelocitySalesSetupPrefOffOn",
+    "display": "Organization setup action: highVelocitySalesSetupPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
   },
   {
     "action": "HistoricalTrendingEntityDeleted",
@@ -4396,6 +4438,13 @@
     "section": null
   },
   {
+    "action": "mailAppEnabledOffOn",
+    "display": "Organization setup action: mailAppEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "mailAppProductivityEnabledOffOn",
     "display": "Organization setup action: mailAppProductivityEnabledOffOn has changed.",
     "title": "Org Preferences",
@@ -4517,6 +4566,13 @@
   {
     "action": "multiLocationFeatureOrgPrefOffOn",
     "display": "Organization setup action: multiLocationFeatureOrgPrefOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "multipleCadencesPrefOffOn",
+    "display": "Organization setup action: multipleCadencesPrefOffOn has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
@@ -5894,6 +5950,13 @@
   {
     "action": "SandboxLicenseMatch",
     "display": "License match requested, sandboxOrgId: 00Dq9hewY2gsmhF, requested by: 0052PpCxdC81jGP",
+    "title": "Sandboxes",
+    "category": "Organization Management",
+    "section": "Sandboxes"
+  },
+  {
+    "action": "SandboxLicenseMatchSuccess",
+    "display": "License match completed, sandboxOrgId: 00DRQCeBEF8r5Gp, requested by: 005QZkma5fXCSpf",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": "Sandboxes"
