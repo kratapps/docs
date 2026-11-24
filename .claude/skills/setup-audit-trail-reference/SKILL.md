@@ -61,6 +61,13 @@ json = 2 spaces, md = proseWrap always/80).
 -   `category` - repo-defined, becomes the `##` heading. **Not in
     SetupAuditTrail.**
 
+**`title` and `category` are made up by this repo.** SetupAuditTrail only
+returns `Action`, `Display` and `Section` (plus `CreatedDate`, `CreatedBy`,
+`DelegateUser`), so nothing in the query result tells you the title or category.
+They are editorial judgment, not Salesforce data: decide them using the rules in
+"How to pick category/title" below, never expect to find or derive them from the
+org, and flag uncertain picks (or newly invented titles) to the user.
+
 Key order used in the file: `action, display, title, category, section`.
 
 ## Build output
@@ -170,15 +177,23 @@ Works with any authorized org: `sf org list`, then
 `--target-org <alias|username>`.
 
 ```bash
-sf data query --target-org <org> --json --query "SELECT Action, Section, Display, CreatedDate FROM SetupAuditTrail ORDER BY CreatedDate DESC LIMIT 2000"
+# Use the script, a plain sf data query cannot carry the NOT IN list (HTTP 414)
+node scripts/fetchNewSetupAuditTrailActions.js --target-org <org>
 ```
 
--   SetupAuditTrail retains 180 days; query returns max 20 000 rows.
-    `DelegateUser`, `CreatedBy.Username` are not needed (and are PII).
+-   **Always exclude documented actions in the query**:
+    `WHERE Action NOT IN (<all actions from reference.json>)`. Orgs can hold
+    millions of rows (UAT had 1.4M), a plain `ORDER BY CreatedDate DESC LIMIT`
+    only sees the newest ones and misses rarer actions. The `NOT IN` list is ~26
+    KB, which is too long for a GET URL (`sf data query` fails with HTTP 414),
+    so send it through the Composite API as POST
+    (`sf api request rest /services/data/vXX.0/composite --method POST --body @file`)
+    with a GET subrequest to `/query?q=<encoded SOQL>`. SOQL statement limit is
+    100 000 characters. The fetch script does all of this.
+-   SetupAuditTrail retains 180 days. `DelegateUser`, `CreatedBy.Username` are
+    not needed (and are PII).
 -   Group raw records by `Action`, keep the most recent/most informative record
     per action (prefer one with non-empty `Display` and `Section`).
--   Filter out any action already present in `reference.json` (compare `action`
-    exactly).
 -   Sort order is applied by the build script, but keep new entries appended
     then run the build.
 
@@ -200,8 +215,9 @@ sf data query --target-org <org> --json --query "SELECT Action, Section, Display
 
 `node scripts/fetchNewSetupAuditTrailActions.js --target-org <alias|username> [--limit 20000] [--out <file>]`
 
--   Queries SetupAuditTrail via `sf data query`, diffs by `action` against the
-    **local** `reference.json`.
+-   Queries SetupAuditTrail with
+    `Action NOT IN (<actions in the local reference.json>)` via the Composite
+    API (see above).
 -   Writes candidates `[{action, display, section}]` (one per new action, best
     record) to `--out`, default `out/setup-audit-trail-new-actions.json`. The
     file holds real unmasked org data: `out/` is gitignored and an `--out`
