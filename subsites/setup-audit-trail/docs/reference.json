@@ -1785,6 +1785,13 @@
     "section": null
   },
   {
+    "action": "configDuringSaleCheckEnabledOffOn",
+    "display": "Organization setup action: configDuringSaleCheckEnabledOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "configProfileAssignment",
     "display": "Einstein Activity Capture configuration \"Holonet Configuration\" was saved with 3 profiles.",
     "title": "Einstein",
@@ -7149,6 +7156,13 @@
     "section": null
   },
   {
+    "action": "value_ORG_COMM_SVC_PROVIDER_ENABLED",
+    "display": "Organization setup action: value_ORG_COMM_SVC_PROVIDER_ENABLED has changed from true to false",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "value_PROV_SCRATCH_ACTIVE_LIMIT",
     "display": "Changed Provisioned Active Scratch Org Limit from 100 to 100",
     "title": "Org Limits",
@@ -7194,6 +7208,13 @@
     "action": "value_RULES_ENGINE_CALLS_LIMIT",
     "display": "Organization setup action: value_RULES_ENGINE_CALLS_LIMIT has changed from 50000 to 50000",
     "title": "Org Limits",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "value_SECURITY_CONTACT_EMAIL",
+    "display": "Security contact email changed from \"\" to {\"name\":\"Darth Vader\",\"email\":\"darth@vader.com\",\"phone\":\"+1 555 0100123\"}.",
+    "title": "Security Controls",
     "category": "Organization Management",
     "section": null
   },
