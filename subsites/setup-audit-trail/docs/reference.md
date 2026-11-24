@@ -1248,6 +1248,8 @@ ORDER BY CreatedDate DESC LIMIT 1000
     https://test.salesforce.com
 -   enhancedDomainChosen (My Domain) - Deployed a My Domain change with My
     Domain login URL galactic-empire.my.salesforce.com with enhanced domains
+-   icorInstApiTrafficBlockedOffOn - Enabled Block API traffic that uses any
+    instanced URL
 -   insertServiceProvider (Service Provider) - Created Service Provider
     GalacticEmpire Connected App
 -   logHostnameRedirectionsOffOn - Enabled Log redirections for My Domain
@@ -1294,7 +1296,7 @@ ORDER BY CreatedDate DESC LIMIT 1000
 ```
 SELECT CreatedDate, CreatedById, CreatedBy.Username, Action, Display, Section, DelegateUser
 FROM SetupAuditTrail
-WHERE Action IN ('AuthConfig_UsernamePasswordActivated_Experience','AuthConfig_UsernamePasswordActivated_MyDomain','AuthConfig_UsernamePasswordDeactivated_Experience','AuthConfig_UsernamePasswordDeactivated_MyDomain','AuthConfigProviderCreate_Experience','AuthConfigProviderCreate_MyDomain','AuthConfigProviderDelete_Experience','changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','removeServiceProviderStartUrl','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
+WHERE Action IN ('AuthConfig_UsernamePasswordActivated_Experience','AuthConfig_UsernamePasswordActivated_MyDomain','AuthConfig_UsernamePasswordDeactivated_Experience','AuthConfig_UsernamePasswordDeactivated_MyDomain','AuthConfigProviderCreate_Experience','AuthConfigProviderCreate_MyDomain','AuthConfigProviderDelete_Experience','changedStaticResource','changeServiceProviderAcsUrl','changeServiceProviderIssuer','changeServiceProviderSamlEntityUrl','changeServiceProviderStartUrl','communitiesDefaultCdnPrefOffOn','communitiesDefaultCdnPrefOnOff','createdStaticResource','customDomainRedirectPolicy','deletedStaticResource','disableAPILoginRequiresOrgDomain','disableRequireLoginFromOrgDomain','domainChosen','enableAPILoginRequiresOrgDomain','enableRequireLoginFromOrgDomain','enhancedDomainChosen','icorInstApiTrafficBlockedOffOn','insertServiceProvider','logHostnameRedirectionsOffOn','logHostnameRedirectionsOnOff','maintainForceDotComCnamesOffOn','maintainForceDotComCnamesOnOff','mobileSdkBrowserOnAndroidOffOn','mobileSdkBrowserOnAndroidOnOff','mobileSdkNativeBrowserOffOn','mobileSdkNativeBrowserOnOff','remoteproxy','removeServiceProviderStartUrl','saveDomainProvisioned','saveEnhancedDomainProvisioned','shareBrowserSessionAndroidOffOn','shareBrowserSessionAndroidOnOff','shareBrowserSessionIOSOffOn','shareBrowserSessionIOSOnOff','warnForceDotComRedirectionOffOn','warnForceDotComRedirectionOnOff')
 ORDER BY CreatedDate DESC LIMIT 1000
 ```
 

@@ -4088,6 +4088,13 @@
     "section": "Holidays"
   },
   {
+    "action": "icorInstApiTrafficBlockedOffOn",
+    "display": "Enabled Block API traffic that uses any instanced URL",
+    "title": "Network",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "InactiveUserSweeperInfo",
     "display": "6 users were frozen in this sandbox because they didn't log in within the first 60 days of it being created, cloned, or refreshed.",
     "title": "Sandboxes",
