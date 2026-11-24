@@ -106,7 +106,7 @@
   },
   {
     "action": "activateduser",
-    "display": "Activated user Anakin Skywalker (UserID: [0052A00000EsOI0])",
+    "display": "Activated user Anakin Skywalker (UserID: [0054KTFtUJGytb6])",
     "title": "User Activation and Auth",
     "category": "User Management",
     "section": "Manage Users"
@@ -183,14 +183,14 @@
   },
   {
     "action": "addeduserpackagelicense",
-    "display": "Added 1 User Package Licenses for Package License with ID: 050600000008kK9",
+    "display": "Added 1 User Package Licenses for Package License with ID: 050qywXBVZ8tn4n",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Custom App Licenses"
   },
   {
     "action": "addOauthClientCredentialUser",
-    "display": "Assigned OAuth client credentials user darth@vader.com (UserID: [005790000024p8r]) to app Death Star Connector (AppID: [0H479000000CcUh])",
+    "display": "Assigned OAuth client credentials user darth@vader.com (UserID: [005PpASpnVgY1Z7]) to app Death Star Connector (AppID: [0H4wQ8P1z0nDmVf])",
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "OAuth Client Credentials User"
@@ -342,7 +342,7 @@
   },
   {
     "action": "caselayout",
-    "display": "Changed Cases page layout CSS Page Layout 2.0",
+    "display": "Changed Cases page layout Imperial Support Page Layout 2.0",
     "title": "Layouts",
     "category": "UI",
     "section": "Customize Cases"
@@ -503,7 +503,7 @@
   },
   {
     "action": "changedApproverRequestEmails",
-    "display": "The email approval preference for user Anakin Skywalker (UserID: [0052A00000EsOI0]) changed from 'Only if I am an approver' to 'If I am an approver or delegated approver'",
+    "display": "The email approval preference for user Anakin Skywalker (UserID: [0054KTFtUJGytb6]) changed from 'Only if I am an approver' to 'If I am an approver or delegated approver'",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -559,7 +559,7 @@
   },
   {
     "action": "changedCFDefaultCustom",
-    "display": "Changed default value for Prepaid Margin custom field on Quotes from Checked to Unchecked",
+    "display": "Changed default value for Credit Margin custom field on Quotes from Checked to Unchecked",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Custom Objects"
@@ -599,7 +599,7 @@
   },
   {
     "action": "changedCFFieldHelpCustom",
-    "display": "Changed help text of Share with Partners custom field on Quotes",
+    "display": "Changed help text of Share with Hutts custom field on Quotes",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Custom Objects"
@@ -739,7 +739,7 @@
   },
   {
     "action": "changedcommunitynickname",
-    "display": "Changed nickname for user Anakin Skywalker (UserID: [0052A00000EsOI0]) from Ani to Emperor",
+    "display": "Changed nickname for user Anakin Skywalker (UserID: [0054KTFtUJGytb6]) from Ani to Emperor",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -774,7 +774,7 @@
   },
   {
     "action": "changedCustEntMask",
-    "display": "Changed record name display format for custom object Estimate from Estimate-{000000} to E-{000000}",
+    "display": "Changed record name display format for custom object Bounty from Bounty-{000000} to B-{000000}",
     "title": "Custom Objects",
     "category": "Schema",
     "section": "Custom Objects"
@@ -823,7 +823,7 @@
   },
   {
     "action": "changedCustEntTypeAutoNum",
-    "display": "Changed record name data type of custom object Staging Utility to Auto Number (Starting from 0)",
+    "display": "Changed record name data type of custom object Hangar Utility to Auto Number (Starting from 0)",
     "title": "Custom Objects",
     "category": "Schema",
     "section": "Custom Objects"
@@ -861,7 +861,7 @@
   },
   {
     "action": "changedCustLinkContentSourceCustom",
-    "display": "Changed Add_Change_Address button or link content source on Contract Licenses from Visualforce Page to URL",
+    "display": "Changed Add_Change_Sector button or link content source on Contract Licenses from Visualforce Page to URL",
     "title": "Links, Buttons and Actions",
     "category": "UI",
     "section": "Custom Objects"
@@ -934,7 +934,7 @@
   },
   {
     "action": "changedDelegateApprover",
-    "display": "The delegate approver for user Anakin Skywalker (UserID: [0052A00000EsOI0]) changed from Obi-Wan Kenobi to Sheev Palpatine",
+    "display": "The delegate approver for user Anakin Skywalker (UserID: [0054KTFtUJGytb6]) changed from Obi-Wan Kenobi to Sheev Palpatine",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -969,14 +969,14 @@
   },
   {
     "action": "changedemail",
-    "display": "Changed email for user Anakin Skywalker (UserID: [0052A00000EsOI0]) from anakin@skywalker.com to darth@vader.com",
+    "display": "Changed email for user Anakin Skywalker (UserID: [0054KTFtUJGytb6]) from anakin@skywalker.com to darth@vader.com",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "changedfederationid",
-    "display": "Changed federation id for user Anakin Skywalker (UserID: [005Ea0000038SxN]) from null to fed1",
+    "display": "Changed federation id for user Anakin Skywalker (UserID: [005DjLeWKCJ4CrL]) from null to fed1",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -1046,7 +1046,7 @@
   },
   {
     "action": "changedManager",
-    "display": "The manager for user Anakin Skywalker (UserID: [0052A00000EsOI0]) changed from Obi-Wan Kenobi to Sheev Palpatine",
+    "display": "The manager for user Anakin Skywalker (UserID: [0054KTFtUJGytb6]) changed from Obi-Wan Kenobi to Sheev Palpatine",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -1137,7 +1137,7 @@
   },
   {
     "action": "changedPicklistPromote",
-    "display": "Promoted picklist field Macaron Flavor to new global value set Flavors",
+    "display": "Promoted picklist field Kyber Crystal to new global value set Crystals",
     "title": "Picklists",
     "category": "Schema",
     "section": "Customize Products"
@@ -1193,7 +1193,7 @@
   },
   {
     "action": "changedprocessdefinition",
-    "display": "Changed Approval Process: Visit Approval v2 for Object: 01I60000000BHI0",
+    "display": "Changed Approval Process: Visit Approval v2 for Object: 01IjzNtR4K5RH1f",
     "title": "Approval Process",
     "category": "Automation",
     "section": "Approval Process"
@@ -1361,14 +1361,14 @@
   },
   {
     "action": "changedusername",
-    "display": "Changed username for 0052A00000EsOI0 from anakin@skywalker.com to darth@vader.com",
+    "display": "Changed username for 0054KTFtUJGytb6 from anakin@skywalker.com to darth@vader.com",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "changedUserPhoneNumber",
-    "display": "For user anakin@skywalker.com, the mobile phone number was changed from +65 93100001 to +65 93100002",
+    "display": "For user anakin@skywalker.com, the mobile phone number was changed from +65 91000001 to +65 91000002",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -1478,7 +1478,7 @@
   },
   {
     "action": "changeUserRuntimeAccessPolicy",
-    "display": "Changed connected app Death Start Permitted Users setting from All users may self-authorize to Admin approved users are pre-authorized",
+    "display": "Changed connected app Death Star Permitted Users setting from All users may self-authorize to Admin approved users are pre-authorized",
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
@@ -1499,7 +1499,7 @@
   },
   {
     "action": "ci_updatedCUnknown",
-    "display": "Organization setup action: [Competitor Mentioned] has changed.",
+    "display": "Organization setup action: [Rebel Spy Mentioned] has changed.",
     "title": "Einstein",
     "category": "Data Management",
     "section": "Einstein Email Insights"
@@ -1709,7 +1709,7 @@
   },
   {
     "action": "createdBigObj",
-    "display": "Created Big Object: Atom",
+    "display": "Created Big Object: Holocron",
     "title": "Big Objects",
     "category": "Schema",
     "section": "Big Objects"
@@ -1737,7 +1737,7 @@
   },
   {
     "action": "createdCFBigObjects",
-    "display": "Created custom field Description (Text) on Atoms",
+    "display": "Created custom field Description (Text) on Holocrons",
     "title": "Big Objects",
     "category": "Schema",
     "section": "Big Objects"
@@ -1856,14 +1856,14 @@
   },
   {
     "action": "createdDependency",
-    "display": "Created dependency for \"Tested Field\" controlled by \"Tested Object\" on object Error Condition",
+    "display": "Created dependency for \"Force Alignment\" controlled by \"Force Affinity\" on object Jedi Trial",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Field Dependencies"
   },
   {
     "action": "createdDuplicateRule",
-    "display": "Created new 01I4W000002HdqL duplicate rule \"Droid Serial Number\". Set \"Record-Level Security\" to \"Enforce sharing rules\"",
+    "display": "Created new 01I7NWeS3hRbn6q duplicate rule \"Droid Serial Number\". Set \"Record-Level Security\" to \"Enforce sharing rules\"",
     "title": "Matching and Duplicate Rules",
     "category": "Data Management",
     "section": "Duplicate Rule"
@@ -1898,7 +1898,7 @@
   },
   {
     "action": "createdflowtrigger",
-    "display": "Created Flow Trigger Opportunity_Flow3014W000000Fbld for Object: Opportunity",
+    "display": "Created Flow Trigger Opportunity_Flow301xeTLWvPtPzpD for Object: Opportunity",
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
@@ -2038,7 +2038,7 @@
   },
   {
     "action": "createdworkflowrule",
-    "display": "Created workflow rule Opportunity_Process3010z0000002oy4 for Object: Opportunity",
+    "display": "Created workflow rule Opportunity_Process301B0LuKv0JWLdq for Object: Opportunity",
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
@@ -2052,7 +2052,7 @@
   },
   {
     "action": "crmaDataflowDeleted",
-    "display": "Deleted CRMA Dataflow 02KO50000050VP9 ExternalFileDataflow06VO5000001dBCjMAM",
+    "display": "Deleted CRMA Dataflow 02KVM2eZgBqJMy6 ExternalFileDataflow06VM3vsPu71R1As9bk",
     "title": "CRMA",
     "category": "Data Cloud",
     "section": "CRMA"
@@ -2206,14 +2206,14 @@
   },
   {
     "action": "deactivateduser",
-    "display": "Deactivated user Anakin Skywalker (UserID: [0052A00000EsOI0])",
+    "display": "Deactivated user Anakin Skywalker (UserID: [0054KTFtUJGytb6])",
     "title": "User Activation and Auth",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "deactivatedworkflowrule",
-    "display": "Deactivated workflow rule Opportunity_Process3010z0000002oy4 for Object: Opportunity",
+    "display": "Deactivated workflow rule Opportunity_Process301B0LuKv0JWLdq for Object: Opportunity",
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
@@ -2269,7 +2269,7 @@
   },
   {
     "action": "defaultCustomEntityAccess",
-    "display": "Changed default internal access for Country Region from Public Read Only to Public Read/Write",
+    "display": "Changed default internal access for Galactic Sector from Public Read Only to Public Read/Write",
     "title": "Sharing Defaults",
     "category": "Data Management",
     "section": "Sharing Defaults"
@@ -2332,7 +2332,7 @@
   },
   {
     "action": "deleteAuthProvider",
-    "display": "Deleted Auth. Provider Meta Ads Data Cloud",
+    "display": "Deleted Auth. Provider Holonet Ads Data Cloud",
     "title": "Auth. Providers",
     "category": "Organization Management",
     "section": "Auth. Providers"
@@ -2353,7 +2353,7 @@
   },
   {
     "action": "deleteCustomAttribute",
-    "display": "Deleted custom attribute WORK_ORDER_SERVICE_NOTE with value of \"\" for connected app",
+    "display": "Deleted custom attribute DEATH_STAR_SERVICE_NOTE with value of \"\" for connected app",
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Application"
@@ -2416,7 +2416,7 @@
   },
   {
     "action": "deletedBigObj",
-    "display": "Deleted Big Object: Atom",
+    "display": "Deleted Big Object: Holocron",
     "title": "Big Objects",
     "category": "Schema",
     "section": "Big Objects"
@@ -2507,21 +2507,21 @@
   },
   {
     "action": "deletedemailalert",
-    "display": "Deleted Email Alert POA Update Email for Object: Case",
+    "display": "Deleted Email Alert Trade Federation Update Email for Object: Case",
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
   },
   {
     "action": "deletedFieldSet",
-    "display": "Deleted Field Set Switchboard Popover Fields on Case",
+    "display": "Deleted Field Set Holonet Popover Fields on Case",
     "title": "Custom Objects",
     "category": "Schema",
     "section": "Customize Cases"
   },
   {
     "action": "deletedfieldupdate",
-    "display": "Deleted Field Update PRM-Update Sync Litmos for Object: User",
+    "display": "Deleted Field Update Hyperspace-Update Sync Holonet for Object: User",
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
@@ -2535,7 +2535,7 @@
   },
   {
     "action": "deletedflowtrigger",
-    "display": "Deleted Flow Trigger Opportunity_Flow3014W000000Fbld for Object: Opportunity",
+    "display": "Deleted Flow Trigger Opportunity_Flow301xeTLWvPtPzpD for Object: Opportunity",
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
@@ -2577,7 +2577,7 @@
   },
   {
     "action": "deletedopplayout",
-    "display": "Deleted Opportunity page layout PRM Deal Registration - Direct Partner",
+    "display": "Deleted Opportunity page layout Hutt Deal Registration - Direct Partner",
     "title": "Layouts",
     "category": "UI",
     "section": "Customize Opportunities"
@@ -2591,28 +2591,28 @@
   },
   {
     "action": "deletedPicklistMapWithColor",
-    "display": "Deleted value Blaster with color Assigned dynamically from Weapon picklist and replaced with value Pistol",
+    "display": "Deleted value Blaster with color Assigned dynamically from Weapon picklist and replaced with value Bowcaster",
     "title": "Picklists",
     "category": "Schema",
     "section": "Customize Accounts"
   },
   {
     "action": "deletedPicklistMapWithColorCustom",
-    "display": "Deleted value Blaster with color Assigned dynamically from Weapon picklist on Stormtrooper and replaced with value Pistol",
+    "display": "Deleted value Blaster with color Assigned dynamically from Weapon picklist on Stormtrooper and replaced with value Bowcaster",
     "title": "Picklists",
     "category": "Schema",
     "section": "Custom Objects"
   },
   {
     "action": "deletedPicklistWithColor",
-    "display": "Deleted value Pistol from Weapon picklist with color Assigned dynamically",
+    "display": "Deleted value Bowcaster from Weapon picklist with color Assigned dynamically",
     "title": "Picklists",
     "category": "Schema",
     "section": "Customize Opportunities"
   },
   {
     "action": "deletedPicklistWithColorCustom",
-    "display": "Deleted value Pistol from Weapon picklist with color Assigned dynamically on Stormtrooper",
+    "display": "Deleted value Bowcaster from Weapon picklist with color Assigned dynamically on Stormtrooper",
     "title": "Picklists",
     "category": "Schema",
     "section": "Custom Objects"
@@ -2689,14 +2689,14 @@
   },
   {
     "action": "deletedworkflowrule",
-    "display": "Deleted workflow rule Opportunity_Process3010z0000002oy4 for Object: Opportunity",
+    "display": "Deleted workflow rule Opportunity_Process301B0LuKv0JWLdq for Object: Opportunity",
     "title": "Workflow Rule",
     "category": "Automation",
     "section": "Workflow Rule"
   },
   {
     "action": "deleteIpWhiteList",
-    "display": "Deleted Ip AllowList from 14.101.11.1 to 14.101.11.1",
+    "display": "Deleted Ip AllowList from 203.0.113.10 to 203.0.113.10",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": "Security Controls"
@@ -2710,28 +2710,28 @@
   },
   {
     "action": "deleteRoleSharingRuleCascade",
-    "display": "Cascade deleted Opportunity Owner Rule EMEA due to deletion of role EMEA Manager",
+    "display": "Cascade deleted Opportunity Owner Rule Outer Rim due to deletion of role Outer Rim Moff",
     "title": "Sharing Rules",
     "category": "Data Management",
     "section": "Sharing Rules"
   },
   {
     "action": "DeleteSandbox",
-    "display": "Deleted sandbox, name: mySandbox, sandboxid: 07E4W000000KINO, sandboxOrgId: 00D770000003f4V, deleted by: 00560000001JNq5",
+    "display": "Deleted sandbox, name: Endor, sandboxid: 07EjmBsp6aT6b6K, sandboxOrgId: 00DmQcvzeE4qs3X, deleted by: 005sj5BbWPDe6wG",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": "Sandboxes"
   },
   {
     "action": "deleteScratchOrg",
-    "display": "Deleted scratch org with ID:  \"00D1X000000AmYD\"",
+    "display": "Deleted scratch org with ID:  \"00DTnDHS5NrARAk\"",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": null
   },
   {
     "action": "deleteSharingRule",
-    "display": "Deleted Opportunity Owner Sharing Rule EMEA",
+    "display": "Deleted Opportunity Owner Sharing Rule Outer Rim",
     "title": "Sharing Rules",
     "category": "Data Management",
     "section": "Sharing Rules"
@@ -2745,7 +2745,7 @@
   },
   {
     "action": "deleteTwoFactorWebAuthN",
-    "display": "Security Key credential 0moJw00000004bL with nickname \"Padme\" removed for anakin@skywalker.com",
+    "display": "Security Key credential 0moDp9cF4s0w7dR with nickname \"Padme\" removed for anakin@skywalker.com",
     "title": "User Activation and Auth",
     "category": "User Management",
     "section": null
@@ -2766,7 +2766,7 @@
   },
   {
     "action": "deployedchangeset",
-    "display": "Deployed Change Set: Quoting Process",
+    "display": "Deployed Change Set: Order 66",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": "Inbound Change Sets"
@@ -2815,7 +2815,7 @@
   },
   {
     "action": "disabledForIntegrations",
-    "display": "Removed User Package License for Platform Integration User with ID 0050z000007GL6j and Package License with ID: 0500z0000008mU1",
+    "display": "Removed User Package License for Platform Integration User with ID 005ryw7bfAdxHqZ and Package License with ID: 050ubQSrEms6LMK",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Custom App Licenses"
@@ -2864,21 +2864,21 @@
   },
   {
     "action": "DiscardSandbox",
-    "display": "Discarded sandbox, name: mySandbox, sandboxid: 07E4W000000KINO, sandboxOrgId: null, discarded by: 00560000001JNq5",
+    "display": "Discarded sandbox, name: Endor, sandboxid: 07EjmBsp6aT6b6K, sandboxOrgId: null, discarded by: 005sj5BbWPDe6wG",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": "Sandboxes"
   },
   {
     "action": "dkimRotationPreparationSuccessful",
-    "display": "Generated new public and private keys for DKIM key 09P4W000000YNCD in preparation for key rotation in 5 days.",
+    "display": "Generated new public and private keys for DKIM key 09PmKH1n5RpXZpP in preparation for key rotation in 5 days.",
     "title": "Email Administration",
     "category": "Organization Management",
     "section": "Email Administration"
   },
   {
     "action": "dkimRotationSuccessful",
-    "display": "Rotated public and private keys for DKIM key 09P4W000000YNCD",
+    "display": "Rotated public and private keys for DKIM key 09PmKH1n5RpXZpP",
     "title": "Email Administration",
     "category": "Organization Management",
     "section": "Email Administration"
@@ -3004,7 +3004,7 @@
   },
   {
     "action": "enabledForIntegrations",
-    "display": "Added User Package License for Platform Integration User with ID 0050z000007GL6j and Package License with ID: 0500z0000008mU1",
+    "display": "Added User Package License for Platform Integration User with ID 005ryw7bfAdxHqZ and Package License with ID: 050ubQSrEms6LMK",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Custom App Licenses"
@@ -3158,7 +3158,7 @@
   },
   {
     "action": "externalCredentialDelete",
-    "display": "Deleted external credential: AddApprovalApi",
+    "display": "Deleted external credential: AddSenateApi",
     "title": "Named Credentials",
     "category": "Organization Management",
     "section": "External Credentials"
@@ -3200,21 +3200,21 @@
   },
   {
     "action": "ExternalServicesCreate",
-    "display": "Created External Service Registration QuoteAutoApprovals",
+    "display": "Created External Service Registration ImperialAutoApprovals",
     "title": "Integrations",
     "category": "Automation",
     "section": "Integrations"
   },
   {
     "action": "ExternalServicesDelete",
-    "display": "Deleted External Service Registration AuthorizationToken2",
+    "display": "Deleted External Service Registration DeathStarAuthToken2",
     "title": "Integrations",
     "category": "Automation",
     "section": "Integrations"
   },
   {
     "action": "ExternalServicesSchemaChange",
-    "display": "Changed External Service Registration QuoteAutoApprovals: schema was changed",
+    "display": "Changed External Service Registration ImperialAutoApprovals: schema was changed",
     "title": "Integrations",
     "category": "Automation",
     "section": "Integrations"
@@ -3277,14 +3277,14 @@
   },
   {
     "action": "filteredLookupDelete",
-    "display": "Deleted Lookup Filter from Marketplace Account",
+    "display": "Deleted Lookup Filter from Cantina Account",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Customize Opportunities"
   },
   {
     "action": "filteredLookupEdit",
-    "display": "Changed Lookup Filter Error Message for Capital City from Value does not exist to Value does not match filter criteria",
+    "display": "Changed Lookup Filter Error Message for Capital Planet from Value does not exist to Value does not match filter criteria",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Customize Opportunities"
@@ -3375,7 +3375,7 @@
   },
   {
     "action": "granteduserpackagelicense",
-    "display": "Granted 1 User Package Licenses for User with ID: 0052A00000EsOI0",
+    "display": "Granted 1 User Package Licenses for User with ID: 0054KTFtUJGytb6",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Custom App Licenses"
@@ -3403,7 +3403,7 @@
   },
   {
     "action": "hardDeletedBigObj",
-    "display": "Permanently deleted Big Object: Atom",
+    "display": "Permanently deleted Big Object: Holocron",
     "title": "Big Objects",
     "category": "Schema",
     "section": "Big Objects"
@@ -3452,56 +3452,56 @@
   },
   {
     "action": "HistoricalTrendingEntityDeleted",
-    "display": "Historical Trending for Product Feature Request deleted",
+    "display": "Historical Trending for Droid Upgrade Request deleted",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": "Customize Historical Entity Trending"
   },
   {
     "action": "HistoricalTrendingEntityTracked",
-    "display": "Historical Trending for Product Feature Request on",
+    "display": "Historical Trending for Droid Upgrade Request on",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": "Customize Historical Entity Trending"
   },
   {
     "action": "HistoricalTrendingEntityUnTracked",
-    "display": "Historical Trending for Product Feature Request off",
+    "display": "Historical Trending for Droid Upgrade Request off",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": "Customize Historical Entity Trending"
   },
   {
     "action": "HistoricalTrendingFieldDeleted",
-    "display": "Historical Trending for Product Feature Request field 00N60000002boqR deleted",
+    "display": "Historical Trending for Droid Upgrade Request field 00Nbwh6CCDjsSbH deleted",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": null
   },
   {
     "action": "HistoricalTrendingFieldTracked",
-    "display": "Historical for Product Feature Request field 00N60000002boqR on",
+    "display": "Historical for Droid Upgrade Request field 00Nbwh6CCDjsSbH on",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": "Customize Historical Field Trending"
   },
   {
     "action": "HistoricalTrendingFieldUnTracked",
-    "display": "Historical Trending for Product Feature Request field 00N60000002boqR off",
+    "display": "Historical Trending for Droid Upgrade Request field 00Nbwh6CCDjsSbH off",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": "Customize Historical Field Trending"
   },
   {
     "action": "HistoricalTrendingFilterChanged",
-    "display": "Historical data filter for Product Feature Request changed",
+    "display": "Historical data filter for Droid Upgrade Request changed",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": "Customize Historical Entity Trending"
   },
   {
     "action": "HistoricalTrendingFilterDeleted",
-    "display": "Historical data filter for Product Feature Request deleted",
+    "display": "Historical data filter for Droid Upgrade Request deleted",
     "title": "Historical Trending",
     "category": "Data Management",
     "section": "Customize Historical Entity Trending"
@@ -3543,7 +3543,7 @@
   },
   {
     "action": "insertAuthProvider",
-    "display": "Created Auth. Provider Meta Ads Data Cloud",
+    "display": "Created Auth. Provider Holonet Ads Data Cloud",
     "title": "Auth. Providers",
     "category": "Organization Management",
     "section": "Auth. Providers"
@@ -3578,7 +3578,7 @@
   },
   {
     "action": "insertConnectedAppSessionPolicy",
-    "display": "Created connected app session policy for app 0H44W000002DeeO with Session Timeout null",
+    "display": "Created connected app session policy for app 0H4PseFvaRDkr4T with Session Timeout null",
     "title": "Connected Apps",
     "category": "Organization Management",
     "section": "Connected App Session Policy"
@@ -3599,7 +3599,7 @@
   },
   {
     "action": "insertLpuAccessMapping",
-    "display": "Created access mapping for sharing set 0H279000000009J on 01I7900000097jP with access Contact.ReportsTo=Owner.Contact(Public Read/Write)",
+    "display": "Created access mapping for sharing set 0H27KnJprECbAyv on 01IaLjnArH9NK4y with access Contact.ReportsTo=Owner.Contact(Public Read/Write)",
     "title": "Sharing Sets",
     "category": "Data Management",
     "section": "Sharing Sets"
@@ -3613,14 +3613,14 @@
   },
   {
     "action": "insertSharingRule",
-    "display": "Created Opportunity Owner Sharing Rule EMEA",
+    "display": "Created Opportunity Owner Sharing Rule Outer Rim",
     "title": "Sharing Rules",
     "category": "Data Management",
     "section": "Sharing Rules"
   },
   {
     "action": "insertSharingSets",
-    "display": "Created sharing set Stormtroopers (0H279000000009J ) ",
+    "display": "Created sharing set Stormtroopers (0H27KnJprECbAyv ) ",
     "title": "Sharing Sets",
     "category": "Data Management",
     "section": "Sharing Sets"
@@ -3641,14 +3641,14 @@
   },
   {
     "action": "insertTwoFactorWebAuthN",
-    "display": "Security Key credential 0moJw00000003sL with nickname \"Security Key #1\" added for anakin@skywalker.com",
+    "display": "Security Key credential 0moQrrgULawnQkZ with nickname \"Security Key #1\" added for anakin@skywalker.com",
     "title": "User Activation and Auth",
     "category": "User Management",
     "section": null
   },
   {
     "action": "installedpackagingapp",
-    "display": "Installed AppExchange package: One Logger",
+    "display": "Installed AppExchange package: Holonet Logger",
     "title": "Custom Apps",
     "category": "Organization Management",
     "section": "Custom Apps"
@@ -3795,7 +3795,7 @@
   },
   {
     "action": "loginasrevokedtopartnerbt",
-    "display": "anakin@skywalker.com has revoked user login access to package publisher Salesforce CPQ & Billing (00D300000008V7f)",
+    "display": "anakin@skywalker.com has revoked user login access to package publisher Salesforce CPQ & Billing (00DUcvqncSq5a2E)",
     "title": "User Login Access",
     "category": "User Management",
     "section": null
@@ -3809,7 +3809,7 @@
   },
   {
     "action": "loginIpRange",
-    "display": "Added Login Ip Range to Sith Lord from 52.38.129.456 to 52.38.129.123",
+    "display": "Added Login Ip Range to Sith Lord from 198.51.100.45 to 198.51.100.123",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -3963,7 +3963,7 @@
   },
   {
     "action": "namedCredentialDelete",
-    "display": "Deleted named credential: ApproveApprovalApi",
+    "display": "Deleted named credential: ApproveSenateApi",
     "title": "Named Credentials",
     "category": "Organization Management",
     "section": "Named Credentials"
@@ -4033,7 +4033,7 @@
   },
   {
     "action": "NetworksChangedSendWelcomeEmailOff",
-    "display": "Disabled welcome emails for DepotFinder ",
+    "display": "Disabled welcome emails for HangarFinder ",
     "title": "Portal",
     "category": "Organization Management",
     "section": "Experiences send welcome email pref"
@@ -4089,7 +4089,7 @@
   },
   {
     "action": "nonSecurityReviewedManagedPackageInstalled",
-    "display": "The managed package \"Salesforce CPQ\" version \"Winter '24\" has not been security reviewed and was installed by user \"033a0000000pgefiak@00d60000000j3aqea0\".",
+    "display": "The managed package \"Salesforce CPQ\" version \"Winter '24\" has not been security reviewed and was installed by user \"005ZYdUcuv2hq8BRLH@00dzvGkCTR5tW5yryL\".",
     "title": "Custom Apps",
     "category": "Organization Management",
     "section": null
@@ -4208,7 +4208,7 @@
   },
   {
     "action": "owdInternalUpdateStartedForEntity",
-    "display": "Started default internal access update for Country Region from Public Read Only to Public Read/Write",
+    "display": "Started default internal access update for Galactic Sector from Public Read Only to Public Read/Write",
     "title": "Sharing Defaults",
     "category": "Data Management",
     "section": "Sharing Defaults"
@@ -4346,7 +4346,7 @@
   },
   {
     "action": "PermissionSetGroupComponentRemoved",
-    "display": "Changed permission set group Galactic Empire: group member Death Start was removed",
+    "display": "Changed permission set group Galactic Empire: group member Death Star was removed",
     "title": "Permission Set Groups",
     "category": "Permission Management",
     "section": "Permission Set Group"
@@ -4367,21 +4367,21 @@
   },
   {
     "action": "PermSetAssign",
-    "display": "Permission set Sith Lord: assigned to user Darth Vader (UserID: [0052A00000EsOI0])",
+    "display": "Permission set Sith Lord: assigned to user Darth Vader (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "PermSetAssign_HasExpiration",
-    "display": "Permission set SithLord with expiration: assigned to user Darth Vader (UserID: [0052A00000EsOI0]), expiring on Sat May 20 06:59:59 GMT 2023",
+    "display": "Permission set SithLord with expiration: assigned to user Darth Vader (UserID: [0054KTFtUJGytb6]), expiring on Sat May 20 06:59:59 GMT 2023",
     "title": "User Permissions",
     "category": "User Management",
     "section": null
   },
   {
     "action": "PermSetAssignmentExpirationChange",
-    "display": "Permission set SithLord assigned to user Darth Vader (UserID: [0052A00000EsOI0]): expiration was changed from Sat Apr 01 06:59:59 GMT 2023 to Sat May 20 06:59:59 GMT 2023",
+    "display": "Permission set SithLord assigned to user Darth Vader (UserID: [0054KTFtUJGytb6]): expiration was changed from Sat Apr 01 06:59:59 GMT 2023 to Sat May 20 06:59:59 GMT 2023",
     "title": "User Permissions",
     "category": "User Management",
     "section": null
@@ -4472,7 +4472,7 @@
   },
   {
     "action": "PermSetGroupAssign",
-    "display": "Permission set group Sith: assigned to user Darth Vader (UserID: [0052A00000EsOI0])",
+    "display": "Permission set group Sith: assigned to user Darth Vader (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
@@ -4486,7 +4486,7 @@
   },
   {
     "action": "PermSetGroupUnassign",
-    "display": "Permission set group Jedi: unassigned from user Anakin Skywalker (UserID: [0052A00000EsOI0])",
+    "display": "Permission set group Jedi: unassigned from user Anakin Skywalker (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
@@ -4507,21 +4507,21 @@
   },
   {
     "action": "PermSetLicenseAssign",
-    "display": "Permission set license Galactic Senate: assigned to user Anakin Skywalker (UserID: [0052A00000EsOI0])",
+    "display": "Permission set license Galactic Senate: assigned to user Anakin Skywalker (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "PermSetLicenseUnassign",
-    "display": "Permission set license Galactic Senate removed from user Anakin Skywalker (UserID: [0052A00000EsOI0])",
+    "display": "Permission set license Galactic Senate removed from user Anakin Skywalker (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "permsetLicenseUserPermRevoked",
-    "display": "Removed the AutomaticActivityCapture user permission as allowed by Permission Set License 0PL4W000000tpqk",
+    "display": "Removed the AutomaticActivityCapture user permission as allowed by Permission Set License 0PLWHJ536a2fyLr",
     "title": "Permission Sets",
     "category": "Permission Management",
     "section": null
@@ -4563,14 +4563,14 @@
   },
   {
     "action": "PermSetUnassign",
-    "display": "Permission set Padawan: unassigned from user Anakin Skywalker (UserID: [0052A00000EsOI0])",
+    "display": "Permission set Padawan: unassigned from user Anakin Skywalker (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "PermSetUnassign_HasExpiration",
-    "display": "Permission set SithLord with expiration: unassigned from user Darth Vader (UserID: [0052A00000EsOI0])",
+    "display": "Permission set SithLord with expiration: unassigned from user Darth Vader (UserID: [0054KTFtUJGytb6])",
     "title": "User Permissions",
     "category": "User Management",
     "section": null
@@ -4654,7 +4654,7 @@
   },
   {
     "action": "profileDefaultCustAppCustom",
-    "display": "Changed profile Sith: DeathStart2 is now the default application",
+    "display": "Changed profile Sith: DeathStar2 is now the default application",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -4682,7 +4682,7 @@
   },
   {
     "action": "profileEntityPermRemoved",
-    "display": "Removed the Create on Account object permission from Profile 00e07000000dkb6",
+    "display": "Removed the Create on Account object permission from Profile 00efXZCrn1vK0cb",
     "title": "Profiles",
     "category": "Permission Management",
     "section": null
@@ -4703,7 +4703,7 @@
   },
   {
     "action": "profileFlsChangedCustom",
-    "display": "Changed profile Sith: field-level security for Death Start: Capacity was changed from No Access to Read Only",
+    "display": "Changed profile Sith: field-level security for Death Star: Capacity was changed from No Access to Read Only",
     "title": "Profiles",
     "category": "Permission Management",
     "section": "Manage Users"
@@ -4815,7 +4815,7 @@
   },
   {
     "action": "RateLimitingNotification",
-    "display": "API Usage Notification insert for TotalRequests Recipient: 0054W00000EwVFB Threshold / Interval: 50 / 24",
+    "display": "API Usage Notification insert for TotalRequests Recipient: 005fZLhHaBMvgR9 Threshold / Interval: 50 / 24",
     "title": "Org Limits",
     "category": "Organization Management",
     "section": "API Usage Notification"
@@ -4836,21 +4836,21 @@
   },
   {
     "action": "recalcSingleSharingRuleComplete",
-    "display": "Completed Opportunity Owner Rule recalculation: EMEA",
+    "display": "Completed Opportunity Owner Rule recalculation: Outer Rim",
     "title": "Sharing Rules",
     "category": "Data Management",
     "section": "Sharing Rules"
   },
   {
     "action": "recalcSingleSharingRuleStart",
-    "display": "Initiated Opportunity Owner Rule recalculation: EMEA",
+    "display": "Initiated Opportunity Owner Rule recalculation: Outer Rim",
     "title": "Sharing Rules",
     "category": "Data Management",
     "section": "Sharing Rules"
   },
   {
     "action": "registeredUserPhoneNumber",
-    "display": "For user anakin@skywalker.com, the phone number +91 9041812345 was registered",
+    "display": "For user anakin@skywalker.com, the phone number +91 9100000001 was registered",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -4878,14 +4878,14 @@
   },
   {
     "action": "removedDependency",
-    "display": "Removed dependency for \"Tested Field\" controlled by \"Tested Object\" on object Error Condition",
+    "display": "Removed dependency for \"Force Alignment\" controlled by \"Force Affinity\" on object Jedi Trial",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Field Dependencies"
   },
   {
     "action": "removedFieldOnCompactLayout",
-    "display": "Removed 00N5e00000fbJFn field from Death_Star Compact Layout on Death Star",
+    "display": "Removed 00NDKzvtMzYbvrS field from Death_Star Compact Layout on Death Star",
     "title": "Layouts",
     "category": "UI",
     "section": "Custom Objects"
@@ -4906,7 +4906,7 @@
   },
   {
     "action": "removeduserpackagelicense",
-    "display": "Removed 1 User Package License for Package License with ID: 050600000008kK9",
+    "display": "Removed 1 User Package License for Package License with ID: 050qywXBVZ8tn4n",
     "title": "User Permissions",
     "category": "User Management",
     "section": "Custom App Licenses"
@@ -5151,7 +5151,7 @@
   },
   {
     "action": "SandboxLicenseMatch",
-    "display": "License match requested, sandboxOrgId: 00D790000000Nq2, requested by: 0054W00000DiLY4",
+    "display": "License match requested, sandboxOrgId: 00Dq9hewY2gsmhF, requested by: 0052PpCxdC81jGP",
     "title": "Sandboxes",
     "category": "Organization Management",
     "section": "Sandboxes"
@@ -5256,7 +5256,7 @@
   },
   {
     "action": "sessiontimeoutForProfile",
-    "display": "Changed profile IT Support: Changed Session Timeout Value from 120 to 240 minutes",
+    "display": "Changed profile Droid Maintenance: Changed Session Timeout Value from 120 to 240 minutes",
     "title": "Session Settings",
     "category": "Organization Management",
     "section": "Session Settings"
@@ -5498,28 +5498,28 @@
   },
   {
     "action": "setupObjectChanged",
-    "display": "Changed Email Domain Key 09P4W000000TNCC. Field Is Key1 Active value changed from 1 to 0.",
+    "display": "Changed Email Domain Key 09PucDFPX0ZNd95. Field Is Key1 Active value changed from 1 to 0.",
     "title": "Email Administration",
     "category": "Organization Management",
     "section": "Email Administration"
   },
   {
     "action": "setupObjectChangedSkipValue",
-    "display": "Changed Email Domain Key 09P4W000000TNCC. Field Public Key value changed.",
+    "display": "Changed Email Domain Key 09PucDFPX0ZNd95. Field Public Key value changed.",
     "title": "Email Administration",
     "category": "Organization Management",
     "section": "Email Administration"
   },
   {
     "action": "setupObjectCreated",
-    "display": "Created Email Domain Filter 0T6Ea000000003d.",
+    "display": "Created Email Domain Filter 0T6gyfwT7JaEKgU.",
     "title": "Email Administration",
     "category": "Organization Management",
     "section": "Email Administration"
   },
   {
     "action": "setupObjectDeleted",
-    "display": "Deleted Email Domain Filter 0T60z000000000R.",
+    "display": "Deleted Email Domain Filter 0T6ULfC0zDAZDmr.",
     "title": "Email Administration",
     "category": "Organization Management",
     "section": "Email Administration"
@@ -5708,7 +5708,7 @@
   },
   {
     "action": "supportaccessadmins",
-    "display": "darth@vader.com has set support access for only admins to package publisher GalacticEmpire Support (00D5e000003BCef)",
+    "display": "darth@vader.com has set support access for only admins to package publisher GalacticEmpire Support (00DtS9HaXF6hVzw)",
     "title": "User Login Access",
     "category": "User Management",
     "section": null
@@ -5827,14 +5827,14 @@
   },
   {
     "action": "unlockeduser",
-    "display": "Unlocked user anakin@skywalker.com (UserID: [0052A00000EsOI0])",
+    "display": "Unlocked user anakin@skywalker.com (UserID: [0054KTFtUJGytb6])",
     "title": "User Activation and Auth",
     "category": "User Management",
     "section": "Manage Users"
   },
   {
     "action": "unregisterdUserPhoneNumber",
-    "display": "For user anakin@skywalker.com, the phone number +91 (90418) 12345 was disconnected",
+    "display": "For user anakin@skywalker.com, the phone number +91 (91000) 00001 was disconnected",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -5883,7 +5883,7 @@
   },
   {
     "action": "updatedDependency",
-    "display": "Updated dependency rules for \"Tested Field\" controlled by \"Tested Object\" on object Error Condition",
+    "display": "Updated dependency rules for \"Force Alignment\" controlled by \"Force Affinity\" on object Jedi Trial",
     "title": "Custom Fields",
     "category": "Schema",
     "section": "Field Dependencies"
@@ -5925,14 +5925,14 @@
   },
   {
     "action": "updateLpuAccessMapping",
-    "display": "Updated access mapping for sharing set 0H279000000009J on 01I7900000097jP. Changed UserField from Contact.ReportsTo to Contact.00N60000002gfBS, Field from Owner.Contact to Owner.Account",
+    "display": "Updated access mapping for sharing set 0H27KnJprECbAyv on 01IaLjnArH9NK4y. Changed UserField from Contact.ReportsTo to Contact.00NAk31LVze1y6a, Field from Owner.Contact to Owner.Account",
     "title": "Sharing Sets",
     "category": "Data Management",
     "section": "Sharing Sets"
   },
   {
     "action": "updateProfileMapping",
-    "display": "Updated sharing set 0H279000000009J with profiles 00e60000001BgPF",
+    "display": "Updated sharing set 0H27KnJprECbAyv with profiles 00eQxR7yL0ZkJt6",
     "title": "Sharing Sets",
     "category": "Data Management",
     "section": "Sharing Sets"
@@ -5946,14 +5946,14 @@
   },
   {
     "action": "updateSharingRule",
-    "display": "Updated Opportunity Criteria-Based Sharing Rule Owned By CORP: Changed Name from Owned By ISO to Owned By CORP, DeveloperName from Owned_By_ISO to Owned_By_CORP",
+    "display": "Updated Opportunity Criteria-Based Sharing Rule Owned By Army: Changed Name from Owned By Navy to Owned By Army, DeveloperName from Owned_By_Navy to Owned_By_Army",
     "title": "Sharing Rules",
     "category": "Data Management",
     "section": "Sharing Rules"
   },
   {
     "action": "updateSharingSets",
-    "display": "Updated sharing set Stormtroopers (0H279000000009J ) ",
+    "display": "Updated sharing set Stormtroopers (0H27KnJprECbAyv ) ",
     "title": "Sharing Sets",
     "category": "Data Management",
     "section": "Sharing Sets"
@@ -6037,7 +6037,7 @@
   },
   {
     "action": "useremailchangesent",
-    "display": "Email change attempted for user Anakin Skywalker (UserID: [0052A00000EsOI0]) from anakin@skywalker.com to darth@vader.com",
+    "display": "Email change attempted for user Anakin Skywalker (UserID: [0054KTFtUJGytb6]) from anakin@skywalker.com to darth@vader.com",
     "title": "User Detail",
     "category": "User Management",
     "section": "Manage Users"
@@ -6051,7 +6051,7 @@
   },
   {
     "action": "userLicenseEntityPermRevoked",
-    "display": "Removed the Create on Account object permission as allowed by User License 100070000009FRQ",
+    "display": "Removed the Create on Account object permission as allowed by User License 100kzA0BRmG2Krr",
     "title": "Profiles",
     "category": "Permission Management",
     "section": null
@@ -6289,7 +6289,7 @@
   },
   {
     "action": "wolayout",
-    "display": "Changed Work Order page layout Install Work Order",
+    "display": "Changed Work Order page layout Hyperdrive Install Work Order",
     "title": "Layouts",
     "category": "UI",
     "section": "Customize Work Orders"
