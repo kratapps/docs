@@ -1465,6 +1465,13 @@
     "section": "Customize Opportunities"
   },
   {
+    "action": "changedQuickActionLayoutGlobal",
+    "display": "Changed Action Layout for action: Activate_Superlaser",
+    "title": "Links, Buttons and Actions",
+    "category": "UI",
+    "section": "Global Actions"
+  },
+  {
     "action": "changedRecordTypePicklist",
     "display": "Changed picklist mapping for Fleet Type picklist of record type Supply Contract",
     "title": "Picklists",
@@ -1547,6 +1554,13 @@
     "title": "User Activation and Auth",
     "category": "User Management",
     "section": "Manage Users"
+  },
+  {
+    "action": "changedTabSetDevName",
+    "display": "Changed deveoper name of custom app from Death_Star to Death_Star_II",
+    "title": "Custom Apps",
+    "category": "Organization Management",
+    "section": "Custom Apps"
   },
   {
     "action": "changedTabSetName",
@@ -1953,6 +1967,13 @@
     "section": "Email Administration"
   },
   {
+    "action": "createdaccountlayout",
+    "display": "Created Account page layout Account page - Imperial Senate",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Accounts"
+  },
+  {
     "action": "createdActionOverride",
     "display": "Added standard button override: View (Lightning Page null)",
     "title": "Links, Buttons and Actions",
@@ -2091,6 +2112,13 @@
     "title": "Layouts",
     "category": "UI",
     "section": "Custom Objects"
+  },
+  {
+    "action": "createdcontactlayout",
+    "display": "Created Contact page layout Contact page Stormtrooper",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Contacts"
   },
   {
     "action": "createdCustEnt",
@@ -2261,6 +2289,13 @@
     "section": "Mobile Administration"
   },
   {
+    "action": "createdorderlayout",
+    "display": "Created Order page layout Order Layout - Imperial Senate",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Orders"
+  },
+  {
     "action": "createdpartneruser",
     "display": "Created new Partner User Anakin Skywalker",
     "title": "User Activation and Auth",
@@ -2294,6 +2329,13 @@
     "title": "Approval Process",
     "category": "Automation",
     "section": "Approval Process"
+  },
+  {
+    "action": "createdproductlayout",
+    "display": "Created Product page layout Product Layout - Imperial Senate",
+    "title": "Layouts",
+    "category": "UI",
+    "section": "Customize Products"
   },
   {
     "action": "createdqueue",
@@ -3885,6 +3927,13 @@
     "section": null
   },
   {
+    "action": "fedIdCaseInsensitivityEnabled",
+    "display": "Made Federation ID case-insensitive",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
     "action": "feed_entity_untracked",
     "display": "Feed Tracking for Asset off",
     "title": "Custom Objects",
@@ -4795,6 +4844,34 @@
     "section": "SAML Configuration"
   },
   {
+    "action": "MutingPermissionSetCreate",
+    "display": "Created muting permission set Muting_Blaster_Muted",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Muting Permission Set"
+  },
+  {
+    "action": "MutingPermissionSetDelete",
+    "display": "Deleted muting permission set null",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Muting Permission Set"
+  },
+  {
+    "action": "MutingPermissionSetEnableUserPerm",
+    "display": "Changed muting permission set Muting Blaster Muted: PublishPackaging permission was changed from un-muted to muted",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Muting Permission Set"
+  },
+  {
+    "action": "MutingPermissionSetEntityPermChanged",
+    "display": "Changed muting permission set Muting Blaster Muted: Death Star Visit object permissions were changed from No Access to View All Records, Modify All Records",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Muting Permission Set"
+  },
+  {
     "action": "namedCredentialDelete",
     "display": "Deleted named credential: ApproveSenateApi",
     "title": "Named Credentials",
@@ -5271,6 +5348,13 @@
   {
     "action": "PermissionSetGroupDeveloperNameChange",
     "display": "Changed permission set group Sith_Lord_PSG: developer name was changed from Sith_Lord to Sith_Lord_PSG",
+    "title": "Permission Set Groups",
+    "category": "Permission Management",
+    "section": "Permission Set Group"
+  },
+  {
+    "action": "PermissionSetGroupHasActivationRequiredChange",
+    "display": "Changed permission set group Team_Imperial_PSG:  Session Activation Required has changed from enabled to disabled",
     "title": "Permission Set Groups",
     "category": "Permission Management",
     "section": "Permission Set Group"
@@ -6474,6 +6558,13 @@
     "section": "Manage Users"
   },
   {
+    "action": "SetupEntityAccessAudit_PermissionSet_FlowDefinition_Disabled",
+    "display": "Changed permission set Sith Lord: Send Death Star Welcome Package Flow was disabled",
+    "title": "Permission Sets",
+    "category": "Permission Management",
+    "section": "Manage Users"
+  },
+  {
     "action": "SetupEntityAccessAudit_PermissionSet_FlowDefinition_Enabled",
     "display": "Changed permission set Sith Lord: Send Death Star Welcome Package Flow access was enabled",
     "title": "Permission Sets",
@@ -6703,6 +6794,13 @@
   {
     "action": "showDeveloperConsoleWithWebIdeOffOn",
     "display": "Organization setup action: showDeveloperConsoleWithWebIdeOffOn has changed.",
+    "title": "Org Preferences",
+    "category": "Organization Management",
+    "section": null
+  },
+  {
+    "action": "showDeveloperConsoleWithWebIdeOnOff",
+    "display": "Organization setup action: showDeveloperConsoleWithWebIdeOnOff has changed.",
     "title": "Org Preferences",
     "category": "Organization Management",
     "section": null
